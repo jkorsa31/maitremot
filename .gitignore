@@ -1,0 +1,19 @@
+node_modules/
+coverage/
+dist/
+
+# Expo
+.expo/
+web-build/
+apps/mobile/ios/
+apps/mobile/android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Misc
+.DS_Store
+*.log
+.env*.local
