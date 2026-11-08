@@ -45,6 +45,15 @@ en ligne en temps réel entre amis.
 - Chaque mot du plateau retrouve ses graphies réelles et ses lemmes
   (ETE → été : été, être), pour chercher la définition sur le Wiktionnaire.
 
+## IA
+
+- Le générateur trouve **tous** les coups légaux (vérifié contre une recherche
+  exhaustive) en ~7 ms en médiane, ~0,5 s au pire (deux jokers) sur PC.
+- **Expert** : meilleur score + valeur des lettres gardées (joker, S, équilibre voyelles/consonnes).
+- **Moyen** : un coup au hasard entre 55 % et 85 % du meilleur score.
+- **Facile** : un coup court (≤ 4 lettres posées) entre 20 % et 50 % du meilleur score.
+- Moyennes sur 30 parties à trois : facile ≈ 100 pts, moyen ≈ 240 pts, expert ≈ 415 pts.
+
 ## Architecture
 
 ```
@@ -65,7 +74,7 @@ tel quel par le serveur en phase 2 pour valider les coups.
 - [x] **1. Mise en place** : monorepo npm, Expo, TypeScript strict, ESLint, Prettier, Vitest, CI GitHub
 - [x] **2. Moteur de règles** : plateau, sac, chevalets, placement, mots formés, score, échange, passe, fin de partie
 - [x] **3. Dictionnaire** : dictionnaire Hunspell de Grammalecte déplié (toutes les formes) → DAWG compact (440 Ko), lexique forme accentuée → lemme (550 Ko), chargement dans l'app
-- [ ] **4. IA** : générateur de coups (Appel & Jacobson), 3 niveaux, 1 à 3 IA par partie
+- [x] **4. IA** : générateur de coups (Appel & Jacobson), 3 niveaux, 1 à 3 IA par partie
 - [ ] **5. Interface** : plateau zoomable, glisser-déposer, joker, aperçu du score, historique, sac
 - [ ] **5 bis. Définitions** : fiche Wiktionnaire au toucher d'un mot joué, cache
 - [ ] **6. Sauvegarde** : reprise de partie, statistiques

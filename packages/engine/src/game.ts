@@ -30,10 +30,15 @@ export const SCORELESS_ROUNDS_TO_END = 2;
 
 export type PlayerKind = 'human' | 'ai';
 
+/** Strength of a computer player (see ai.ts). */
+export type AiLevel = 'easy' | 'medium' | 'expert';
+
 export interface PlayerConfig {
   readonly id: string;
   readonly name: string;
   readonly kind: PlayerKind;
+  /** Only for `kind: 'ai'`; defaults to 'medium'. */
+  readonly aiLevel?: AiLevel;
 }
 
 export interface PlayerState extends PlayerConfig {

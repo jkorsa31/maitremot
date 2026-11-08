@@ -11,6 +11,8 @@
  * - dawg.ts       compact word graph (dictionary storage, AI move generation)
  * - lexicon.ts    board word → real spellings and lemmas (for definitions)
  * - game.ts       full game state machine (2–4 players)
+ * - movegen.ts    generation of every legal move (Appel & Jacobson)
+ * - ai.ts         computer opponents (3 levels)
  */
 
 export * from './tiles';
@@ -22,3 +24,5 @@ export * from './dictionary';
 export * from './dawg';
 export * from './lexicon';
 export * from './game';
+export * from './movegen';
+export * from './ai';

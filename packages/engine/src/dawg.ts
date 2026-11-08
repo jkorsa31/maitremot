@@ -97,6 +97,42 @@ export class Dawg {
     }
   }
 
+  // -------------------------------------------------------------------------
+  // Allocation-free variants, used in the AI's hot loops where creating an
+  // object per edge would make move generation several times slower.
+  // Symbols are given as their index in `alphabet`.
+  // -------------------------------------------------------------------------
+
+  /** Calls `visit` for each outgoing edge of `node`. */
+  forEachEdge(
+    node: DawgNode,
+    visit: (symbolIndex: number, isFinal: boolean, target: DawgNode) => void,
+  ): void {
+    if (node === 0) return;
+    for (let i = node; ; i++) {
+      const edge = this.edges[i]!;
+      visit(edge & SYMBOL_MASK, (edge & FINAL_BIT) !== 0, edge >>> TARGET_SHIFT);
+      if (edge & LAST_BIT) return;
+    }
+  }
+
+  /**
+   * Follows the edge with symbol index `symbolIndex`. Returns -1 if there is
+   * none, otherwise `target * 2 + (isFinal ? 1 : 0)` packed in one number;
+   * decode with `stepTarget` / `stepIsFinal`.
+   */
+  step(node: DawgNode, symbolIndex: number): number {
+    if (node === 0) return -1;
+    for (let i = node; ; i++) {
+      const edge = this.edges[i]!;
+      const edgeSymbol = edge & SYMBOL_MASK;
+      if (edgeSymbol === symbolIndex) {
+        return (edge >>> TARGET_SHIFT) * 2 + ((edge & FINAL_BIT) !== 0 ? 1 : 0);
+      }
+      if (edgeSymbol > symbolIndex || edge & LAST_BIT) return -1;
+    }
+  }
+
   /**
    * Walks `prefix` from the root. Returns the edge reached by its last
    * character (so `isFinal` tells whether `prefix` itself is a word), or null.
@@ -162,6 +198,11 @@ export class Dawg {
     return new Dawg(alphabet, edges);
   }
 }
+
+/** Target node of a value returned by `Dawg.step`. */
+export const stepTarget = (step: number): DawgNode => Math.floor(step / 2);
+/** Whether the edge followed by `Dawg.step` ends a word. */
+export const stepIsFinal = (step: number): boolean => step % 2 === 1;
 
 const MAGIC = [0x4d, 0x4d, 0x44, 0x47]; // "MMDG"
 const align4 = (n: number) => (n + 3) & ~3;
