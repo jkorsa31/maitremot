@@ -7,6 +7,8 @@ import { describe, expect, it } from 'vitest';
 import {
   type AiLevel,
   type GameState,
+  type Letter,
+  type Tile,
   chooseAiAction,
   createGame,
   currentPlayer,
@@ -32,9 +34,9 @@ function playOut(initial: GameState): { state: GameState; maxMoveMs: number } {
   let maxMoveMs = 0;
   for (let turn = 0; state.status === 'playing'; turn++) {
     expect(turn).toBeLessThan(200);
-    const t0 = performance.now();
+    const t0 = Date.now();
     const decision = chooseAiAction(state, words);
-    maxMoveMs = Math.max(maxMoveMs, performance.now() - t0);
+    maxMoveMs = Math.max(maxMoveMs, Date.now() - t0);
 
     if (decision.kind === 'play') {
       // The generator's score must match the official scoring, and every word must be valid.
@@ -79,7 +81,10 @@ describe('AI with the French dictionary', () => {
   it('finds a 7-tile word when there is one', () => {
     // "ARTISTE" uses the whole rack on an empty board.
     const state = aiGame(['expert', 'expert'], 1);
-    const rack = 'ARTISTE'.split('').map((letter, id) => ({ id: 1000 + id, letter }) as const);
+    const rack: Tile[] = [...'ARTISTE'].map((letter, id) => ({
+      id: 1000 + id,
+      letter: letter as Letter,
+    }));
     const moves = generateMoves(state.board, rack, words);
     expect(moves.some((m) => m.placements.length === 7 && m.score > 50)).toBe(true);
   });
