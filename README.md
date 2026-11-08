@@ -14,7 +14,8 @@ règles, les choix techniques et l'avancement.
 npm install              # installe toutes les dépendances (monorepo)
 npm run check            # format + lint + typage + tests (comme la CI)
 npm test                 # tests unitaires du moteur
-npm start -w @maitremot/mobile   # lance l'app (QR code à scanner avec Expo Go)
+npm start -w @maitremot/mobile   # lance l'app (QR code à scanner avec Expo Go, touche w = navigateur)
+npm run build:dictionary -w @maitremot/tools   # régénère le dictionnaire
 ```
 
 ## Organisation du code

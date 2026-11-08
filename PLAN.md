@@ -32,11 +32,25 @@ en ligne en temps réel entre amis.
 - Fin : un joueur vide son chevalet sac vide (il gagne les points restants des
   autres), ou deux tours de table complets sans mot posé. Chacun déduit ses lettres restantes.
 
+## Dictionnaire
+
+- Source : le dictionnaire orthographique de Grammalecte v7.5 (« classique »,
+  paquet npm `dictionary-fr`, licence MPL 2.0). `tools/dictionary/build.ts`
+  génère toutes les formes (pluriels, féminins, conjugaisons) à partir des règles Hunspell.
+- Sont exclus : noms propres, sigles, mots avec chiffres, trait d'union ou apostrophe,
+  mots de 1 lettre ou de plus de 15 lettres.
+- Différences avec les listes officielles des clubs : quelques mots rares absents
+  (ex. KA), quelques mots présents en plus. On pourra ajouter une liste de
+  corrections maison si besoin.
+- Chaque mot du plateau retrouve ses graphies réelles et ses lemmes
+  (ETE → été : été, être), pour chercher la définition sur le Wiktionnaire.
+
 ## Architecture
 
 ```
 apps/mobile/       application Expo / React Native
-packages/engine/   moteur de jeu en TypeScript pur (règles, score, dictionnaire, IA)
+packages/engine/   moteur de jeu en TypeScript pur (règles, score, DAWG, IA)
+packages/lexicon-fr/ données du dictionnaire français (générées)
 supabase/          (phase 2) base de données et fonctions serveur
 tools/             scripts (construction du dictionnaire...)
 ```
@@ -50,7 +64,7 @@ tel quel par le serveur en phase 2 pour valider les coups.
 
 - [x] **1. Mise en place** : monorepo npm, Expo, TypeScript strict, ESLint, Prettier, Vitest, CI GitHub
 - [x] **2. Moteur de règles** : plateau, sac, chevalets, placement, mots formés, score, échange, passe, fin de partie
-- [ ] **3. Dictionnaire** : script Grammalecte → DAWG compact, chargement dans l'app, lien forme → lemme
+- [x] **3. Dictionnaire** : dictionnaire Hunspell de Grammalecte déplié (toutes les formes) → DAWG compact (440 Ko), lexique forme accentuée → lemme (550 Ko), chargement dans l'app
 - [ ] **4. IA** : générateur de coups (Appel & Jacobson), 3 niveaux, 1 à 3 IA par partie
 - [ ] **5. Interface** : plateau zoomable, glisser-déposer, joker, aperçu du score, historique, sac
 - [ ] **5 bis. Définitions** : fiche Wiktionnaire au toucher d'un mot joué, cache

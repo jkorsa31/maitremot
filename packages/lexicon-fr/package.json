@@ -1,0 +1,17 @@
+{
+  "name": "@maitremot/lexicon-fr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "French word list and lexicon for MaitreMot, generated from Grammalecte's dictionary (MPL-2.0).",
+  "license": "MPL-2.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@maitremot/engine": "*"
+  }
+}

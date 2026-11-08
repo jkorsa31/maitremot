@@ -1,10 +1,11 @@
 {
   "name": "maitremot",
   "private": true,
-  "description": "MaitreMot — jeu de lettres en français (iOS / Android)",
+  "description": "MaitreMot \u2014 jeu de lettres en fran\u00e7ais (iOS / Android)",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "tools"
   ],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces --if-present",

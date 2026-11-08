@@ -2,3 +2,4 @@ node_modules
 coverage
 package-lock.json
 apps/mobile/.expo
+packages/lexicon-fr/src/generated

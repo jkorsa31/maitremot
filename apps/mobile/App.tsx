@@ -1,11 +1,13 @@
 /**
- * Temporary home screen (step 1): renders the MaitreMot board straight from the
- * engine package, to prove the monorepo wiring works. The real game UI comes in step 5.
+ * Temporary home screen: renders the MaitreMot board straight from the engine
+ * package and a dictionary tester, to prove the monorepo wiring works.
+ * The real game UI comes in step 5.
  */
 
 import { BOARD_SIZE, CENTER, PREMIUM_LAYOUT, type Premium } from '@maitremot/engine';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { WordChecker } from './src/WordChecker';
 
 /** Colors and short labels for the bonus squares. */
 const PREMIUM_STYLE: Record<Premium, { color: string; label: string }> = {
@@ -46,6 +48,7 @@ export default function App() {
           </View>
         ))}
       </View>
+      <WordChecker />
       <StatusBar style="auto" />
     </View>
   );
