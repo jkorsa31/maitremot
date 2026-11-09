@@ -23,6 +23,9 @@ describe('French board words', () => {
     'QI', // short words
     'ZYTHUM',
     'KILOMETRES', // prefixed forms
+    'KA', // house words (packages/lexicon-fr/house-words.txt)
+    'KAT',
+    'SKYR',
   ])('accepts %s', (word) => expect(words.has(word)).toBe(true));
 
   it.each([

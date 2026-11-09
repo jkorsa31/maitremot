@@ -42,6 +42,8 @@ en ligne en temps réel entre amis.
 - Différences avec les listes officielles des clubs : quelques mots rares absents
   (ex. KA), quelques mots présents en plus. On pourra ajouter une liste de
   corrections maison si besoin.
+- **Dictionnaire maison** : `packages/lexicon-fr/house-words.txt` (mots acceptés en plus,
+  ex. KA, KAT, SKYR) et bouton « Ajouter » dans le jeu quand un mot est refusé.
 - Chaque mot du plateau retrouve ses graphies réelles et ses lemmes
   (ETE → été : été, être), pour chercher la définition sur le Wiktionnaire.
 
@@ -75,7 +77,7 @@ tel quel par le serveur en phase 2 pour valider les coups.
 - [x] **2. Moteur de règles** : plateau, sac, chevalets, placement, mots formés, score, échange, passe, fin de partie
 - [x] **3. Dictionnaire** : dictionnaire Hunspell de Grammalecte déplié (toutes les formes) → DAWG compact (440 Ko), lexique forme accentuée → lemme (550 Ko), chargement dans l'app
 - [x] **4. IA** : générateur de coups (Appel & Jacobson), 3 niveaux, 1 à 3 IA par partie
-- [x] **5. Interface** : accueil (1 à 3 IA, niveaux), plateau zoomable, glisser-déposer ou toucher, joker, aperçu du score, échange, passe, historique, fin de partie
+- [x] **5. Interface** : accueil (1 à 3 IA, niveaux), plateau zoomable, glisser-déposer (case visée surlignée, aimantation sur la case libre la plus proche) ou toucher, curseur de saisie (→/↓), propositions pour compléter le mot depuis le chevalet, joker, aperçu du score, échange, passe, historique, fin de partie
 - [ ] **5 bis. Définitions** : fiche Wiktionnaire au toucher d'un mot joué, cache
 - [ ] **6. Sauvegarde** : reprise de partie, statistiques
 - [ ] **7. Diffusion** : builds EAS, TestFlight et APK

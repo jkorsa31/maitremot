@@ -14,6 +14,7 @@ import { BOARD_SIZE, type GameState, type Position } from '@maitremot/engine';
 import { Redirect, router } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
+  Pressable,
   ScrollView,
   type ScrollViewInstance,
   StyleSheet,
@@ -58,7 +59,7 @@ function GameContent({ game }: { game: GameState }) {
   const g = useSoloGame(game);
 
   const [zoomed, setZoomed] = useState(false);
-  const [sheet, setSheet] = useState<'exchange' | 'history' | 'pass' | null>(null);
+  const [sheet, setSheet] = useState<'exchange' | 'history' | 'pass' | 'addWord' | null>(null);
   const [gameOverDismissed, setGameOverDismissed] = useState(false);
 
   const contentWidth = Math.min(width, 600);
@@ -98,6 +99,8 @@ function GameContent({ game }: { game: GameState }) {
   }, [zoomed]);
 
   const status = statusLine(game, g);
+  // Formed words missing from the dictionary: the player may add them.
+  const unknownWords = g.evaluation?.ok ? g.evaluation.value.invalidWords : [];
   // Score of the word being composed, when it can be played.
   const playableScore =
     g.evaluation?.ok && g.evaluation.value.invalidWords.length === 0
@@ -112,6 +115,8 @@ function GameContent({ game }: { game: GameState }) {
       lastMove={lastMove}
       squareSize={squareSize}
       interactive={g.isMyTurn}
+      cursor={g.cursor}
+      isFree={g.isFree}
       onSquarePress={g.pressSquare}
       onDropTile={(tileId: number, pos: Position) => g.placeTile(tileId, pos)}
     />
@@ -141,9 +146,37 @@ function GameContent({ game }: { game: GameState }) {
         </View>
 
         <View style={styles.statusRow}>
-          <Text style={[styles.status, { color: status.color }]} numberOfLines={2}>
-            {status.text}
-          </Text>
+          {g.suggestions.length > 0 ? (
+            // One tile placed: offer to complete the word with the next rack letters.
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.status}>
+              {g.suggestions.map((suggestion) => (
+                <Pressable
+                  key={`${suggestion.direction}-${suggestion.placements.length}`}
+                  onPress={() => g.applySuggestion(suggestion)}
+                  accessibilityRole="button"
+                  style={({ pressed }) => [styles.chip, pressed && styles.chipPressed]}
+                >
+                  <Text style={styles.chipText}>
+                    {suggestion.word} {suggestion.direction === 'horizontal' ? '→' : '↓'}{' '}
+                    <Text style={styles.chipScore}>{suggestion.score}</Text>
+                  </Text>
+                </Pressable>
+              ))}
+            </ScrollView>
+          ) : (
+            <Text style={[styles.status, { color: status.color }]} numberOfLines={2}>
+              {status.text}
+            </Text>
+          )}
+          {unknownWords.length > 0 && (
+            <Button
+              label="Ajouter"
+              icon="add"
+              variant="secondary"
+              compact
+              onPress={() => setSheet('addWord')}
+            />
+          )}
           <Text style={styles.bag}>Sac : {game.bag.length}</Text>
           <Button
             label=""
@@ -173,7 +206,7 @@ function GameContent({ game }: { game: GameState }) {
             tileSize={tileSize}
             selectedTileId={g.selectedTileId}
             interactive={g.isMyTurn}
-            onSelect={g.selectTile}
+            onSelect={g.pressRackTile}
             onDropTile={(tileId, from, index) =>
               from === 'board' ? g.returnToRack(tileId, index) : g.moveInRack(tileId, index)
             }
@@ -253,6 +286,17 @@ function GameContent({ game }: { game: GameState }) {
           setSheet(null);
         }}
       />
+      <ConfirmSheet
+        visible={sheet === 'addWord'}
+        title="Ajouter au dictionnaire ?"
+        message={`${unknownWords.join(', ')} ${unknownWords.length > 1 ? 'seront acceptés' : 'sera accepté'} dans tes parties. Ajoute seulement des mots sur lesquels vous êtes d'accord entre amis !`}
+        confirmLabel="Ajouter"
+        onCancel={() => setSheet(null)}
+        onConfirm={() => {
+          unknownWords.forEach(g.addWord);
+          setSheet(null);
+        }}
+      />
       <HistorySheet visible={sheet === 'history'} game={game} onClose={() => setSheet(null)} />
       <GameOverSheet
         visible={game.status === 'finished' && !gameOverDismissed}
@@ -304,6 +348,16 @@ const styles = StyleSheet.create({
   column: { flex: 1, paddingHorizontal: 4 },
   topBar: { flexDirection: 'row', alignItems: 'center', gap: 4 },
   statusRow: { flexDirection: 'row', alignItems: 'center', minHeight: 44, paddingLeft: 6 },
+  chip: {
+    backgroundColor: colors.primary,
+    borderRadius: 16,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    marginRight: 6,
+  },
+  chipPressed: { opacity: 0.7 },
+  chipText: { color: colors.primaryText, fontWeight: '700', fontSize: 14 },
+  chipScore: { fontWeight: '400' },
   status: { flex: 1, fontSize: 14, fontWeight: '600' },
   bag: { fontSize: 13, color: colors.textMuted, marginLeft: 8 },
   boardViewport: { alignSelf: 'center', overflow: 'hidden' },

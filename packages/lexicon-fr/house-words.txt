@@ -1,0 +1,10 @@
+# Dictionnaire maison de MaitreMot
+#
+# Mots acceptés en plus du dictionnaire Grammalecte : un mot par ligne, en
+# minuscules, avec ses accents (ils sont retirés automatiquement sur le
+# plateau). Les lignes commençant par # sont ignorées.
+# Après modification : npm run build:dictionary -w @maitremot/tools
+
+ka
+kat
+skyr

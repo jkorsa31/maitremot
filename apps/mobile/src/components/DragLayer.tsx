@@ -32,6 +32,8 @@ export interface DragItem {
 }
 
 type DropHandler = (item: DragItem, x: number, y: number) => void;
+/** Called while dragging over a zone (coordinates relative to it), or with null when leaving it. */
+type HoverHandler = (item: DragItem, point: { x: number; y: number } | null) => void;
 
 interface Rect {
   x: number;
@@ -43,6 +45,7 @@ interface Rect {
 interface Zone {
   ref: RefObject<HostInstance | null>;
   onDrop: DropHandler;
+  onHover?: HoverHandler;
   rect?: Rect;
 }
 
@@ -82,13 +85,46 @@ export function DragProvider({ children }: { children: ReactNode }) {
   );
 
   const value = useMemo<DragContextValue>(() => {
+    // The tile is drawn slightly ABOVE the finger so the finger does not hide
+    // it. Its center (not the finger) is what decides the target square.
+    const LIFT = 0.9; // in tile sizes
+    const target = (pageX: number, pageY: number) => {
+      const size = current.current?.size ?? 0;
+      return { x: pageX, y: pageY - size * (LIFT - 0.5) };
+    };
+    /** The zone under a point, with the point relative to it. */
+    const hit = (point: { x: number; y: number }) => {
+      for (const zone of zones.values()) {
+        const r = zone.rect;
+        if (
+          r &&
+          point.x >= r.x &&
+          point.x <= r.x + r.width &&
+          point.y >= r.y &&
+          point.y <= r.y + r.height
+        ) {
+          return { zone, x: point.x - r.x, y: point.y - r.y };
+        }
+      }
+      return null;
+    };
     const place = (pageX: number, pageY: number) => {
       const size = current.current?.size ?? 0;
-      // Center the tile on the finger, slightly above it so it stays visible.
       position.setValue({
         x: pageX - rootOffset.current.x - size / 2,
-        y: pageY - rootOffset.current.y - size * 0.9,
+        y: pageY - rootOffset.current.y - size * LIFT,
       });
+    };
+    const hover = (pageX: number, pageY: number) => {
+      const dragged = current.current;
+      if (!dragged) return;
+      const found = hit(target(pageX, pageY));
+      for (const zone of zones.values()) {
+        zone.onHover?.(dragged.item, found?.zone === zone ? { x: found.x, y: found.y } : null);
+      }
+    };
+    const clearHover = (item: DragItem) => {
+      for (const zone of zones.values()) zone.onHover?.(item, null);
     };
     return {
       zones,
@@ -108,29 +144,24 @@ export function DragProvider({ children }: { children: ReactNode }) {
           });
         }
       },
-      move: place,
+      move(pageX, pageY) {
+        place(pageX, pageY);
+        hover(pageX, pageY);
+      },
       end(pageX, pageY) {
         const dragged = current.current;
+        const found = hit(target(pageX, pageY));
         current.current = null;
         setDrag(null);
         if (!dragged) return;
-        for (const zone of zones.values()) {
-          const r = zone.rect;
-          if (
-            r &&
-            pageX >= r.x &&
-            pageX <= r.x + r.width &&
-            pageY >= r.y &&
-            pageY <= r.y + r.height
-          ) {
-            zone.onDrop(dragged.item, pageX - r.x, pageY - r.y);
-            return;
-          }
-        }
+        clearHover(dragged.item);
+        found?.zone.onDrop(dragged.item, found.x, found.y);
       },
       cancel() {
+        const dragged = current.current;
         current.current = null;
         setDrag(null);
+        if (dragged) clearHover(dragged.item);
       },
     };
   }, [position, zones]);
@@ -160,17 +191,25 @@ export function DragProvider({ children }: { children: ReactNode }) {
   );
 }
 
-/** Registers a view as a drop target. `onDrop` gets coordinates relative to the view. */
+/**
+ * Registers a view as a drop target. `onDrop` (and the optional `onHover`, called
+ * while a tile is dragged over it) get coordinates relative to the view.
+ */
 export function useDropZone(
   name: string,
   ref: RefObject<HostInstance | null>,
   onDrop: DropHandler,
+  onHover?: HoverHandler,
 ) {
   const { zones } = useDragContext();
-  const onDropRef = useRef(onDrop);
-  onDropRef.current = onDrop;
+  const handlers = useRef({ onDrop, onHover });
+  handlers.current = { onDrop, onHover };
   useEffect(() => {
-    zones.set(name, { ref, onDrop: (...args) => onDropRef.current(...args) });
+    zones.set(name, {
+      ref,
+      onDrop: (...args) => handlers.current.onDrop(...args),
+      onHover: (...args) => handlers.current.onHover?.(...args),
+    });
     return () => {
       zones.delete(name);
     };

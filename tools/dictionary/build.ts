@@ -9,6 +9,7 @@
  * 2. keep only forms playable on the board: lowercase French letters only
  *    (no proper nouns, acronyms, unit symbols, digits, hyphens, apostrophes),
  *    2 to 15 letters;
+ *    then add the house words (packages/lexicon-fr/house-words.txt);
  * 3. write two DAWGs into packages/lexicon-fr/src/generated/:
  *    - words:   board words (A–Z, no accents) → used to validate moves and by the AI;
  *    - lexicon: "<spelling>=<lemma rule>" → used to fetch definitions.
@@ -33,6 +34,7 @@ import { expandEntry, parseAffixFile, parseFlags } from './hunspell';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outputDir = join(here, '../../packages/lexicon-fr/src/generated');
+const houseWordsFile = join(here, '../../packages/lexicon-fr/house-words.txt');
 const source = dirname(createRequire(import.meta.url).resolve('dictionary-fr'));
 
 const spellingPattern = new RegExp(`^[${SPELLING_CHARS}]+$`, 'u');
@@ -69,6 +71,17 @@ async function main() {
     }
   }
 
+  // House words: extra words accepted by the group of friends (each is its own lemma).
+  const houseText = await readFile(houseWordsFile, 'utf8');
+  let houseCount = 0;
+  for (const raw of houseText.split('\n')) {
+    const form = raw.trim().toLowerCase();
+    if (!form || form.startsWith('#')) continue;
+    if (!spellingPattern.test(form)) throw new Error(`Invalid house word: "${raw}"`);
+    if (!forms.has(form)) forms.set(form, new Set([form]));
+    houseCount++;
+  }
+
   // 3. Build the DAWGs.
   const boardWords = new Set([...forms.keys()].map(normalizeWord));
   const words = buildDawg(boardWords, LETTERS.join(''));
@@ -95,7 +108,7 @@ async function main() {
       `export const LEXICON_DAWG_BASE64 =\n  '${Buffer.from(lexicon.toBytes()).toString('base64')}';\n`,
   );
 
-  console.log(`Spellings: ${forms.size}`);
+  console.log(`Spellings: ${forms.size} (house words: ${houseCount})`);
   console.log(`Board words: ${boardWords.size} → ${(words.size * 4) / 1e6} MB`);
   console.log(`Lexicon entries: ${lexiconEntries.length} → ${(lexicon.size * 4) / 1e6} MB`);
 }
