@@ -23,4 +23,4 @@ npm run build:dictionary -w @maitremot/tools   # régénère le dictionnaire
 | Dossier           | Rôle                                                                                                                                                                          |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `packages/engine` | Moteur de jeu en TypeScript pur : règles, score, dictionnaire, IA. Chaque fichier commence par un commentaire qui explique son rôle ; `src/index.ts` donne la vue d'ensemble. |
-| `apps/mobile`     | Application Expo / React Native.                                                                                                                                              |
+| `apps/mobile`     | Application Expo / React Native : écrans dans `src/app` (Expo Router), composants dans `src/components`, logique de partie dans `src/game`.                                   |

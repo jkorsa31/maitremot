@@ -37,7 +37,7 @@ en ligne en temps réel entre amis.
 - Source : le dictionnaire orthographique de Grammalecte v7.5 (« classique »,
   paquet npm `dictionary-fr`, licence MPL 2.0). `tools/dictionary/build.ts`
   génère toutes les formes (pluriels, féminins, conjugaisons) à partir des règles Hunspell.
-- Sont exclus : noms propres, sigles, mots avec chiffres, trait d'union ou apostrophe,
+- Sont exclus : noms propres, sigles, symboles d'unités (mm, kcal…), mots avec chiffres, trait d'union ou apostrophe,
   mots de 1 lettre ou de plus de 15 lettres.
 - Différences avec les listes officielles des clubs : quelques mots rares absents
   (ex. KA), quelques mots présents en plus. On pourra ajouter une liste de
@@ -75,7 +75,7 @@ tel quel par le serveur en phase 2 pour valider les coups.
 - [x] **2. Moteur de règles** : plateau, sac, chevalets, placement, mots formés, score, échange, passe, fin de partie
 - [x] **3. Dictionnaire** : dictionnaire Hunspell de Grammalecte déplié (toutes les formes) → DAWG compact (440 Ko), lexique forme accentuée → lemme (550 Ko), chargement dans l'app
 - [x] **4. IA** : générateur de coups (Appel & Jacobson), 3 niveaux, 1 à 3 IA par partie
-- [ ] **5. Interface** : plateau zoomable, glisser-déposer, joker, aperçu du score, historique, sac
+- [x] **5. Interface** : accueil (1 à 3 IA, niveaux), plateau zoomable, glisser-déposer ou toucher, joker, aperçu du score, échange, passe, historique, fin de partie
 - [ ] **5 bis. Définitions** : fiche Wiktionnaire au toucher d'un mot joué, cache
 - [ ] **6. Sauvegarde** : reprise de partie, statistiques
 - [ ] **7. Diffusion** : builds EAS, TestFlight et APK

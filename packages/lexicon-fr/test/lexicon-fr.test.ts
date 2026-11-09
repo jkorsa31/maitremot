@@ -25,8 +25,18 @@ describe('French board words', () => {
     'KILOMETRES', // prefixed forms
   ])('accepts %s', (word) => expect(words.has(word)).toBe(true));
 
-  it.each(['FRANCE', 'SNCF', 'AUJOURDHUI', 'PORTEMONNAIE', 'A', 'MANGERONSS'])(
-    'rejects %s (proper noun, acronym, apostrophe, hyphen, single letter, typo)',
+  it.each([
+    'FRANCE',
+    'SNCF',
+    'AUJOURDHUI',
+    'PORTEMONNAIE',
+    'A',
+    'MANGERONSS',
+    'MLX',
+    'KCAL',
+    'JUSQU',
+  ])(
+    'rejects %s (proper noun, acronym, apostrophe, hyphen, single letter, typo, unit symbol, elision)',
     (word) => expect(words.has(word)).toBe(false),
   );
 });

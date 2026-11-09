@@ -36,6 +36,8 @@ export interface AffixFile {
   readonly needAffix: string | undefined;
   readonly circumfix: string | undefined;
   readonly forbidden: string | undefined;
+  /** Flag of entries never suggested: in Grammalecte, unit symbols and abbreviations. */
+  readonly noSuggest: string | undefined;
 }
 
 /** Splits a flag string into flags (FLAG long = 2 characters per flag). */
@@ -60,6 +62,7 @@ export function parseAffixFile(text: string): AffixFile {
   let needAffix: string | undefined;
   let circumfix: string | undefined;
   let forbidden: string | undefined;
+  let noSuggest: string | undefined;
 
   for (const line of text.split('\n')) {
     const parts = line.trim().split(/\s+/);
@@ -68,6 +71,7 @@ export function parseAffixFile(text: string): AffixFile {
     if (keyword === 'NEEDAFFIX') needAffix = flag;
     else if (keyword === 'CIRCUMFIX') circumfix = flag;
     else if (keyword === 'FORBIDDENWORD') forbidden = flag;
+    else if (keyword === 'NOSUGGEST') noSuggest = flag;
     else if ((keyword === 'PFX' || keyword === 'SFX') && flag) {
       const existing = classes.get(flag);
       if (!existing) {
@@ -86,7 +90,7 @@ export function parseAffixFile(text: string): AffixFile {
       });
     }
   }
-  return { classes, needAffix, circumfix, forbidden };
+  return { classes, needAffix, circumfix, forbidden, noSuggest };
 }
 
 export interface ExpandedForm {

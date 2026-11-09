@@ -7,7 +7,8 @@
  * Steps:
  * 1. expand every stem of the .dic file into all its forms (hunspell.ts);
  * 2. keep only forms playable on the board: lowercase French letters only
- *    (no proper nouns, acronyms, digits, hyphens, apostrophes), 2 to 15 letters;
+ *    (no proper nouns, acronyms, unit symbols, digits, hyphens, apostrophes),
+ *    2 to 15 letters;
  * 3. write two DAWGs into packages/lexicon-fr/src/generated/:
  *    - words:   board words (A–Z, no accents) → used to validate moves and by the AI;
  *    - lexicon: "<spelling>=<lemma rule>" → used to fetch definitions.
@@ -28,7 +29,7 @@ import {
   encodeLexiconEntry,
   normalizeWord,
 } from '@maitremot/engine';
-import { expandEntry, parseAffixFile } from './hunspell';
+import { expandEntry, parseAffixFile, parseFlags } from './hunspell';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outputDir = join(here, '../../packages/lexicon-fr/src/generated');
@@ -55,6 +56,9 @@ async function main() {
     const slash = entry.indexOf('/');
     const stem = slash < 0 ? entry : entry.slice(0, slash);
     const flags = slash < 0 ? '' : entry.slice(slash + 1);
+    // Unit symbols and abbreviations (mm, cl, mlx...) are flagged "never
+    // suggest"; real words with the same spelling have their own entry.
+    if (aff.noSuggest && parseFlags(flags).includes(aff.noSuggest)) continue;
     for (const { form, lemma } of expandEntry(aff, stem, flags, skipAffix)) {
       if (!spellingPattern.test(form)) continue;
       const length = normalizeWord(form).length;
