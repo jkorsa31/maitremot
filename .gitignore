@@ -17,3 +17,7 @@ apps/mobile/android/
 .DS_Store
 *.log
 .env*.local
+
+# Web build / Vercel
+apps/mobile/dist/
+.vercel/
