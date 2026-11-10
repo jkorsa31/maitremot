@@ -85,7 +85,7 @@ export function createRequestHandler(
     const { data } = await admin.auth.getUser(token);
     if (!data.user) return json(401, { ok: false, error: { code: 'UNAUTHORIZED' } });
 
-    let parsed: GameRequest | null = null;
+    let parsed: GameRequest | null;
     try {
       parsed = parseRequest(await request.json());
     } catch {
