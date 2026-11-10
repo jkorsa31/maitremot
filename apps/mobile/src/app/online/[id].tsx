@@ -3,13 +3,15 @@
  */
 
 import { router, useLocalSearchParams } from 'expo-router';
-import type { ReactNode } from 'react';
+import { type ReactNode, useMemo } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import type { GameState } from '@maitremot/engine';
 import { Button } from '../../components/Button';
+import { ChatBar } from '../../components/ChatBar';
 import { DragProvider } from '../../components/DragLayer';
 import { GameView } from '../../components/GameView';
 import { useSession } from '../../online/auth';
+import { useChat } from '../../online/useChat';
 import { useOnlineController, useOnlineGame } from '../../online/useOnlineGame';
 import { colors } from '../../ui/theme';
 
@@ -56,8 +58,23 @@ function OnlineGame(props: {
   reload: () => Promise<void>;
 }) {
   const g = useOnlineController(props.gameId, props.userId, props.game, props.reload);
+  const chat = useChat(props.gameId, props.userId);
+  const names = useMemo(
+    () => new Map(props.game.players.map((p) => [p.id, p.name])),
+    [props.game.players],
+  );
   return (
     <GameView
+      footer={
+        <ChatBar
+          messages={chat.messages}
+          meId={props.userId}
+          names={names}
+          unread={chat.unread}
+          onSend={chat.send}
+          onRead={chat.markRead}
+        />
+      }
       game={props.game}
       g={g}
       notice={props.offline ? 'Hors ligne : reconnexion en cours…' : null}

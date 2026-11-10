@@ -12,7 +12,7 @@
  */
 
 import { BOARD_SIZE, type Board, type GameState, type Position, cellAt } from '@maitremot/engine';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react';
 import {
   Pressable,
   ScrollView,
@@ -36,6 +36,14 @@ import { colors } from '../ui/theme';
 /** Time for a closing modal window to disappear before opening another one. */
 const MODAL_SWITCH_DELAY_MS = 350;
 
+/** Approximate heights of the parts around the board, to fit small screens. */
+const TOP_BAR_HEIGHT = 56;
+const STATUS_HEIGHT = 48;
+const NOTICE_HEIGHT = 20;
+const RACK_EXTRA_HEIGHT = 34; // rack padding + margin above it
+const ACTIONS_HEIGHT = 76; // buttons + margin above them
+const FOOTER_HEIGHT = 52; // chat bar
+
 /** Square size when the board is zoomed in. */
 const ZOOMED_SQUARE = 40;
 
@@ -47,11 +55,13 @@ export interface GameViewProps {
   readonly onNewGame: () => void;
   /** Optional extra line under the status (e.g. connection state online). */
   readonly notice?: string | null;
+  /** Optional content under the action buttons (the chat in online games). */
+  readonly footer?: ReactNode;
 }
 
-export function GameView({ game, g, onQuit, onNewGame, notice }: GameViewProps) {
+export function GameView({ game, g, onQuit, onNewGame, notice, footer }: GameViewProps) {
   const insets = useSafeAreaInsets();
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
 
   const [zoomed, setZoomed] = useState(false);
   const [sheet, setSheet] = useState<'exchange' | 'history' | 'pass' | 'addWord' | null>(null);
@@ -59,11 +69,33 @@ export function GameView({ game, g, onQuit, onNewGame, notice }: GameViewProps) 
   /** Words whose definitions are shown (empty = sheet closed). */
   const [definitionWords, setDefinitionWords] = useState<string[]>([]);
 
+  // Sizes: everything must fit in the screen height too (small phones), so the
+  // board and the rack tiles shrink when the height is short.
   const contentWidth = Math.min(width, 600);
-  const fitSquare = Math.floor((contentWidth - 8) / BOARD_SIZE);
+  const tileSize = Math.min(
+    52,
+    Math.floor((contentWidth - 16 - 8 * 6) / 7),
+    Math.floor(height * 0.075),
+  );
+  const reservedHeight =
+    insets.top +
+    insets.bottom +
+    TOP_BAR_HEIGHT +
+    STATUS_HEIGHT +
+    (notice ? NOTICE_HEIGHT : 0) +
+    tileSize +
+    RACK_EXTRA_HEIGHT +
+    ACTIONS_HEIGHT +
+    (footer ? FOOTER_HEIGHT : 0);
+  const fitSquare = Math.max(
+    16,
+    Math.min(
+      Math.floor((contentWidth - 8) / BOARD_SIZE),
+      Math.floor((height - reservedHeight) / BOARD_SIZE),
+    ),
+  );
   const squareSize = zoomed ? Math.max(ZOOMED_SQUARE, fitSquare) : fitSquare;
   const viewport = fitSquare * BOARD_SIZE;
-  const tileSize = Math.min(52, Math.floor((contentWidth - 16 - 8 * 6) / 7));
 
   // Squares of the last word played, to highlight them.
   const lastMove = useMemo(() => {
@@ -263,6 +295,7 @@ export function GameView({ game, g, onQuit, onNewGame, notice }: GameViewProps) 
             />
           </View>
         </View>
+        {footer}
       </View>
 
       <BlankPicker visible={g.blankPrompt !== null} onChoose={g.chooseBlankLetter} />
@@ -400,7 +433,7 @@ const styles = StyleSheet.create({
   notice: { fontSize: 13, color: colors.danger, paddingHorizontal: 6, marginBottom: 4 },
   bag: { fontSize: 13, color: colors.textMuted, marginLeft: 8 },
   boardViewport: { alignSelf: 'center', overflow: 'hidden' },
-  rackArea: { marginTop: 14, alignItems: 'center' },
+  rackArea: { marginTop: 10, alignItems: 'center' },
   actions: {
     flexDirection: 'row',
     justifyContent: 'space-between',

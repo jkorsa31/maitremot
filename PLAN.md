@@ -86,6 +86,6 @@ tel quel par le serveur en phase 2 pour valider les coups.
 
 - [x] **8. Comptes** : connexion par e-mail + code à 6 chiffres, pseudo, code ami, ajout d'amis
 - [x] **9. Parties en ligne** : invitations (1 à 3 amis), démarrage automatique, coups validés par le serveur (même moteur), lettres des autres invisibles, mises à jour en temps réel, reprise après reconnexion
-- [ ] **10. Chat texte**
+- [x] **10. Chat texte** : barre de discussion en bas de l'écran de partie (dernier message, non lus), panneau de conversation, temps réel ; seuls les joueurs de la partie lisent et écrivent
 - [ ] **11. Audio / vidéo** : LiveKit (WebRTC)
 - [ ] **12. Notifications push**
