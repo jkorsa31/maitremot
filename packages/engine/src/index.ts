@@ -13,6 +13,7 @@
  * - game.ts       full game state machine (2–4 players)
  * - movegen.ts    generation of every legal move (Appel & Jacobson)
  * - ai.ts         computer opponents (3 levels)
+ * - public.ts     hidden information in online games (public state, player view)
  */
 
 export * from './tiles';
@@ -26,3 +27,4 @@ export * from './lexicon';
 export * from './game';
 export * from './movegen';
 export * from './ai';
+export * from './public';

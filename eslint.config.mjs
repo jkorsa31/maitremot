@@ -11,6 +11,7 @@ export default tseslint.config(
       '**/coverage/**',
       '**/dist/**',
       '**/generated/**',
+      'tools/e2e-local/**',
     ],
   },
   js.configs.recommended,

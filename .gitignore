@@ -21,3 +21,6 @@ apps/mobile/android/
 # Web build / Vercel
 apps/mobile/dist/
 .vercel/
+
+# Local browser test scripts (not versioned)
+tools/e2e-local/

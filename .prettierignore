@@ -3,3 +3,4 @@ coverage
 package-lock.json
 apps/mobile/.expo
 packages/lexicon-fr/src/generated
+tools/e2e-local

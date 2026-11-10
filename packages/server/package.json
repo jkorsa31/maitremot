@@ -1,0 +1,17 @@
+{
+  "name": "@maitremot/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Server-side logic of MaitreMot online games (Supabase Edge Function).",
+  "type": "module",
+  "main": "src/handler.ts",
+  "types": "src/handler.ts",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@maitremot/engine": "*",
+    "@maitremot/lexicon-fr": "*"
+  }
+}
