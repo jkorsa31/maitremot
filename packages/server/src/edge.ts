@@ -9,6 +9,7 @@
 
 import { getWords } from '@maitremot/lexicon-fr';
 import { type GameRequest, GameHandler } from './handler';
+import { type LiveKitConfig, createCallToken } from './livekit';
 import { type SupabaseLike, supabaseStore } from './store-supabase';
 
 const CORS_HEADERS = {
@@ -26,6 +27,8 @@ interface AdminClient extends SupabaseLike {
 export interface EdgeEnv {
   readonly url: string;
   readonly serviceKey: string;
+  /** LiveKit credentials, when audio / video calls are set up. */
+  readonly livekit?: LiveKitConfig;
 }
 
 const json = (status: number, body: unknown) =>
@@ -52,6 +55,7 @@ export function parseRequest(body: unknown): GameRequest | null {
     case 'cancel':
     case 'pass':
     case 'stop':
+    case 'callToken':
       return isId(r.gameId) ? { action: r.action, gameId: r.gameId } : null;
     case 'play':
       return isId(r.gameId) && Array.isArray(r.placements) && r.placements.length <= 7
@@ -75,7 +79,12 @@ export function createRequestHandler(
   const admin = createClient(env.url, env.serviceKey, {
     auth: { persistSession: false, autoRefreshToken: false },
   });
-  const handler = new GameHandler(supabaseStore(admin), getWords());
+  const { livekit } = env;
+  const signCallToken = livekit
+    ? (identity: string, name: string, room: string) =>
+        createCallToken(livekit, { identity, name, room })
+    : undefined;
+  const handler = new GameHandler(supabaseStore(admin), getWords(), signCallToken);
 
   return async (request) => {
     if (request.method === 'OPTIONS') return new Response('ok', { headers: CORS_HEADERS });

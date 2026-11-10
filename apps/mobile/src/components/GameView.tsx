@@ -42,7 +42,7 @@ const STATUS_HEIGHT = 48;
 const NOTICE_HEIGHT = 20;
 const RACK_EXTRA_HEIGHT = 34; // rack padding + margin above it
 const ACTIONS_HEIGHT = 76; // buttons + margin above them
-const FOOTER_HEIGHT = 52; // chat bar
+const FOOTER_HEIGHT = 52; // chat bar (online games)
 
 /** Square size when the board is zoomed in. */
 const ZOOMED_SQUARE = 40;
@@ -59,9 +59,20 @@ export interface GameViewProps {
   readonly footer?: ReactNode;
   /** When given, a button lets the player stop the game (online games). */
   readonly onStop?: () => void;
+  /** Height taken by `footer`, so the board shrinks to keep everything visible. */
+  readonly footerHeight?: number;
 }
 
-export function GameView({ game, g, onQuit, onNewGame, notice, footer, onStop }: GameViewProps) {
+export function GameView({
+  game,
+  g,
+  onQuit,
+  onNewGame,
+  notice,
+  footer,
+  onStop,
+  footerHeight = FOOTER_HEIGHT,
+}: GameViewProps) {
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
 
@@ -90,7 +101,7 @@ export function GameView({ game, g, onQuit, onNewGame, notice, footer, onStop }:
     tileSize +
     RACK_EXTRA_HEIGHT +
     ACTIONS_HEIGHT +
-    (footer ? FOOTER_HEIGHT : 0);
+    (footer ? footerHeight : 0);
   const fitSquare = Math.max(
     16,
     Math.min(

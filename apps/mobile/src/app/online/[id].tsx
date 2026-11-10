@@ -3,15 +3,17 @@
  */
 
 import { router, useLocalSearchParams } from 'expo-router';
-import { type ReactNode, useMemo } from 'react';
+import { type ReactNode, useCallback, useMemo } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import type { GameState } from '@maitremot/engine';
 import { Button } from '../../components/Button';
+import { CallStrip } from '../../components/CallStrip';
 import { ChatBar } from '../../components/ChatBar';
 import { DragProvider } from '../../components/DragLayer';
 import { GameView } from '../../components/GameView';
 import { useSession } from '../../online/auth';
 import { callGame } from '../../online/api';
+import { useCall } from '../../online/call';
 import { useChat } from '../../online/useChat';
 import { useOnlineController, useOnlineGame } from '../../online/useOnlineGame';
 import { colors } from '../../ui/theme';
@@ -64,17 +66,56 @@ function OnlineGame(props: {
     () => new Map(props.game.players.map((p) => [p.id, p.name])),
     [props.game.players],
   );
+  // When this player opens a call, tell the others in the chat.
+  const { send } = chat;
+  const onCallStarted = useCallback(
+    (video: boolean) =>
+      void send(
+        `📞 J'ai lancé un appel ${video ? 'vidéo' : 'audio'} : touche 📞 ou 🎥 pour me rejoindre !`,
+      ),
+    [send],
+  );
+  const call = useCall(props.gameId, onCallStarted);
+  const inCall = call.status === 'connecting' || call.status === 'connected';
+
   return (
     <GameView
+      // Chat bar, plus the call strip during a call.
+      footerHeight={52 + (call.status === 'idle' ? 0 : 82)}
       footer={
-        <ChatBar
-          messages={chat.messages}
-          meId={props.userId}
-          names={names}
-          unread={chat.unread}
-          onSend={chat.send}
-          onRead={chat.markRead}
-        />
+        <>
+          <CallStrip call={call} />
+          <ChatBar
+            messages={chat.messages}
+            meId={props.userId}
+            names={names}
+            unread={chat.unread}
+            onSend={chat.send}
+            onRead={chat.markRead}
+            extra={
+              call.supported && !inCall ? (
+                <>
+                  <Button
+                    label=""
+                    accessibilityLabel="Appel audio"
+                    icon="call-outline"
+                    variant="ghost"
+                    compact
+                    onPress={() => void call.join(false)}
+                  />
+                  <Button
+                    label=""
+                    accessibilityLabel="Appel vidéo"
+                    icon="videocam-outline"
+                    variant="ghost"
+                    compact
+                    onPress={() => void call.join(true)}
+                  />
+                </>
+              ) : null
+            }
+          />
+        </>
       }
       game={props.game}
       g={g}

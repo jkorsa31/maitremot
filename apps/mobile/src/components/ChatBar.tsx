@@ -8,7 +8,7 @@
  */
 
 import { Ionicons } from '@expo/vector-icons';
-import { useEffect, useRef, useState } from 'react';
+import { type ReactNode, useEffect, useRef, useState } from 'react';
 import {
   FlatList,
   KeyboardAvoidingView,
@@ -32,6 +32,8 @@ interface Props {
   readonly unread: number;
   readonly onSend: (text: string) => Promise<boolean>;
   readonly onRead: () => void;
+  /** Extra buttons at the right of the bar (call buttons). */
+  readonly extra?: ReactNode;
 }
 
 export function ChatBar(props: Props) {
@@ -41,22 +43,27 @@ export function ChatBar(props: Props) {
 
   return (
     <>
-      <Pressable
-        onPress={() => setOpen(true)}
-        accessibilityRole="button"
-        accessibilityLabel={`Discussion${props.unread > 0 ? `, ${props.unread} non lus` : ''}`}
-        style={({ pressed }) => [styles.bar, pressed && styles.pressed]}
-      >
-        <Ionicons name="chatbubbles-outline" size={20} color={colors.primary} />
-        <Text style={styles.barText} numberOfLines={1}>
-          {last ? `${author(last.userId)} : ${last.body}` : 'Discussion : écris à tes adversaires'}
-        </Text>
-        {props.unread > 0 && (
-          <View style={styles.badge}>
-            <Text style={styles.badgeText}>{props.unread}</Text>
-          </View>
-        )}
-      </Pressable>
+      <View style={styles.bar}>
+        <Pressable
+          onPress={() => setOpen(true)}
+          accessibilityRole="button"
+          accessibilityLabel={`Discussion${props.unread > 0 ? `, ${props.unread} non lus` : ''}`}
+          style={({ pressed }) => [styles.barMain, pressed && styles.pressed]}
+        >
+          <Ionicons name="chatbubbles-outline" size={20} color={colors.primary} />
+          <Text style={styles.barText} numberOfLines={1}>
+            {last
+              ? `${author(last.userId)} : ${last.body}`
+              : 'Discussion : écris à tes adversaires'}
+          </Text>
+          {props.unread > 0 && (
+            <View style={styles.badge}>
+              <Text style={styles.badgeText}>{props.unread}</Text>
+            </View>
+          )}
+        </Pressable>
+        {props.extra}
+      </View>
       {open && <ChatPanel {...props} author={author} onClose={() => setOpen(false)} />}
     </>
   );
@@ -157,15 +164,22 @@ const styles = StyleSheet.create({
   bar: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 4,
     marginTop: 10,
     marginHorizontal: 4,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
+    paddingRight: 4,
     borderRadius: radius.medium,
     backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
+  },
+  barMain: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
   },
   pressed: { opacity: 0.7 },
   barText: { flex: 1, color: colors.text, fontSize: 14 },

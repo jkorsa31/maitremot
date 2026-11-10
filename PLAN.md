@@ -87,5 +87,5 @@ tel quel par le serveur en phase 2 pour valider les coups.
 - [x] **8. Comptes** : connexion par e-mail + code à 6 chiffres, pseudo, code ami, ajout d'amis
 - [x] **9. Parties en ligne** : invitations (1 à 3 amis), démarrage automatique, coups validés par le serveur (même moteur), lettres des autres invisibles, mises à jour en temps réel, reprise après reconnexion
 - [x] **10. Chat texte** : barre de discussion en bas de l'écran de partie (dernier message, non lus), panneau de conversation, temps réel ; seuls les joueurs de la partie lisent et écrivent
-- [ ] **11. Audio / vidéo** : LiveKit (WebRTC)
+- [x] **11. Audio / vidéo** (version web) : appels LiveKit depuis la barre de chat, jetons signés par le serveur pour les joueurs de la partie seulement, micro / caméra / raccrocher. Dans l'app installée : à venir avec l'étape 7
 - [ ] **12. Notifications push**

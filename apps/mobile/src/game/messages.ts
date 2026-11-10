@@ -52,7 +52,8 @@ export type ServerErrorCode =
   | 'BAD_REQUEST'
   | 'UNAUTHORIZED'
   | 'SERVER_ERROR'
-  | 'NETWORK';
+  | 'NETWORK'
+  | 'CALLS_DISABLED';
 
 export type AppError = MoveError | { readonly code: ServerErrorCode };
 
@@ -67,6 +68,7 @@ const SERVER_MESSAGES: Record<ServerErrorCode, string> = {
   UNAUTHORIZED: 'Ta session a expiré. Reconnecte-toi.',
   SERVER_ERROR: 'Le serveur a rencontré un problème. Réessaie.',
   NETWORK: 'Connexion au serveur impossible. Vérifie ta connexion à Internet.',
+  CALLS_DISABLED: 'Les appels ne sont pas encore activés sur le serveur.',
 };
 
 /** Message for any error (engine or server). */

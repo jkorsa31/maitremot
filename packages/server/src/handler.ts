@@ -79,7 +79,8 @@ export type GameRequest =
   | { readonly action: 'play'; readonly gameId: string; readonly placements: readonly Placement[] }
   | { readonly action: 'exchange'; readonly gameId: string; readonly tileIds: readonly number[] }
   | { readonly action: 'pass'; readonly gameId: string }
-  | { readonly action: 'stop'; readonly gameId: string };
+  | { readonly action: 'stop'; readonly gameId: string }
+  | { readonly action: 'callToken'; readonly gameId: string };
 
 /** Errors that are not about the move itself. */
 export type ServerError =
@@ -89,10 +90,11 @@ export type ServerError =
   | { readonly code: 'NOT_FRIENDS' }
   | { readonly code: 'WRONG_STATUS' }
   | { readonly code: 'NOT_ENOUGH_PLAYERS' }
-  | { readonly code: 'CONFLICT' };
+  | { readonly code: 'CONFLICT' }
+  | { readonly code: 'CALLS_DISABLED' };
 
 export type GameResponse =
-  | { readonly ok: true; readonly gameId: string }
+  | { readonly ok: true; readonly gameId: string; readonly callToken?: string }
   | { readonly ok: false; readonly error: ServerError | MoveError };
 
 const fail = (error: ServerError | MoveError): GameResponse => ({ ok: false, error });
@@ -113,10 +115,14 @@ function shuffled<T>(items: readonly T[]): T[] {
   return result;
 }
 
+/** Signs a call token for a player (see livekit.ts); absent when calls are not configured. */
+export type CallTokenSigner = (identity: string, name: string, room: string) => Promise<string>;
+
 export class GameHandler {
   constructor(
     private readonly store: Store,
     private readonly dictionary: WordList,
+    private readonly signCallToken?: CallTokenSigner,
   ) {}
 
   async handle(userId: string, request: GameRequest): Promise<GameResponse> {
@@ -139,6 +145,8 @@ export class GameHandler {
         return this.move(userId, request.gameId, (s) => passTurn(s, userId));
       case 'stop':
         return this.move(userId, request.gameId, (s) => stopGame(s, userId));
+      case 'callToken':
+        return this.callToken(userId, request.gameId);
       default:
         return fail({ code: 'BAD_REQUEST', message: 'unknown action' });
     }
@@ -220,6 +228,23 @@ export class GameHandler {
     if (game.status !== 'lobby') return fail({ code: 'WRONG_STATUS' });
     await this.store.setGameStatus(gameId, 'cancelled');
     return { ok: true, gameId };
+  }
+
+  /** A token to join the audio / video call of a game (its players only). */
+  private async callToken(userId: string, gameId: string): Promise<GameResponse> {
+    if (!this.signCallToken) return fail({ code: 'CALLS_DISABLED' });
+    const game = await this.store.getGame(gameId);
+    if (!game) return fail({ code: 'NOT_FOUND' });
+    if (game.status !== 'playing' && game.status !== 'finished') {
+      return fail({ code: 'WRONG_STATUS' });
+    }
+    const players = await this.store.players(gameId);
+    if (!players.some((p) => p.userId === userId && p.status === 'joined')) {
+      return fail({ code: 'FORBIDDEN' });
+    }
+    const names = await this.store.displayNames([userId]);
+    const callToken = await this.signCallToken(userId, names.get(userId) ?? 'Joueur', gameId);
+    return { ok: true, gameId, callToken };
   }
 
   /** Applies a move with the engine and saves the result. */

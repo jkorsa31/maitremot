@@ -38,14 +38,14 @@ export interface GameSummary {
 export type GameCall =
   | { action: 'create'; friendIds: string[] }
   | { action: 'respond'; gameId: string; accept: boolean }
-  | { action: 'start' | 'cancel' | 'pass' | 'stop'; gameId: string }
+  | { action: 'start' | 'cancel' | 'pass' | 'stop' | 'callToken'; gameId: string }
   | { action: 'play'; gameId: string; placements: readonly unknown[] }
   | { action: 'exchange'; gameId: string; tileIds: readonly number[] };
 
 /** Calls the server. Returns the game id, or the error to show. */
 export async function callGame(
   body: GameCall,
-): Promise<{ ok: true; gameId: string } | { ok: false; error: AppError }> {
+): Promise<{ ok: true; gameId: string; callToken?: string } | { ok: false; error: AppError }> {
   const { data, error } = await supabase.functions.invoke('game', { body });
   if (data && typeof data === 'object' && 'ok' in data) return data as never;
   return { ok: false, error: { code: error ? 'NETWORK' : 'SERVER_ERROR' } };

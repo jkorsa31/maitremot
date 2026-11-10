@@ -13,5 +13,8 @@
   "dependencies": {
     "@maitremot/engine": "*",
     "@maitremot/lexicon-fr": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5"
   }
 }

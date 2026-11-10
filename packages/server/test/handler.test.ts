@@ -269,3 +269,34 @@ describe('request parsing', () => {
     expect(parseRequest(body) !== null).toBe(valid);
   });
 });
+
+describe('call tokens', () => {
+  it('are given to the players of the game only, when calls are configured', async () => {
+    const signed: string[] = [];
+    const withCalls = new GameHandler(store, words, async (identity, name, room) => {
+      signed.push(`${identity}/${name}/${room}`);
+      return 'token';
+    });
+    const id = (await withCalls.handle('alice', { action: 'create', friendIds: ['bob'] })) as {
+      gameId: string;
+    };
+    expect(await withCalls.handle('alice', { action: 'callToken', gameId: id.gameId })).toEqual({
+      ok: false,
+      error: { code: 'WRONG_STATUS' },
+    });
+    await withCalls.handle('bob', { action: 'respond', gameId: id.gameId, accept: true });
+    expect(await withCalls.handle('bob', { action: 'callToken', gameId: id.gameId })).toEqual({
+      ok: true,
+      gameId: id.gameId,
+      callToken: 'token',
+    });
+    expect(signed).toEqual([`bob/Bob/${id.gameId}`]);
+    expect((await withCalls.handle('carol', { action: 'callToken', gameId: id.gameId })).ok).toBe(
+      false,
+    );
+    expect(await handler.handle('bob', { action: 'callToken', gameId: id.gameId })).toEqual({
+      ok: false,
+      error: { code: 'CALLS_DISABLED' },
+    });
+  });
+});
