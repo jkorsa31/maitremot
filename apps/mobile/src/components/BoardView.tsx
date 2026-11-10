@@ -19,7 +19,7 @@ import {
 } from '@maitremot/engine';
 import { memo, useRef, useState } from 'react';
 import { type HostInstance, Pressable, StyleSheet, Text, View } from 'react-native';
-import type { Cursor, PendingTile } from '../game/useSoloGame';
+import type { Cursor, PendingTile } from '../game/useGameController';
 import { colors, premiumStyle } from '../ui/theme';
 import { useDraggable, useDropZone } from './DragLayer';
 import { TileView } from './TileView';
