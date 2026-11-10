@@ -5,7 +5,7 @@
  * The whole grid is one drop zone: a dragged tile goes to the free square
  * nearest to it (highlighted while dragging). Tapping a square places the
  * selected rack tile, or sets the typing cursor (→ / ↓); tapping a pending tile
- * sends it back to the rack.
+ * sends it back to the rack; tapping a played tile shows the definitions.
  */
 
 import {
@@ -36,6 +36,8 @@ interface Props {
   /** Whether a tile (`tileId`, which may already be on the board) can go on `pos`. */
   readonly isFree: (pos: Position, tileId?: number) => boolean;
   readonly onSquarePress: (pos: Position) => void;
+  /** Tap on a tile already played (to show the definitions of its words). */
+  readonly onPlayedTilePress: (pos: Position) => void;
   readonly onDropTile: (tileId: number, pos: Position) => void;
 }
 
@@ -105,8 +107,11 @@ export function BoardView(props: Props) {
             return (
               <Pressable
                 key={col}
-                onPress={() => props.onSquarePress({ row, col })}
-                disabled={!interactive || cell !== null}
+                onPress={() =>
+                  cell ? props.onPlayedTilePress({ row, col }) : props.onSquarePress({ row, col })
+                }
+                // Played tiles can always be tapped (definitions), even during others' turns.
+                disabled={cell === null && !interactive}
                 style={{ width: squareSize, height: squareSize }}
               >
                 {cell ? (

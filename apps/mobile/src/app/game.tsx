@@ -10,7 +10,7 @@
  *   [recall|shuffle] [exchange] [pass] [play]
  */
 
-import { BOARD_SIZE, type GameState, type Position } from '@maitremot/engine';
+import { BOARD_SIZE, type Board, type GameState, type Position, cellAt } from '@maitremot/engine';
 import { Redirect, router } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -25,6 +25,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { BoardView } from '../components/BoardView';
 import { Button } from '../components/Button';
+import { DefinitionSheet } from '../components/DefinitionSheet';
 import { DragProvider } from '../components/DragLayer';
 import { RackView } from '../components/RackView';
 import { ScoreBar } from '../components/ScoreBar';
@@ -39,6 +40,9 @@ import { moveErrorMessage, points } from '../game/messages';
 import { useSoloGameState } from '../game/session';
 import { useSoloGame } from '../game/useSoloGame';
 import { colors } from '../ui/theme';
+
+/** Time for a closing modal window to disappear before opening another one. */
+const MODAL_SWITCH_DELAY_MS = 350;
 
 /** Square size when the board is zoomed in. */
 const ZOOMED_SQUARE = 40;
@@ -61,6 +65,8 @@ function GameContent({ game }: { game: GameState }) {
   const [zoomed, setZoomed] = useState(false);
   const [sheet, setSheet] = useState<'exchange' | 'history' | 'pass' | 'addWord' | null>(null);
   const [gameOverDismissed, setGameOverDismissed] = useState(false);
+  /** Words whose definitions are shown (empty = sheet closed). */
+  const [definitionWords, setDefinitionWords] = useState<string[]>([]);
 
   const contentWidth = Math.min(width, 600);
   const fitSquare = Math.floor((contentWidth - 8) / BOARD_SIZE);
@@ -118,6 +124,7 @@ function GameContent({ game }: { game: GameState }) {
       cursor={g.cursor}
       isFree={g.isFree}
       onSquarePress={g.pressSquare}
+      onPlayedTilePress={(pos: Position) => setDefinitionWords(playedWordsAt(game.board, pos))}
       onDropTile={(tileId: number, pos: Position) => g.placeTile(tileId, pos)}
     />
   );
@@ -297,7 +304,18 @@ function GameContent({ game }: { game: GameState }) {
           setSheet(null);
         }}
       />
-      <HistorySheet visible={sheet === 'history'} game={game} onClose={() => setSheet(null)} />
+      <HistorySheet
+        visible={sheet === 'history'}
+        game={game}
+        onClose={() => setSheet(null)}
+        onShowWords={(words) => {
+          setSheet(null);
+          // Let the history window finish closing first: on iOS, a modal opened
+          // while another one is being dismissed may never appear.
+          setTimeout(() => setDefinitionWords(words), MODAL_SWITCH_DELAY_MS);
+        }}
+      />
+      <DefinitionSheet words={definitionWords} onClose={() => setDefinitionWords([])} />
       <GameOverSheet
         visible={game.status === 'finished' && !gameOverDismissed}
         game={game}
@@ -306,6 +324,30 @@ function GameContent({ game }: { game: GameState }) {
       />
     </View>
   );
+}
+
+/** The played words (2+ letters) going through `pos`, horizontally then vertically. */
+function playedWordsAt(board: Board, pos: Position): string[] {
+  const words: string[] = [];
+  for (const [dr, dc] of [
+    [0, 1],
+    [1, 0],
+  ] as const) {
+    let r = pos.row;
+    let c = pos.col;
+    while (cellAt(board, { row: r - dr, col: c - dc })) [r, c] = [r - dr, c - dc];
+    let word = '';
+    for (
+      let cell = cellAt(board, { row: r, col: c });
+      cell;
+      cell = cellAt(board, { row: r, col: c })
+    ) {
+      word += cell.letter;
+      [r, c] = [r + dr, c + dc];
+    }
+    if (word.length >= 2) words.push(word);
+  }
+  return words;
 }
 
 /** The line under the scores: whose turn it is, the live score, or what is wrong. */

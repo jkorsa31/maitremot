@@ -1,0 +1,449 @@
+== {{langue|fr}} ==
+=== {{S|étymologie}} ===
+: {{date|lang=fr}} Du {{étyl|frm|fr}}, de l’{{étyl|fro|fr|suivre}}, d’abord ''{{lien|sivre|fro}}'' refait à partir de la troisième personne du singulier de l’indicatif présent ''{{lien|suit|fr}}'', d’abord ''{{lien|siut|fro}}'', du {{étyl|la|fr|sequor|dif=sequi}} devenu {{recons|lang-mot-vedette=fr|sequere|la|dif=sĕquĕre}} en latin populaire.
+: Les parentés proches de ce mot incluent, entre autres, le bourguignon [[seugre]] (resté plus proche du latin que le français standard), le mayennais et sarthois [[sieudre]], le tourangeau [[sieugue]], le gallo [[sieudr]], le picard [[suire]], le normand [[suure]] (dont la conjugaison s’en fait en -s- au lieu de -v- en français), l’occitan [[sègre]] et l’arpitan [[siugre]] ou [[siudre]].
+
+=== {{S|verbe|fr}} ===
+'''suivre''' {{pron|sɥivʁ|fr}} {{t|fr}} ou {{i|fr}} {{conjugaison|fr|groupe=3}}
+# [[aller|Aller]] ou [[venir]] après.
+#* {{exemple | lang=fr
+ | Seulement, remarquez bien ceci, l’Académie, même à cette époque où elle était si franchement réformiste, ne devançait pas l’usage ; elle le '''suivait'''.
+ | source={{w|Émile Faguet}}, ''[[s:Simplification simple de l’orthographe|Simplification simple de l’orthographe]], 1905}}
+#* {{exemple | lang=fr
+ | Pour la troisième fois, et sur un ton intolérablement agressif, il réitéra son insolente question. Un silence gros de danger '''suivit'''.
+ | source={{Citation/H. G. Wells/La Guerre dans les airs/1921|349}}}}
+#* {{exemple | lang=fr
+ | Il y a aussi deux groupes d'astéroïdes, appelés Troyens, qui partagent l'orbite de Jupiter, précédant et '''suivant''' la planète de 60 degrés.
+ | source=Barry Williams (traduit par Claude Lafleur), ''L’astrologie confrontée aux progrès de l’astronomie'', dans ''{{w|Le Québec sceptique}}'', {{n°|24}}, décembre 1992, page 41}}
+# {{figuré|fr}} S’[[intéresser]] ; porter de l'[[attention]].
+#* {{exemple | lang=fr
+ | Des journalistes anglais avaient donc passé le Chenal pour '''suivre''', non seulement des débats, mais encore l’instruction.
+ | source=Christian Brulls (pseudonyme de Georges Simenon), ''L’Amant sans Nom'', éditions Arthème Fayard, 1929, réédition 1980, troisième partie, chapitre I}}
+#* {{exemple | lang=fr | Au cours de l’épreuve que vous venez de traverser, je n’ai pas cessé de vous '''suivre''' par la pensée, en pensée.}}
+# {{figuré|fr}} En parlant des choses.
+#* {{exemple | lang=fr | Son image me '''suit''' partout.}}
+#* {{exemple | lang=fr | Le malheur le '''suivit''' dans la plus grande partie de sa carrière.}}
+# {{en particulier}} [[aller|Aller]] après pour [[atteindre]] et pour prendre.
+#* {{exemple|Ils prirent la résolution de décamper la nuit, à la seconde veille, de crainte que les Perses venant à s'appercevoir {{SIC}} de leur départ ne les '''suivissent''' et ne les inquiétassent dans leur marche. |source=''Histoire d'Hérodote'', édition en neuf volumes, traduite du grec, tome 6, Imprimerie de C. Crapelet, Paris : chez Guillaume Debure ainé & chez Théophile Barrois père, {{w|an XI}}, p. 40|lang=fr}}
+#* {{exemple|[…], car enfin, pourquoi ce gredin se serait-il mis à mes trousses? . […]. Il m’'''a suivi''' comme il '''aurait suivi''' le premier venu, pour me dévaliser s'il en trouvait l'occasion, […]. |source={{w|Fortuné du Boisgobey}}, ''Double-Blanc'', Paris : chez Plon & Nourrit, 1889, tome 1, p. 27|lang=fr}}
+#* {{exemple | lang=fr
+ | Quand le gars arrive pour prendre son matos, on le laisse partir et on le '''suit''' jusqu'à sa planque où on le prendra en flag avec le matos. Le plus important à retenir, est que tout devra être expédié en moins de trente minutes !
+ | source=Gilles Horsa, ''Première Âme'', Librinova, 2018, chapitre 41}}
+#* {{exemple | lang=fr | '''Suivre''' un lièvre ou une compagnie de perdreaux.}}
+# [[accompagner|Accompagner]], [[escorter]], aller avec.
+#* {{exemple | lang=fr
+ | C'est là aussi que végètent misérablement les bédouines qui ont voulu '''suivre''' leurs maris prisonniers.
+ | source={{w|Frédéric Weisgerber}}, ''Trois mois de campagne au Maroc : étude géographique de la région parcourue'', Paris : Ernest Leroux, 1904, page 94}}
+#* {{exemple | lang=fr
+ | L'enterrement de mon père '''fut suivi''' de tout le village suivant la coutume et il y vint des gens des environs, à des lieues à la ronde.
+ | source={{Citation/Jean Rogissart/Hurtebise aux griottes/1954|30}}}}
+#* {{exemple | lang=fr
+ | Ses économies sombraient, son ventre poussait, mais il ne s'en préoccupait guère; il buvait à longueur de temps avec ceux qui voulaient bien le '''suivre'''.
+ | source=Michaël Perruchoud, ''Poil au temps'', Éditions L'Âge d’Homme, 2002, page 99}}
+#* ''Qui m’aime me '''suive''','' que celui qui a de l’amitié, de l’attachement pour moi, fasse ce que je ferai, qu’il vienne avec moi, qu’il prenne mon parti, qu’il se déclare pour moi.
+# [[observer|Observer]] ; [[surveiller]].
+#* {{exemple|[…], il m'a semblé un instant qu'un individu me '''suivait''' j'ai du me tromper, car il a disparu presque aussitôt, mais un homme averti en vaut deux et j'ouvre l'œil quand je sors. |source={{w|Fortuné du Boisgobey}}, ''Double-Blanc'', Paris : chez Plon & Nourrit, 1889, p. 115|lang=fr}}
+#* {{exemple | lang=fr
+ | Marandier alluma une cigarette et '''suivit''' d'un regard rêveur les volutes bleues qui serpentinaient vers le plafond.
+ | source=Maurice Ciantar, ''La Mongolique'', Gallimard, 1949, page 295}}
+#* {{exemple | lang=fr | J’ai '''suivi''' ses progrès, et j’en ai été surpris.}}
+#* {{exemple | lang=fr | '''Suivre''' les événements.}}
+#* {{exemple | lang=fr | J’ai '''suivi''' cette affaire, et l’en connais tous les détails.}}
+# Aller, [[continuer]] d’aller dans une même direction.
+#* {{exemple | lang=fr
+ | Loin de s'occuper des jappements indicatifs du chien, notre personnage se plaisait à '''suivre''' loisireusement le sentier tortueux dans lequel il marchait.
+ | source={{w|Angelo de Sorr}}, ''Le Châtiment'', dans la ''Revue Parisienne'', mai 1856, page 2}}
+#* {{exemple | lang=fr
+ | On descendit dans des caves, on '''suivit''' des souterrains dont les parois, cotonnées par les fleurs du nitre.
+ | source=Maurice Maindron, ''Blancador l'avantageux'', Éditions de la Revue Blanche, 1901, page 362}}
+#* {{exemple | lang=fr
+ | La route que nous '''suivons''' est d'abord une belle avenue d’eucalyptus traversant des champs de céréales et montant doucement jusqu’à son point culminant, à 620 mètres.
+ | source={{w|Frédéric Weisgerber}}, ''Huit jours à Ténériffe'', dans la ''Revue générale des sciences pures et appliquées'', Paris : Doin, 1905, volume 16, pages 1039}}
+#* {{exemple | lang=fr
+ | Je ne fais pourtant de tort à personne<br>En '''suivant''' les chemins qui ne mènent pas à Rome,<br>Mais les braves gens n´aiment pas que<br>L´on '''suive''' une autre route qu´eux.
+ | source={{w|Georges Brassens}}, ''{{w|La Mauvaise Réputation}}'', 1952}}
+## S’emploie figurément dans le même sens.
+##* {{exemple | lang=fr | '''Suivre''' le chemin de la vertu, de la gloire.}}
+##* {{exemple | lang=fr | '''Suivre''' les traces de ses ancêtres, les pas de ses devanciers.}}
+##* {{exemple | lang=fr | '''Suivre''' le fil des événements.}}
+# {{figuré|fr}} {{en particulier|fr}} Comprendre le [[raisonnement]] de quelqu’un, son [[enchaînement]], ses [[implications]], ses [[sous-entendus]].
+#* {{exemple | lang=fr
+ | Bob Vandick : Ah, vous êtes de la police ? Et M. le curé aussi, peut-être ?<br/>Antoine Carco : Non, monsieur m’accompagne. Et pratique de temps en temps des extrêmes-onctions en cas de bavure… Si vous me '''suivez'''…
+ | source={{w|Jean-Marie Poiré}} et {{w|Christian Clavier}}, ''Les Anges gardiens'', 1995}}
+# {{figuré|fr}} [[assister|Assister]] à.
+#* {{exemple | lang=fr
+ | Quand il '''suivit''' un peu plus tard comme externe les classes du collège d'Arbois, il appartint tout d'abord à la catégorie des élèves que l’on pourrait appeler bons-ordinaires.
+ | source={{w|René Vallery-Radot}}, ''La vie de Pasteur'', Hachette, 1900, Flammarion, 1941, page 12}}
+# {{lexique|typographie|fr}} Ne pas faire d’alinéa, continuer la ligne commencée.
+#* {{exemple | lang=fr | '''Suivre''', faites '''suivre''', en suivant.}}
+# {{lexique|Internet|fr}} [[s’abonner|S’abonner]] à un [[compte]] ou à son [[fil d’actualité]], sur un [[réseau social]] quelconque, pour être [[informé]] des derniers [[statut]]s, photos, messages, etc. publiés par le compte en question.
+#*'''''Suivez'''-nous sur Twitter@dgfip_officiel et sur Facebook : Direction générale des finances publiques''.
+## Être [[abonné]] à un compte ou à son fil d’actualité sur un réseau social.
+#* {{exemple | lang=fr | Les gens peuvent parfois par dizaines de millions '''suivre''' les chanteurs à la mode ou les vedettes de cinéma.}}
+# {{ébauche-déf|fr}}
+#* {{exemple | lang=fr
+ | Jusqu’après Valpuiseaux, sur plus d'une lieue, les groupes de fermes '''se suivent'''. Ensuite le vallon est solitaire, pli étroit et profond dont les côtés sont striés par une infinité de vaux très courts.
+ | source=Victor E. Ardouin-Dumazet, ''Voyage en France'', volume 23, éditions Berger-Levrault, 1906, page 316}}
+#* ''L’affaire '''suit''' son cours,'' Elle a le développement qu’elle comporte.
+#* '''''Suivre''' une profession,'' l’exercer.
+#* {{exemple | lang=fr | Il '''suit''' la profession d’avocat.}}
+#* {{exemple | lang=fr | '''Suivre''' le métier des armes.}}
+#* '''''Suivre''' la carrière des lettres.'' Évaluer, agir en fonction de cette évaluation, pour tenter de réussir ce qu'implique cette chose.
+#* '''''Suivre''' une affaire, une entreprise, etc.,'' S’attacher à une affaire, à une entreprise avec persévérance, et ne rien négliger de ce qui peut la faire réussir.
+#* {{exemple | lang=fr | Il a vu échouer cette affaire, faute de l’avoir '''suivie'''.}}
+#* ''Il '''suit''' son projet, son entreprise avec ardeur.'' On dit aussi absolument :
+#* {{exemple | lang=fr | Quand on a commencé, il faut '''suivre'''.}}
+#* '''''Suivre''' le parti de quelqu’un,'' être du parti de quelqu’un.
+#* '''''Suivre''' une doctrine, une opinion,'' Faire profession d’une doctrine, d’une opinion.
+#* '''''Suivre''' Platon, '''suivre''' Descartes,'' être du sentiment de Platon, de Descartes.
+#* {{exemple | lang=fr | '''Suivre''' le théâtre,'' Aller fréquemment au théâtre pour juger en quel sens s’orientent les auteurs dramatiques.}}
+#* {{exemple | lang=fr | '''Suivre''' le mouvement dramatique, littéraire, etc.}}
+#* '''''Suivre''' un prédicateur,'' être assidu aux sermons d’un prédicateur.
+#* {{exemple | lang=fr | '''Suivre''' un professeur,'' Assister régulièrement à ses leçons.}}
+#* ''On dit dans le même sens :
+#* {{exemple | lang=fr | '''Suivre''' un cours.}}
+#* {{exemple | lang=fr | '''Suivre''' les leçons d’un professeur.}}
+#* {{exemple | lang=fr | Le cours de ce professeur est très '''suivi'''.}}
+#* '''''Suivre''' une retraite,'' Assister, prendre part à tous les exercices d’une retraite.
+#* '''''Suivre''' quelqu’un dans un discours, dans un raisonnement,'' être attentif à son discours, à son raisonnement, de manière à n’en perdre rien.
+#* ''Cet orateur parle si rapidement qu’il est difficile de le '''suivre'''.'' On dit de même :
+#* {{exemple | lang=fr | '''Suivez''' bien mon raisonnement ; Prêtez-moi attention et suivez-moi.}}
+# S’[[abandonner]] à, se [[laisser]] [[conduire]] par.
+#* {{exemple | lang=fr
+ | J'ai beau savoir qu'au fond de ce regard, tout est calcul et complaisance, où qu'il m'entraîne, je le '''suivrai'''.
+ | source={{Citation/Francis Carco/L’Amour vénal/1927|16}}}}
+#* {{exemple | lang=fr | '''Suivre''' son imagination, sa pensée, son idée, sa fantaisie.}}
+#* {{exemple | lang=fr | '''Suivre''' sa passion, son caprice, son inclination, son instinct.}}
+#* {{exemple | lang=fr | '''Suivre''' ses goûts, ses penchants.}}
+# Se [[conformer]] à.
+#* {{exemple | lang=fr
+ | Ray, Montius, Scheuchzer, Micheli se sont les premiers occupés de l’''Agrostographie''. Tous '''ont''' à peu près '''suivi''' le même plan, et travaillé d’après les mêmes principes et sur les mêmes bases.
+ | source=Ambrose-Marie-François-Joseph Palisot de Beauvois, ''Essai d'une nouvelle agrostographie ou Nouveaux genres des graminées;'', page LI, 1812}}
+#* {{exemple | lang=fr
+ | Pour atteindre ce but tous les moyens ne sont pas indifférents ; il y a des lois à observer et une marche rationnelle à '''suivre'''.
+ | source=Jean Déhès, ''{{ws|Essai sur l’amélioration des races chevalines de la France}}'', École impériale vétérinaire de Toulouse, Thèse de médecine vétérinaire, 1868}}
+#* {{exemple | lang=fr
+ | Il offre des sacrifices, aux autres dieux selon le rite albain, à Hercule selon le rite grec, '''suivant''' en cela la règle établie par Évandre.
+ | source={{w|Tite-Live}}, ''Histoire romaine'', éditions Les belles Lettres, 1940, texte établi par J. Bayet et traduit par G. Baillet, tome 1, livre 1, § VII, page 13}}
+#* {{exemple | lang=fr
+ | '''Suivez''' scrupuleusement la ligne de conduite choisie.
+ | source=journal ''Sud-Ouest'', édition ''Charente-Maritime / Charente'', 13 août 2022, page 36}}
+#* {{exemple | lang=fr | '''Suivre''' la mode, l’usage, les coutumes d’un pays.}}
+#* {{exemple | lang=fr | '''Suivre''' les avis, les conseils, l’exemple de quelqu’un.}}
+#* {{exemple | lang=fr | '''Suivre''' les ordres qu’on a reçus.}}
+#* {{exemple | lang=fr | '''Suivre''' les préceptes de l’évangile.}}
+#* {{exemple | lang=fr | '''Suivre''' sa religion, les préceptes de sa religion.}}
+# {{figuré|fr}} Être après, par [[rapport]] au [[temps]], au [[lieu]], à la [[situation]], au [[rang]], etc.
+#* {{exemple | lang=fr
+ | Aussi, dans la nuit qui '''a suivi''', vers 1 heure du matin, deux bizuts se sont retrouvés au sol avec le lit en cathédrale.
+ | source=Roger Cavalié, ''Julien l'insoumis'', Éditions De Borée, 2015}}
+#* {{exemple | lang=fr | L’été '''suit''' le printemps. — L’âge mûr '''suit''' la jeunesse. — La nuit '''suit''' le jour.}}
+#* {{exemple | lang=fr | Vous n’avez vu que le commencement, voyez ce qui '''suit'''.}}
+#* {{exemple | lang=fr | La page qui '''suit'''.}}
+#* {{exemple | lang=fr | Il ouvrit la lettre et y lut ce qui '''suit'''.}}
+#* {{proverbial|fr}} ''Les jours se '''suivent''' et ne se ressemblent pas,'' La vie est mêlée de biens et de maux.
+#* {{exemple | lang=fr | Ces pages, ces numéros se '''suivent''' bien, ne se '''suivent''' pas,'' Ces pages, ces numéros sont ou ne sont pas dans leur ordre.}}
+#* ''On dit, dans un sens analogue :
+#* ''Les parties d’un discours se '''suivent''' bien, ne se '''suivent''' pas,'' Elles ont la liaison convenable, elles en manquent.
+# {{figuré|fr}} Être la [[conséquence]], [[résulter]] d’une chose.
+#* {{exemple | lang=fr | La satiété '''suit''' la jouissance.}}
+#* {{exemple | lang=fr | Les plus grands malheurs ont '''suivi''' cette faute.}}
+#* {{exemple | lang=fr | L’une de ces propositions ne '''suit''' pas toujours de l’autre, ne '''suit''' pas nécessairement de l’autre.}}
+#* {{exemple | lang=fr | Il '''suit''' de ce que vous dites que je n’avais pas tort.}}
+#* {{exemple | lang=fr | Il ne '''suit''' pas de là que vous ayez raison.}}
+
+==== {{S|dérivés}} ====
+{{(}}
+* [[à suivre]]
+* [[désuivre]]
+* [[insuivable]]
+* [[l’intendance suivra]]
+* [[marche à suivre]]
+* [[poursuivre]]
+* [[resuivre]]
+* [[suite]]
+* [[suivable]]
+* [[suivant]]
+* [[suivante]]
+* [[suivez-moi-jeune-homme]]
+* [[suivi]]
+* [[suivre de l’œil]], [[suivre des yeux]]
+* [[suivre le Christ]], [[suivre Jésus]]
+* [[suivre le mouvement]]
+* [[suivre sa pente]]
+* [[suivre son cours]]
+{{)}}
+
+==== {{S|phrases}} ====
+* [[faire suivre]] ''(indique que, si le destinataire est absent, on doit renvoyer la lettre à sa nouvelle adresse)''
+* [[suivez mon regard]]
+
+==== {{S|vocabulaire}} ====
+* {{voir thésaurus|fr|poker|jeu de cartes}}
+''Suivre de près :''
+* [[ne pas lâcher d’une semelle]]
+* [[coller aux basques]]
+* [[coller aux escarpins]]
+* [[emboîter le pas]]
+* [[coller au cul]]
+* [[marquage à la culotte]]
+* [[talonner]]
+* [[marcher sur les talons]]
+* [[souffler au poil]]
+
+==== {{S|traductions}} ====
+{{trad-début|Venir après|1}}
+* {{T|af}} : {{trad+|af|volg}}
+* {{T|de}} : {{trad+|de|folgen}}
+* {{T|en}} : {{trad+|en|follow}}, {{trad+|en|come after}}
+* {{T|ar}} : {{trad-|ar|تبع|R=tabiʿa|dif=تَبِعَ}}
+* {{T|ary}} : {{trad|ary|يتبعه}}
+* {{T|bourguignon}} : {{trad|bourguignon|seugre}}
+* {{T|shi}} : {{trad|shi|ⴹⴼⵕ}}
+* {{T|ht}} : {{trad|ht|swiv}}
+* {{T|hr}} : {{trad+|hr|slijediti}}
+* {{T|es}} : {{trad+|es|seguir}}
+* {{T|eo}} : {{trad-|eo|sekvi}}
+* {{T|fi}} : {{trad+|fi|seurata}}
+* {{T|gallo}} : {{trad|gallo|sieude}}, {{trad|gallo|sieudr}}, {{trad|gallo|suoedr}}
+* {{T|gallo-italique de Sicile}} : {{trad|gallo-italique de Sicile|assiguter}}
+* {{T|el}} : {{trad+|el|ακολουθώ|tr=acoluthẃ}}
+* {{T|grc}} : {{trad|grc|ἕπομαι|tr=hépomai}}, {{trad|grc|ἀκολουθέω|tr=akolouthéō}}
+* {{T|it}} : {{trad+|it|seguire}}
+* {{T|ja}} : {{trad-|ja|ついていく|tr=tsuiteiku}}
+* {{T|avk}} : {{trad|avk|radimifí}}
+* {{T|la}} : {{trad+|la|sequi}}
+* {{T|lep}} : {{trad|lep|ᰛᰤᰦᰭ}}
+* {{T|lorrain}} : {{trad|lorrain|hheure}}, {{trad|lorrain|sêre}}
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|normand}} : {{trad|normand|suure}}
+* {{T|no}} : {{trad+|no|følge}}, {{trad-|no|komme etter}}
+* {{T|ngh}} : {{trad|ngh|ǀhun}}
+* {{T|oc}} : {{trad+|oc|seguir}}, {{trad+|oc|sègre}}
+* {{T|fa}} : {{trad+|fa|دنبال‌کردن|tr=Dōnbāl-Kardan}}
+* {{T|pt}} : {{trad+|pt|seguir}}
+* {{T|ro}} : {{trad+|ro|urma}}
+* {{T|ru}} : {{trad+|ru|следовать|tr=slédovat'}}
+* {{T|se}} : {{trad|se|čuovvut}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad+|sv|följa}}
+* {{T|tourangeau}} : {{trad|tourangeau|sieugue}}
+* {{T|wa}} : {{trad+|wa|shure}}, {{trad+|wa|shuve}}
+{{trad-fin}}
+
+{{trad-début|S’intéresser, porter de l’attention|2}}
+* {{T|af}} : {{trad+|af|volg}}
+* {{T|de}} : {{trad+|de|verfolgen}}, {{trad+|de|nachsehen}}, {{trad+|de|nachsehen}}
+* {{T|en}} : {{trad+|en|follow}}
+* {{T|ary}} : {{trad|ary|اهتم و تتبع}}, {{trad|ary|اهتم وتتبع}}
+* {{T|hr}} : {{trad+|hr|pratiti}}, {{trad+|hr|promatrati}}
+* {{T|es}} : {{trad+|es|seguir}}
+* {{T|eo}} : {{trad-|eo|sekvi}}
+* {{T|gallo}} : {{trad|gallo|sieudr}}
+* {{T|id}} : {{trad+|id|mengikuti}}
+* {{T|avk}} : {{trad|avk|suzdá}}[http://www.kotava.org/kotapedia/doku.php?id=suzd_a]
+* {{T|nl}} : {{trad+|nl|volgen}}, {{trad+|nl|nakomen}}
+* {{T|no}} : {{trad+|no|følge}}
+* {{T|pt}} : {{trad+|pt|atender}}
+* {{T|ro}} : {{trad+|ro|urmări}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad+|sv|följa}}
+{{trad-fin}}
+
+{{trad-début|Aller après pour atteindre et pour prendre|3}}
+* {{T|af}} : {{trad+|af|volg}}
+* {{T|en}} : {{trad+|en|trail}}
+* {{T|ary}} : {{trad|ary|سار على نهجه}}
+* {{T|hr}} : {{trad+|hr|slijediti}}
+* {{T|eo}} : {{trad-|eo|postiri}}
+* {{T|avk}} : {{trad|avk|suzdá}}
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|no}} : {{trad-|no|følge etter}}
+* {{T|ngh}} : {{trad|ngh|ǀhun}}
+* {{T|pt}} : {{trad+|pt|perseguir}}
+* {{T|ro}} : {{trad+|ro|urmări}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad+|sv|följa efter}}
+{{trad-fin}}
+
+{{trad-début|Accompagner, escorter, aller avec|4}}
+* {{T|de}} : {{trad+|de|folgen}}
+* {{T|en}} : {{trad+|en|follow}}
+* {{T|ary}} : {{trad|ary|رافق}}
+* {{T|ht}} : {{trad|ht|swiv}}
+* {{T|hr}} : {{trad-|hr|ići sa}}, {{trad-|hr|ići na|tr=pogreb}}
+* {{T|eo}} : {{trad-|eo|kunvojaĝi}}
+* {{T|gallo}} : {{trad|gallo|suoedr}}
+* {{T|id}} : {{trad+|id|ikuti}}, {{trad+|id|mengikuti}}
+* {{T|avk}} : {{trad|avk|suzdá}}[http://www.kotava.org/kotapedia/doku.php?id=suzd_a]
+* {{T|arn}} : {{trad|arn|inan}}
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|no}} : {{trad-|no|følge med}}, {{trad-|no|slå følge med}}
+* {{T|pt}} : {{trad+|pt|acompanhar}}
+* {{T|ro}} : {{trad+|ro|urma}}
+* {{T|se}} : {{trad|se|čuovvut}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad+|sv|följa med}}
+* {{T|sw}} : {{trad-|sw|kufuatana}}
+{{trad-fin}}
+
+{{trad-début|Observer, surveiller|5}}
+* {{T|de}} : {{trad+|de|verfolgen}}, {{trad+|de|folgen}}
+* {{T|en}} : {{trad+|en|follow}}
+* {{T|ary}} : {{trad|ary|راقب}}
+* {{T|ht}} : {{trad|ht|swiv}}
+* {{T|hr}} : {{trad+|hr|promatrati}}, {{trad-|hr|motriti}}
+* {{T|gallo}} : {{trad|gallo|suoedr}}
+* {{T|avk}} : {{trad|avk|suzdá}}[http://www.kotava.org/kotapedia/doku.php?id=suzd_a]
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|no}} : {{trad+|no|følge}}
+* {{T|ngh}} : {{trad|ngh|ǀhun}}
+* {{T|pt}} : {{trad+|pt|espiar}}, {{trad+|pt|observar}}
+* {{T|ro}} : {{trad+|ro|urmări}}
+* {{T|ru}} : {{trad+|ru|следить|tr=slediť}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad+|sv|fullfölja}}
+{{trad-fin}}
+
+{{trad-début|{{figuré|nocat=1}} Aller, continuer d’aller dans une même direction|6}}
+* {{T|af}} : {{trad+|af|volg}}
+* {{T|en}} : {{trad+|en|follow}}
+* {{T|hr}} : {{trad+|hr|slijediti}}
+* {{T|eo}} : {{trad-|eo|sekvi}}, {{trad-|eo|laŭiri}}
+* {{T|id}} : {{trad+|id|menyusuri}}
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|no}} : {{trad+|no|følge}}, {{trad+|no|fortsette}}
+* {{T|pdt}} : {{trad|pdt|gonen}}
+* {{T|pt}} : {{trad+|pt|continuar}}
+* {{T|swb}} : {{trad|swb|uɗunga|tr=udunga}}
+* {{T|zdj}} : {{trad|zdj|-ɗunga|tr=udunga|dif=uɗunga}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad+|sv|fortsätta}}, {{trad+|sv|gå fram}}
+{{trad-fin}}
+
+{{trad-début|Comprendre un raisonnement|7}}
+* {{T|en}} : {{trad+|en|catch someone's drift}}
+* {{T|hr}} : {{trad+|hr|pratiti}}
+* {{T|avk}} : {{trad|avk|gildá}}[http://www.kotava.org/kotapedia/doku.php?id=gild_a]
+{{trad-fin}}
+
+{{trad-début|Assister à|9}}
+* {{T|en}} : {{trad+|en|attend}}
+* {{T|hr}} : {{trad+|hr|pribivati}}
+* {{T|ken}} : {{trad|ken|koŋo}}
+* {{T|mcn}} : {{trad|mcn|ɦùm}}
+{{trad-fin}}
+
+{{trad-début|S’abonner à un compte sur un réseau social|10}}
+* {{T|de}} : {{trad+|de|folgen}}
+* {{T|en}} : {{trad+|en|follow}}
+* {{T|hr}} : {{trad+|hr|pratiti}}
+* {{T|fi}} : {{trad+|fi|seurata}}
+* {{T|it}} : {{trad+|it|seguire}}
+* {{T|avk}} : {{trad|avk|suzdá}}[http://www.kotava.org/kotapedia/doku.php?id=suzd_a]
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|fa}} : {{trad+|fa|دنبال‌کردن|tr=Dōnbāl-Kardan}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+{{trad-fin}}
+
+{{trad-début|S’abandonner à, se laisser conduire par|12}}
+* {{T|hr}} : {{trad+|hr|slijediti}}
+* {{T|eo}} : {{trad-|eo|konformi}}
+* {{T|nl}} : {{trad+|nl|volgen}}
+* {{T|pt}} : {{trad-|pt|aderir a}}, {{trad-|pt|ser dirigido por}}
+{{trad-fin}}
+
+{{trad-début|Se conformer à|13}}
+* {{T|de}} : {{trad+|de|befolgen}}
+* {{T|en}} : {{trad+|en|follow}}
+* {{T|ar}} : {{trad-|ar|تبع|R=tabiʿa|dif=تَبِعَ}}
+* {{T|hr}} : {{trad+|hr|primijeniti}}, {{trad+|hr|primjenjivati}}
+* {{T|id}} : {{trad+|id|menganut}}, {{trad+|id|anut}}
+* {{T|nl}} : {{trad+|nl|volgen}}, {{trad+|nl|opvolgen}}
+* {{T|pdt}} : {{trad|pdt|utfieren}}
+* {{T|pt}} : {{trad-|pt|ser sectário de}}
+* {{T|se}} : {{trad|se|čuovvut}}
+* {{T|zdj}} : {{trad|zdj|uɗunga}}
+* {{T|sv}} : {{trad+|sv|följa}}
+* {{T|sw}} : {{trad-|sw|kushika}}
+{{trad-fin}}
+
+{{trad-début|{{figuré|nocat=1}} Être après, par rapport au temps, au lieu, à la situation, au rang|14}}
+* {{T|en}} : {{trad+|en|follow}}, {{trad+|en|come after}}
+* {{T|hr}} : {{trad+|hr|slijediti}}
+* {{T|eo}} : {{trad-|eo|sekvi}}, {{trad-|eo|postveni}}
+* {{T|nl}} : {{trad+|nl|volgen}}, {{trad+|nl|volgen op}}
+* {{T|no}} : {{trad+|no|følge}}
+* {{T|pt}} : {{trad-|pt|suceder-se a}}
+* {{T|zdj}} : {{trad|zdj|uɗunga}}
+* {{T|solrésol}} : {{trad|solrésol|sifasolfa}}
+* {{T|sv}} : {{trad-|sv|följa på}}, {{trad-|sv|komma efter}}
+{{trad-fin}}
+
+{{trad-début|{{figuré|nocat=1}} Être la conséquence, résulter d’une chose|15}}
+* {{T|hr}} : {{trad+|hr|proizlaziti}}
+* {{T|eo}} : {{trad+|eo|rezulti}}
+* {{T|fi}} : {{trad+|fi|seurata}}
+* {{T|avk}} : {{trad|avk|maletí}}[http://www.kotava.org/kotapedia/doku.php?id=malet_i]
+* {{T|nl}} : {{trad+|nl|volgen}}, {{trad+|nl|volgen op}}, {{trad+|nl|voortvloeien}}
+* {{T|no}} : {{trad+|no|følge}}
+* {{T|pt}} : {{trad+|pt|decorrer}}, {{trad+|pt|resultar}}, {{trad+|pt|provir}}
+* {{T|sv}} : {{trad+|sv|följa efter}}
+{{trad-fin}}
+
+===== {{S|traductions à trier}} =====
+{{trad-début|Traductions à trier suivant le sens}}
+* {{T|af|trier}} : {{trad+|af|volg}}
+* {{T|de|trier}} : {{trad+|de|folgen}}
+* {{T|en|trier}} : {{trad+|en|succeed}}
+* {{T|ang|trier}} : {{trad-|ang|folgian}}, {{trad-|ang|fylgan}}
+* {{T|br}} : {{trad+|br|heuilh}}, {{trad+|br|heuliañ}}
+* {{T|ca|trier}} : {{trad+|ca|seguir}}
+* {{T|da|trier}} : {{trad-|da|følge}}
+* {{T|eo|trier}} : {{trad-|eo|sekvi}}, {{trad-|eo|laŭiri}}
+* {{T|fo|trier}} : {{trad-|fo|fylgja}}
+* {{T|fi|trier}} : {{trad+|fi|seurata}}
+* {{T|fy|trier}} : {{trad-|fy|folgje}}
+* {{T|gd|trier}} : {{trad-|gd|lean}}
+* {{T|id|trier}} : {{trad+|id|membuntut}}
+* {{T|it|trier}} : {{trad+|it|seguire}}
+* {{T|la|trier}} : {{trad+|la|sequi}}
+* {{T|ms|trier}} : {{trad-|ms|ikuti}}, {{trad-|ms|mengikuti}}
+* {{T|yua|trier}} : {{trad|yua|tsaypachik}}
+* {{T|nl|trier}} : {{trad+|nl|bewandelen}}, {{trad+|nl|bijhouden}}, {{trad+|nl|volgen}}, {{trad+|nl|voortvloeien}}, {{trad+|nl|opvolgen}}, {{trad+|nl|beschrijven}}, {{trad+|nl|gaan langs}}, {{trad+|nl|volgen}}
+* {{T|pap|trier}} : {{trad|pap|sigui}}
+* {{T|pt|trier}} : {{trad+|pt|seguir}}, {{trad+|pt|suceder}}
+* {{T|ro}} : {{trad+|ro|urma}}
+* {{T|sk|trier}} : {{trad-|sk|sledovať}}, {{trad-|sk|chápať}}
+* {{T|tl|trier}} : {{trad-|tl|sumunód}}
+* {{T|cs|trier}} : {{trad+|cs|sledovat}}, {{trad+|cs|následovat}}
+* {{T|vi|trier}} : {{trad+|vi|tùy tòng}}, {{trad+|vi|tuân lệnh}}, {{trad-|vi|đi theo}}
+* {{T|zu|trier}} : {{trad+|zu|-landelayo}}
+{{trad-fin}}
+
+=== {{S|prononciation}} ===
+* {{pron|sɥivʁ|fr}}
+** {{écouter|lang=fr|France|sɥivʁ|audio=Fr-suivre.ogg}}
+* Français méridional : {{pron|ˈsɥi.vʁə|fr}}
+* Canada : {{pron|sʏɪvʁ|fr}}
+* Belgique : {{pron|swivʁ|fr}}
+* {{écouter|||lang=fr|audio=LL-Q150 (fra)-Pamputt-suivre.wav}}
+* {{écouter|lang=fr|France (Lyon)||audio=LL-Q150 (fra)-WikiLucas00-suivre.wav}}
+* {{écouter|lang=fr|France (Vosges)||audio=LL-Q150 (fra)-LoquaxFR-suivre.wav}}
+* {{écouter|lang=fr|France (Vosges)||audio=LL-Q150 (fra)-Poslovitch-suivre.wav}}
+* {{écouter|lang=fr|France (Vosges)||audio=LL-Q150 (fra)-Poslovitch-suivre (chronologie).wav}}
+* {{écouter|lang=fr|France (Cesseras)||audio=LL-Q150 (fra)-Guilhelma-suivre.wav}}
+* {{écouter|Somain (France)||lang=fr|audio=LL-Q150 (fra)-Jérémy-Günther-Heinz Jähnick-suivre.wav}}
+* {{écouter|Vendée (France)||lang=fr|audio=LL-Q150 (fra)-Sartus85-suivre.wav}}
+
+=== {{S|anagrammes}} ===
+{{voir anagrammes|fr}}
+
+=== {{S|références}} ===
+* {{R:TLFi}}
+* {{R:DAF8}}
+* {{R:GDT}}
+{{Références}}
+
+[[Catégorie:Lexique en français du poker]]
+[[Catégorie:Verbes de mouvement en français]]

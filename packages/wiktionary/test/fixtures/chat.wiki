@@ -1,0 +1,960 @@
+{{voir/chat}}
+
+== {{langue|fr}} ==
+=== {{S|étymologie}} ===
+: {{laé|fr|nom|1}} {{siècle|lang=fr|XII}} Du {{étyl|frm|fr|chat}}, de l’{{étyl|fro|fr|chat}}, du {{étyl|bas latin|fr|mot=cattus}} « chat (domestique) », mot que certains<ref>Jean-Paul Savignac, ''Dictionnaire français-gaulois'', art. « chat », Paris, Errance, 2004, p. 82.</ref> rapprochent du copte (bohaïrique) {{lien|ϣⲁⲩ|tr=šau|cop}} « matou », peut-être issu de l’égyptien moyen ''tešau'' « chatte ». Le classique ''{{lien|felis|la}}'', ''{{lien|feles|la}}'' désignait le [[chat sauvage d’Europe]] ({{wsp|Felis silvestris silvestris}}).
+: {{laé|fr|nom|2}} {{siècle|lang=fr|XIII}} Probablement de l’{{étyl|fro|fr|mot=chat|sens=[[chat-château]]}}.
+: {{laé|fr|nom|3}} {{date|lang=fr|1997}} Emprunté à l’{{étyl|en|fr|mot=chat|sens=[[discussion]], [[bavardage]]}}.
+
+=== {{S|nom|fr|num=1}} ===
+{{fr-rég|ʃa|pron2=ʃɑ}}
+[[Image:Cat03.jpg|thumb|Un '''chat'''.]]
+[[Fichier:Kamee01.jpg|vignette|alt=Photo d’un chat de race inhabituelle assis de profil sur une table, tête tournée vers l’objectif, au pelage gris-brun. |Un '''chat''' domestique attentif. (1,2)]]
+[[Fichier:Blason ville fr Chalaines 55.svg|vignette|120px|Armoiries avec un '''chat''' ''(sens héraldique)'']]
+'''chat''' {{pron|ʃa|ʃɑ|fr}} {{m}} {{équiv-pour|lang=fr|une femelle|chatte}}
+# {{félins|fr}} [[mammifère|Mammifère]] [[carnivore]] [[félin]] de taille moyenne, au [[museau]] court et arrondi, domestiqué, apprivoisé ou encore à l’état sauvage.
+#* {{exemple | lang=fr
+ | Des '''chats''' que l’absence d’oreilles et de queue, car en Espagne on leur retranche ces superfluités ornementales, rendait semblables à des chimères japonaises, regardaient aussi, mais de plus loin, ces appétissants préparatifs.
+ | source={{w|Théophile Gautier}}, ''{{ws|Voyage en Espagne/XIII|Voyage en Espagne}}'', Charpentier, 1859}}
+#* {{exemple | lang=fr
+ | Des militants se sont rendus sur place accompagnés par la gendarmerie et les services de la mairie, et ont découvert 18 borders collies et un '''chat'''.
+ | source=journal ''20 minutes'', édition Paris-IDF, 9 septembre 2022, page 2}}
+#* ''Le meilleur préservatif contre les souris est un '''chat''', non pas un '''chat''' angora, mais un '''chat''' à poil lisse et ras, rayé de gris et de brun, de la race commune appelée'' chat de gouttière. {{source|« Souris », dans la ''Grande encyclopédie illustrée d’Économie domestique et rurale'', par {{w|Jules Trousset}}, Paris : chez Fayard frères, s.d. (vers 1875), page 2310}}
+#* {{exemple | lang=fr
+ | Entre autres manies, mon oncle avait celle de tuer tous les '''chats''' qu’il rencontrait. Il faisait, à ces pauvres bêtes, une chasse impitoyable, une guerre acharnée de trappeur.
+ | source={{w|Octave Mirbeau}}, ''Contes cruels : Mon oncle''}}
+#* {{exemple | lang=fr
+ | Mais un '''chat''' hésite, et demeure interdit devant un plus '''chat'''.
+ | source={{w|Colette}}, ''Sido'', 1930, Fayard, page 45}}
+#* {{exemple | lang=fr
+ | Des textes datant de 1020 avant Jésus-Christ évoquent l’arrivée des premiers '''chats''' en Inde.
+ | source={{w|Bernard Werber}}, ''{{w|Demain les chats}}'', Albin Michel, « Le Livre de poche », 2016, page 94}}
+#* {{exemple|lang=fr
+ |C'est sûrement parce que je n'ai pas retrouvé mon '''chat''' depuis deux jours et que je sais très bien au fond de moi qu''''elle''' est partie se cacher pour mourir mais vraiment certaines trahisons de convictions me filent un bourdon absolument terrible aujourd'hui..................
+ |source={{w|Cécile Duflot}} sur Twitter, 19 août 2020|lien=https://twitter.com/CecileDuflot/status/1384812872929366018}}
+# {{en particulier|fr}} Individu [[mâle]] de cet animal. {{note|fr}} Pour préciser qu’on parle d’un animal femelle, on peut dire ''[[chatte]]''.
+#* {{exemple | lang=fr | Le '''chat''' se sent tout chose en regardant passer la chatte du voisin.}}
+# {{par extension|fr}} [[félin|Félin]].
+#* {{exemple | lang=fr | '''Chat-tigre''' Espèce de félin sauvage de l’Amérique méridionale.}}
+# {{poissons|fr}} Synonyme de [[poisson-chat commun]].
+# {{info lex|jeux}} Synonyme de [[loup]] : jeu d’enfants où un des participants appelé ''chat'' doit toucher un de ses camarades qui devient le ''chat'' à son tour.
+#* {{exemple | lang=fr
+ | On n'entendait que le vent qui jouait au '''chat''' dans les cours intérieures.
+ | source={{w|Daniel Boulanger}}, ''Le chemin des caracoles'', Laffont, 1966, réédition Le Livre de Poche, page 64}}
+#* ''On se marre comme des fous en jouant à '''chat''', chat perché, et même chat-bite quand on a un peu trop picolé.'' {{source|{{w|Bérengère Krief}}, ''La prochaine fois je vous montre mon chat'', Flammarion, 2015, prologue}}.
+# {{lexique|mécanique|fr}} [[instrument|Instrument]] à [[branche]]s de fer [[élastique]]s et [[pointu]]es, dont on se sert pour [[visiter]] l’âme d’une [[pièce]] de [[canon]], [[afin]] de [[découvrir]] les [[chambre]]s qui s’y [[trouver|trouvent]].
+# {{vulgaire|fr}} [[vulve|Vulve]] ou [[vagin]], [[chatte]].
+#* {{exemple | lang=fr
+ | Culculine se baissa et, relevant la chemise, découvrit des cuisses rondes et grosses qui se réunissaient sous le '''chat''' blond cendré comme les cheveux.
+ | source={{w|Guillaume Apollinaire}}, ''{{ws|Les Onze Mille Verges}}'', 1907, chapitre II}}
+#* {{exemple | lang=fr
+ | Aucun de ses rêves n’était allé jusqu’à l’homme. Elle n’avait jamais pu franchir son '''chat'''.
+ | source={{w|Victor Hugo}}, {{w|Les Misérables}}, tome 1, 1862, page 821}}
+# {{Lorraine|fr}} [[palatine|Palatine]], sorte de fourrure que les femmes portent au cou.
+# {{meubles héraldiques|fr}} [[meuble|Meuble]] représentant l’animal du même nom dans les [[armoiries]]. Comme le [[léopard]], il est représenté [[passant]] et de [[face]].
+#* ''De gueules au '''chat''' d’argent jouant avec une pelote de laine du même, au chef d’azur à deux étoiles d’or, qui est de Chalaines'' {{cf|lang=fr}} illustration « armoiries avec un chat ».
+# {{lexique|yoga|fr}} Position de yoga à quatre pattes.
+# Défaut, corps étranger, dans un bloc d'[[ardoise]] qui le rend impropre à être fendu et utiliser.
+
+==== {{S|synonymes}} ====
+{{(|Chat domestique|1}}
+* {{lien|chat domestique|fr}}
+* {{lien|greffier|fr}} {{familier|nocat=1}}
+* {{lien|Grippeminaud|fr}}
+* {{lien|minet|fr}}
+* {{lien|mistigri|fr}} {{familier|nocat=1}}
+* {{lien|Raminagrobis|fr}}
+{{)}}
+{{(|Chat mâle|2}}
+* {{lien|matou|fr}}
+{{)}}
+{{(|Jeu|4}}
+* {{cf|lang=fr|jeu du loup}}
+{{)}}
+
+==== {{S|vocabulaire}} ====
+* {{voir thésaurus|fr|chat|magie|discussion|bestiaire médiéval|Halloween|sorcière|momie égyptienne}}
+* {{lien|🐈|fr}} (U+1F408)
+* [[😸]] U+1F638
+* [[😼]] (U+1F63C)
+* [[😽]] (U+1F63D
+* [[🙀]] (U+1F640)
+* {{lien|ailurophile|fr}}
+* {{lien|ailurophobe|fr}},
+* {{lien|ailurophobie|fr}}, {{lien|ailourophobie|fr}}
+* {{lien|chaton|fr}} (petit)
+* {{lien|chatte|fr}} (femelle)
+* {{lien|feuler|fr}}, {{lien|feulement|fr}}
+* {{lien|galéphobie|fr}}
+* {{lien|lapin de gouttière|fr}}
+* {{lien|miauler|fr}}, {{lien|miaulement|fr}} (pousser son cri en parlant du chat)
+* {{lien|ronronner|fr}}, {{lien|ronronnement|fr}}
+
+==== {{S|dérivés}} ====
+{{(}}
+* {{lien|acheter chat en poche|fr}}
+* {{lien|acheter le chat pour le lièvre|fr}}
+* {{lien|amoureuse comme une chatte|fr}} ''(femme qui est de complexion amoureuse)''
+* {{lien|anarchat|fr}}
+* {{lien|à pas de chat|fr}}
+* {{lien|appeler un chat un chat|fr}}
+* {{lien|argent de chat|fr}} {{info lex|minéralogie}}
+* {{lien|avec des yeux de chat qui fait dans la braise|fr}}
+* {{lien|avoir d’autres chats à fouetter|fr}}
+* {{lien|avoir un chat dans la gorge|fr}}
+* {{lien|bar à chats|fr}}
+* {{lien|barbe de chat|fr}}
+* {{lien|barre à chat|fr}}
+* {{lien|bonnet à oreilles de chat|fr}}
+* {{lien|bonnet de chat|fr}}
+* {{lien|bouillie pour chats|fr}} ''(travail mal exécuté, négligé)''
+* {{lien|bouillie pour les chats|fr}} ''(propos mensongers)''
+* {{lien|café à chats|fr}}
+* {{lien|cataire|fr}}
+* {{lien|chat à neuf queues|fr}}
+* {{lien|chat à pattes noires|fr}}
+* {{lien|chat à pieds noirs|fr}} ''(Felis nigripes)''
+* {{lien|chat à tête plate|fr}} ''(Prionailurus planiceps)''
+* {{lien|chat angora|fr}}
+* {{lien|chat bai|fr}} ''(Catopuma badia)''
+* {{lien|chat bite|fr}}, {{lien|chat-bite|fr}}
+* {{lien|Chat botté|fr}}
+* {{lien|chat-brulé|fr}} {{ortho1990}}
+* {{lien|chat-brûlé|fr}} ''(Poire)''
+* {{lien|chat-cervier|fr}}
+* {{lien|chat-chasteil|fr}}
+* {{lien|chat d’Arkhangelsk|fr}}
+* {{lien|chat de Biet|fr}} ''(Felis bieti)''
+* {{lien|chat de Chine|fr}} ''(Prionailurus bengalensis)''
+* {{lien|chat de Geoffroy|fr}} ''(Oncifelis geoffroyi)''
+* {{lien|chat de Gobi|fr}}
+* {{lien|chat de gouttière|fr}}
+* {{lien|chat de jungle|fr}} ''(Felis chaus)''
+* {{lien|chat de l’île de Man|fr}}
+* {{lien|chat de Malte|fr}}
+* {{lien|chat de Margueritte|fr}} ''(Felis margarita)''
+* {{lien|chat de mer|fr}}
+* {{lien|chat de Mongolie|fr}}
+* {{lien|chat de Monseigneur Biet|fr}} ''(Felis bieti)''
+* {{lien|chat de Pallas|fr}} ''(Otocolobus manul)''
+* {{lien|chat de ruelle|fr}}
+* {{lien|chat de Schrödinger|fr}}
+* {{lien|chat de Temminck|fr}} ''(Catopuma temminckii)''
+* {{lien|chat des Andes|fr}} ''(Oreailurus jacobita)''
+* {{lien|chat des bois norvégien|fr}}
+* {{lien|chat des déserts de Chine|fr}}
+* {{lien|chat des forêts norvégien|fr}}
+* {{lien|chat des forêts norvégiennes|fr}}
+* {{lien|chat des marais|fr}} ''(Felis chaus)''
+* {{lien|chat des pampas|fr}} ''(Oncifelis colocolo)''
+* {{lien|chat des rochers|fr}} ''(Espèce de poisson)''
+* {{lien|chat des rues|fr}}
+* {{lien|chat des sables|fr}} ''(Felis margarita)''
+* {{lien|chat domestique|fr}} ''(Felis domesticus)''
+* {{lien|chat doré|fr}} ''(Profelis aurata)''
+* {{lien|chat doré d’Afrique|fr}} ''(Profelis aurata)''
+* {{lien|chat doré d’Asie|fr}} ''(Catopuma temminckii)''
+* {{lien|chat du désert|fr}}
+* {{lien|chat du Général Margueritte|fr}} ''(Felis margarita)''
+* {{lien|chat-fourré|fr}}
+* {{lien|chat glacé|fr}}
+* {{lien|chat haret|fr}}
+* {{lien|chat-huant|fr}}
+* {{lien|chatricide|fr}} {{hapax|nocat=1}}
+* {{lien|chat-léopard|fr}}
+* {{lien|chat-léopard de Chine|fr}} ''(Prionailurus bengalensis)''
+* {{lien|chat-léopard de l’Inde|fr}} ''(Prionailurus rubiginosus)''
+* {{lien|chat-léopard du Bengale|fr}} ''(Prionailurus bengalensis)''
+* {{lien|chat maigre|fr}} {{argot militaire|nocat=1}}
+* {{lien|chat manul|fr}} ''(Otocolobus manul)''
+* {{lien|chat marbré|fr}} ''(Pardofelis marmorata)''
+* {{lien|chat marin|fr}}
+* {{lien|chat marsupial|fr}}
+* {{lien|chat musqué|fr}} {{cf|lang=fr|civette}}
+* {{lien|chat nageur|fr}}
+* {{lien|chat noir|fr}} ''(personne qui attire ou apporte le malheur)''
+* {{lien|chat nu|fr}}
+* {{lien|chat orné|fr}} ''(Felis silvestris ornata)''
+* {{lien|chat pêcheur|fr}} ''(Prionailurus viverrinus)''
+* {{lien|chat-pard|fr}}
+* {{lien|chat perché|fr}}
+* {{lien|chat persan|fr}}
+* {{lien|chat-rochier|fr}}
+* {{lien|chat rougeâtre|fr}} ''(Prionailurus rubiginosus)''
+* {{lien|chat rubigineux|fr}} ''(Prionailurus rubiginosus)''
+* {{lien|chat sauvage|fr}} ''(Felis silvestris / Lynx rufus)''
+* {{lien|chat-tacheté|fr}} ''(Leopardus tigrinus)''
+* {{lien|chat-tigre|fr}} ''(Leopardus tigrinus/Leptailurus serval)''
+* {{lien|chat tigré|fr}}
+* {{lien|chat-tigre du Bengale|fr}} ''(Prionailurus bengalensis bengalensis)''
+* {{lien|chat viverrin|fr}} ''(Prionailurus viverrinus)''
+* {{lien|chataire|fr}}
+* {{lien|chatière|fr}}
+* {{lien|chatillon|fr}}
+* {{lien|chatoiement|fr}}
+* {{lien|chaton|fr}}
+* {{lien|chatonner|fr}}
+* {{lien|chatoyant|fr}}
+* {{lien|chatoyer|fr}}
+* {{lien|chatron|fr}}
+* {{lien|chatte|fr}}
+* {{lien|chattement|fr}}
+* {{lien|chattemite|fr}}
+* {{lien|chattepeleuse|fr}}
+* {{lien|chattepelouse|fr}}
+* {{lien|chatteplouse|fr}}
+* {{lien|chatter|fr}}
+* {{lien|chatterie|fr}}
+* {{lien|couter le lard du chat|fr}} {{Suisse|nocat=1}} {{familier|nocat=1}} {{ortho1990}}
+* {{lien|coûter le lard du chat|fr}} {{Suisse|nocat=1}} {{familier|nocat=1}}
+* {{lien|crêpe du chat|fr}}
+* {{lien|curieux comme un chat|fr}}
+* {{lien|déchatonner|fr}}
+* {{lien|donner sa langue au chat|fr}}
+* {{lien|écrire comme un chat|fr}}
+* {{lien|emporter le chat|fr}}
+* {{lien|enchatonnement|fr}}
+* {{lien|enchatonner|fr}}
+* {{lien|entrechat|fr}}
+* {{lien|étrangle-chat|fr}}
+* {{lien|étripe-chat|fr}}
+* {{lien|éveiller le chat qui dort|fr}}
+* {{lien|friande comme une chatte|fr}} ''(femme très friande)''
+* {{lien|gourmand comme chat de dévote|fr}}
+* {{lien|guetter comme le chat guette la souris|fr}} ''(épier attentivement)''
+* {{lien|happe-chat|fr}}
+* {{lien|herbe à chat|fr}}
+* {{lien|herbe aux chats|fr}}
+* [[il n'y a pas un chat à fouetter]]
+* {{lien|jeu du chat et de la souris|fr}}
+* {{lien|jouer au chat et à la souris|fr}}
+* {{lien|jouer avec quelqu’un comme le chat avec la souris|fr}}
+* {{lien|laisser le chat aller au fromage|fr}}
+* {{lien|langue-de-chat|fr}}
+* {{lien|lisse comme du poil de chat|fr}}
+* {{lien|litière pour chat|fr}}
+* {{lien|menthe des chats|fr}}
+* {{lien|mine de chat fâché|fr}}
+* {{lien|œil-de-chat|fr}}
+* {{lien|oiseau-chat|fr}}
+* {{lien|orgue à chats|fr}}
+* {{lien|orgue-chat|fr}}
+* {{lien|orgue de chats|fr}}
+* {{lien|pas un chat|fr}}
+* {{lien|piano à chats|fr}}
+* {{lien|piano de chats|fr}}
+* {{lien|pied-de-chat|fr}}
+* {{lien|pipi de chat|fr}}
+* {{lien|pleuvoir des chats et des chiens|fr}}
+* {{lien|poisson-chat|fr}}
+* {{lien|qubit de chat|fr}}
+* {{lien|queue-de-chat|fr}}
+* {{lien|queue-du-chat|fr}}
+* {{lien|requin-chat|fr}}
+* {{lien|ressembler à un chat jaune qui chie dans de la braise|fr}}
+* {{lien|retomber comme un chat sur ses pattes|fr}} ''(se tirer adroitement des situations difficiles)''
+* {{lien|s’entendre comme chien et chat|fr}}, {{lien|s’entendre comme chiens et chats|fr}}
+* {{lien|se servir de la patte du chat pour tirer les marrons du feu|fr}} ''(se servir adroitement d’un autre pour faire quelque chose de périlleux dont on espère recueillir le profit)''
+* {{lien|tête-de-chat|fr}}
+* {{lien|thym de chat|fr}}
+* {{lien|toilette de chat|fr}}
+* {{lien|troupeau de chats|fr}}
+* {{lien|valoir le lard du chat|fr}} {{Suisse|nocat=1}} {{familier|nocat=1}} 
+* {{lien|vendre chat en poche|fr}} ''(vendre une chose sans l’avoir montrée)''
+* {{lien|voix de chat qu’on écorche|fr}}
+{{)}}
+
+==== {{S|phrases}} ====
+{{(}}
+* {{lien|à bon chat, bon rat|fr}}
+* {{lien|c’est le chat|fr}} ''(manière de répondre à quelqu’un)''
+* {{lien|chat échaudé craint l’eau froide|fr}}
+* {{lien|il ne faut pas réveiller le chat qui dort|fr}}
+* {{lien|il n’y a pas de quoi fouetter un chat|fr}}
+* {{lien|il n’y a pas un chat|fr}}
+* {{lien|la nuit, tous les chats sont gris|fr}}
+* {{lien|le chat parti, les souris dansent|fr}}
+* {{lien|les chiens ne font pas des chats|fr}}
+* {{lien|ne réveillez pas le chat qui dort|fr}}
+* {{lien|peu importe que le chat soit noir ou blanc pourvu qu’il attrape les souris|fr}}
+* {{lien|quand le chat dort, les souris dansent|fr}}
+* {{lien|quand le chat n’est pas là, les souris dansent|fr}}
+{{)}}
+
+==== {{S|variantes dialectales}} ====
+* {{lien|béarnais|fr}} : {{lien|gat|fr}}
+* {{lien|alsacien|fr}} : {{lien|kàtz|fr}}
+
+==== {{S|hyperonymes}} ====
+(simplifié)
+* {{lien|félidé|fr|dif=félidés}} (Felidea)
+
+==== {{S|hyponymes}} ====
+{{(}}
+* {{lien|chat à pieds noirs|fr}} ''(Felis nigripes)''
+* {{lien|chat à tête plate|fr}} ''(Prionailurus planiceps)''
+* {{lien|chat bai|fr}} ''(Catopuma badia)''
+* {{lien|chat de Biet|fr}} ''(Felis bieti)''
+* {{lien|chat de Geoffroy|fr}} ''(Oncifelis geoffroyi)''
+* {{lien|chat de Pallas|fr}} ''(Otocolobus manul)''
+* {{lien|chat de Temminck|fr}} ''(Catopuma temminckii)''
+* {{lien|chat des Andes|fr}} ''(Oreailurus jacobita)''
+* {{lien|chat des pampas|fr}} ''(Oncifelis colocolo)''
+* {{lien|chat des sables|fr}} ''(Felis margarita)''
+* {{lien|chat domestique|fr}} ''(Felis domesticus)''
+* {{lien|chat doré d’Afrique|fr}} ''(Profelis aurata)''
+* {{lien|chat doré d’Asie|fr}} ''(Catopuma temminckii)''
+* {{lien|chat-léopard de Chine|fr}} ''(Prionailurus bengalensis)''
+* {{lien|chat manul|fr}} ''(Otocolobus manul)''
+* {{lien|chat marbré|fr}} ''(Pardofelis marmorata)''
+* {{lien|chat orné|fr}} ''(Felis silvestris ornata)''
+* {{lien|chat pêcheur|fr}} ''(Prionailurus viverrinus)''
+* {{lien|chat rubigineux|fr}} ''(Prionailurus rubiginosus)''
+* {{lien|chat sauvage|fr}} ''(Felis silvestris / Lynx rufus)''
+* {{lien|chat-tigre|fr}}, oncille ''(Leopardus tigrinus)''
+* {{lien|chat-tigre d’Afrique|fr}}, serval ''(Leptailurus serval)''
+* {{lien|chat-tigre du Bengale|fr}} ''(Prionailurus bengalensis bengalensis)''
+* {{lien|chaus|fr}} ''(Felis chaus)''
+{{)}}
+
+==== {{S|traductions}} ====
+{{trad-début|Chat domestique|1}}
+* {{T|conv}} : ''{{trad+|conv|Felis silvestris catus}}''
+* {{T|abx}} : {{trad|abx|miyong}}
+* {{T|aa}} : {{trad+|aa|bissa}}, {{trad+|aa|dimbato}}
+* {{T|af}} : {{trad+|af|kat}}
+* {{T|any}} : {{trad|any|ɛkala}}
+* {{T|agn}} : {{trad|agn|kosi}}
+* {{T|ak}} : {{trad+|ak|agyinamoa|n}}
+* {{T|akk}} : {{trad|akk|𒊓𒀀|tr=šurānu}}
+* {{T|sq}} : {{trad+|sq|mace|f}}
+* {{T|gsw-fr}} : {{trad|gsw-fr|Kàtz}}, {{trad|gsw-fr|Hüsskàtz}}
+* {{T|de}} : {{trad+|de|Katze|f}}
+* {{T|alt}} : {{trad|alt|киске}}
+* {{T|am}} : {{trad+|am|ድመት}}
+* {{T|en}} : {{trad+|en|cat}}
+* {{T|enm}} : {{trad|enm|catte}}, {{trad|enm|cat}}, {{trad|enm|kat}}
+* {{T|ang}} : {{trad+|ang|catt|m}}
+* {{T|ar}} : {{trad+|ar|قط|tr=qéṭṭ|m}}, {{trad+|ar|قطة|tr=qéṭṭa|f}}, {{trad+|ar|هر|tr=hir|m}}
+* {{T|arq}} : {{trad|arq|قط|m|tr=qaṭṭ}}
+* {{T|arz}} : {{trad|arz|قط|tr=’uṭṭ|m}}, {{trad|arz|قطة|tr=’uṭṭɑ|f}}
+* {{T|ayl}} : {{trad|ayl|قطوس|tr=gɑṭṭūs|m}}, {{trad|ayl|قطوسة|tr=gɑṭṭūsa|f}}
+* {{T|ary}} : {{trad|ary|مش|tr=mašš}}, {{trad|ary+|قط|m|tr=qaṭṭ}}
+* {{T|arc}} : {{trad|arc|ܫܘܢܪܐ|tr=shūnrā|m}}, {{trad|arc|ܫܘܢܪܬܐ|tr=shūnrātā|f}}
+* {{T|hy}} : {{trad+|hy|կատու|tr=katou}}
+* {{T|rup}} : {{trad+|rup|cãtushe}}
+* {{T|ast}} : {{trad+|ast|gatu}}
+* {{T|atj}} : {{trad|atj|minoc}}
+* {{T|az}} : {{trad+|az|pişik}}
+* {{T|ba}} : {{trad|ba|бесәй}}
+* {{T|bm}} : {{trad+|bm|jakuma}}
+* {{T|bdy}} : {{trad|bdy|budhigehn}}, {{trad|bdy|budhigahn}}
+* {{T|eu}} : {{trad+|eu|katu}}
+* {{T|bar}} : {{trad|bar|Katz|f}}, {{trad|bar|Koda|m}}, {{trad|bar|Kotz|f}}
+* {{T|bem}} : {{trad|bem|pushi}}
+* {{T|bn}} : {{trad+|bn|বিড়াল}}, {{trad+|bn|িবলাড়}}
+* {{T|be}} : {{trad+|be|кот|tr=kot|m}}, {{trad+|be|кошка|tr=kóška|f}}
+* {{T|bolze}} : {{trad|bolze|katz}}
+* {{T|bs}} : {{trad+|bs|mačka|f}}, {{trad+|bs|mačak|m}}
+* {{T|br}} : {{trad+|br|kazh}}, {{trad+|br|kaz|m}} ({{p}} : {{trad+|br|kizier}})
+* {{T|bg}} : {{trad+|bg|котка|tr=kotka|f}}, {{trad+|bg|котак|tr=kotak|m}}, {{trad+|bg|котарак|tr=kotarak|m}}
+* {{T|calabrais centro-méridional}} : {{trad|calabrais centro-méridional|gattu}}
+* {{T|yue}} : {{trad+|yue|貓|tr=maau1}}, {{trad+|yue|猫|tr=maau1}} {{term|alternatif}}
+* {{T|krl}} : {{trad|krl|kaži}}
+* {{T|ca}} : {{trad+|ca|gat|m}}, {{trad+|ca|mix|m}}
+* {{T|ch}} : {{trad+|ch|gatu}}
+* {{T|shy}} : {{trad+|shy|amcic}}, {{trad+|shy|mucc}}
+* {{T|chr}} : {{trad+|chr|ᏪᏌ|tr=wesa}}
+* {{T|ctc}} : {{trad|ctc|buu-sri}}, {{trad|ctc|buu-si}}
+* {{T|zh}} : {{trad+|zh|猫|tradi=貓|tr=māo}}
+* {{T|ciw}} : {{trad|ciw|gaazhagens}} {{animé|nocat=1}}
+* {{T|shi}} : {{trad|shi|ⴰⵎⴰⵛⵛⵓ}}
+* {{T|si}} : {{trad+|si|පූසා|tr=pūsā}}
+* {{T|cop}} : {{trad|cop|ⲉⲙⲟⲩ|tr=emou}}
+* {{T|ko}} : {{trad+|ko|고양이|tr=goyangi}}, {{trad+|ko|야옹이|tr=yaongi}}
+* {{T|kw}} : {{trad+|kw|cath}}
+* {{T|co}} : {{trad+|co|gattu}}, {{trad+|co|ghjattu}}
+* {{T|gcf}} : {{trad|gcf|chat}}
+* {{T|ht}} : {{trad|ht|chat}}
+* {{T|rcf}} : {{trad|rcf|losat}}
+* {{T|tcs}} : {{trad|tcs|pusiket}}
+* {{T|cr}} : {{trad+|cr|ᐴᔒ|tr=puushii}}, {{trad+|cr|ᒥᓅᐢ|tr=minôs}}, {{trad+|cr|ᐴᓰᐤ|tr=pôsîw}}
+* {{T|hr}} : {{trad+|hr|mačka|f}}
+* {{T|trl}} : {{trad|trl|meowchaet}}, {{trad|trl|meowing chaet}}
+* {{T|dlm}} : {{trad|dlm|cuot}}
+* {{T|da}} : {{trad+|da|huskat}}, {{trad+|da|kat|c}}
+* {{T|duj}} : {{trad|duj|marurrumburr}}
+* {{T|egy}} : {{trad|egy|𓏇𓇋𓅱𓃠}}
+* {{T|myv}} : {{trad|myv|псака|tr=psaka}}, {{trad|myv|катка|tr=katka}}, {{trad|myv|писай|tr=pisay}}
+* {{T|es}} : {{trad+|es|gato|m}}, {{trad+|es|gata|f}}
+* {{T|eo}} : {{trad+|eo|kato}}
+* {{T|et}} : {{trad+|et|kass}}
+* {{T|ee}} : {{trad|ee|dadi}}
+* {{T|ewo}} : {{trad|ewo|esínga}}
+* {{T|fo}} : {{trad+|fo|ketta|f}}, {{trad+|fo|húsketta|f}}, {{trad+|fo|køttur|m}}, {{trad+|fo|húskøttur|m}}
+* {{T|fi}} : {{trad+|fi|kissa}}
+* {{T|vls}} : {{trad|vls|katrol}}
+* {{T|nld}} : {{trad|nld|katte}}
+* {{T|fon}} : {{trad|fon|ase}}, {{trad|fon|awii}}, {{trad|fon|gbewii}}
+* {{T|fur}} : {{trad|fur|ğhat}}
+* {{T|fy}} : {{trad+|fy|kat|c}}
+* {{T|gd}} : {{trad+|gd|cat|m}}
+* {{T|ga}} : {{trad+|ga|cat|m}}
+* {{T|ga}} : {{trad+|ga|piscín|m}}
+* {{T|gag}} : {{trad|gag|kedi}}
+* {{T|gl}} : {{trad+|gl|gato}}
+* {{T|cy}} : {{trad+|cy|cath}}
+* {{T|sdn}} : {{trad|sdn|ghjattu}}
+* {{T|lg}} : {{trad|lg|kapa}}, {{trad|lg|pusi}}
+* {{T|gaulois}} : {{trad|gaulois|cattos}}
+* {{T|ka}} : {{trad+|ka|კატა|tr=kata}}
+* {{T|gil}} : {{trad|gil|katama}}
+* {{T|gni}} : {{trad|gni|minyawoo}}
+* {{T|el}} : {{trad+|el|γάτα|tr=gáta|f}}, {{trad+|el|γάτος|tr=gátos|m}}, {{trad+|el|γαλή|tr=galí|f}}
+* {{T|grc}} : {{trad|grc|γαλῆ|tr=galễ|f}}, {{trad|grc|αἴλουρος|tr=aílouros|mf}}
+* {{T|haw}} : {{trad|haw|pōpoki}}
+* {{T|he}} : {{trad+|he|חתול|m|dif=חָתוּל|tr=khatul}}, {{trad+|he|חתולה|f|tr=khatula}}
+* {{T|mww}} : {{trad|mww|miv}}
+* {{T|hoi}} : {{trad|hoi|goose}}
+* {{T|hu}} : {{trad+|hu|macska}}, {{trad+|hu|kandúr|m}}
+* {{T|sah}} : {{trad|sah|куоска}}
+* {{T|io}} : {{trad+|io|kato}}
+* {{T|ilo}} : {{trad|ilo|pusa}}
+* {{T|id}} : {{trad+|id|kucing}}
+* {{T|moe}} : {{trad|moe|minush}}
+* {{T|ia}} : {{trad+|ia|catto|m}}, {{trad+|ia|catta|f}}
+* {{T|is}} : {{trad+|is|kisa|f}}, {{trad+|is|köttur|m}}
+* {{T|it}} : {{trad+|it|gatto|m}}, {{trad+|it|gatta|f}}, {{trad+|it|micio|m}}, {{trad+|it|micia|f}}
+* {{T|ja}} : {{trad+|ja|猫|tr=neko}}, {{trad+|ja|ネコ|tr=neko}}
+* {{T|kab}} : {{trad|kab|amchiche|m}}, {{trad|kab|amcic|s}}
+* {{T|csb}} : {{trad+|csb|kòt|m}}
+* {{T|kld}} : {{trad|kld|burrgiyan}}
+* {{T|krc}} : {{trad|krc|киштик}}
+* {{T|kk}} : {{trad+|kk|мысық|tr=mısıq}}
+* {{T|kjh}} : {{trad|kjh|хоосха}}
+* {{T|km}} : {{trad+|km|ឆ្មា|tr=chmā}}
+* {{T|kg}} : {{trad|kg|niau}}
+* {{T|rw}} : {{trad+|rw|jangwe}}
+* {{T|ky}} : {{trad+|ky|мышык|tr=myšyk}}
+* {{T|kog}} : {{trad|kog|mísi}}
+* {{T|kv}} : {{trad|kv|кань}}
+* {{T|kok}} : {{trad|kok|माज़रा}}
+* {{T|avk}} : {{trad|avk|karvol}}
+* {{T|kum}} : {{trad|kum|мишик}}
+* {{T|xug}} : {{trad|xug|猫}}, {{trad|xug|まやー}}, {{trad|xug|まやあ}}
+* {{T|ku}} : {{trad+|ku|پشیله‌}}, {{trad+|ku|pisîng}}, {{trad+|ku|pisîk}}
+* {{T|ldn}} : {{trad|ldn|rul}}
+* {{T|lac}} : {{trad|lac|mis}}
+* {{T|lo}} : {{trad+|lo|ແມວ|tr=meehw}}
+* {{T|la}} : {{trad+|la|feles|f}}, {{trad+|la|felis|f}}, {{trad+|la|cattus|m}}
+* {{T|lep}} : {{trad|lep|ᰣᰦᰜᰤᰫ}}
+* {{T|lv}} : {{trad+|lv|kaķis|m}}
+* {{T|ln}} : {{trad+|ln|nyáu}}, {{trad+|ln|púsu}}, {{trad+|ln|nkɔ́ndɔkɔ́}}
+* {{T|lt}} : {{trad+|lt|katė|f}}, {{trad+|lt|katinas|m}}
+* {{T|jbo}} : {{trad+|jbo|mlatu}}
+* {{T|lmo}} : {{trad+|lmo|gatt}}
+* {{T|lorrain}} : {{trad|lorrain|tchat|m}}, {{trad|lorrain|mircaw|m}}, {{trad|lorrain|tchette}}
+* {{T|lb}} : {{trad+|lb|Kaz|f}}, {{trad+|lb|Kueder|m}}
+* {{T|mk}} : {{trad+|mk|мачка|tr=mačka|f}}, {{trad+|mk|мачор|tr=mačor|m}}
+* {{T|ms}} : {{trad+|ms|kucing}}
+* {{T|ml}} : {{trad+|ml|പൂച്ച|tr=poocha}}
+* {{T|mg}} : {{trad+|mg|saka}}, {{trad+|mg|piso}}
+* {{T|mt}} : {{trad+|mt|qattus|m}}, {{trad+|mt|qattusa|f}} ({{p}} : {{trad+|mt|qtates}})
+* {{T|gv}} : {{trad+|gv|kayt}}
+* {{T|mta}} : {{trad|mta|miyong}}
+* {{T|mi}} : {{trad+|mi|poti}}, {{trad+|mi|ngeru}}
+* {{T|mr}} : {{trad+|mr|मांजर|f|tr=mānjar}}, {{trad+|mr|बोका|m|tr=bokā}}
+* {{T|mrc}} : {{trad|mrc|posh}}
+* {{T|men}} : {{trad|men|gɔ́nɛ̌}}
+* {{T|crg}} : {{trad|crg|shaa}}
+* {{T|mic}} : {{trad|mic|gajuewj}}
+* {{T|moh}} : {{trad|moh|takóhs}}
+* {{T|mn}} : {{trad+|mn|муур|tr=muur}}, {{trad+|mn|мий|tr=mij}}, {{trad+|mn|ᠮᠤᠤᠷ}}
+* {{T|moyen écossais}} : {{trad|moyen écossais|cat}}
+* {{T|mwf}} : ''ku'' {{trad|mwf|yirrthip}}
+* {{T|mlv}} : {{trad|mlv|bus}}
+* {{T|nv}} : {{trad|nv|gídí}}, {{trad|nv|mósí}}, {{trad|nv|másí}}
+* {{T|nl}} : {{trad+|nl|huiskat}}, {{trad+|nl|kat|m}}, {{trad+|nl|poes|f}}, {{trad+|nl|kater|m}}
+* {{T|ne}} : {{trad+|ne|बिरालो|tr=birālō}}
+* {{T|niy}} : {{trad|niy|kayidzangò}}
+* {{T|nil}} : {{trad|nil|yossef}}
+* {{T|nog}} : {{trad|nog|мысык}}
+* {{T|normand}} : {{trad|normand|cat}}
+* {{T|no}} : {{trad+|no|huskatt|m}}, {{trad+|no|katt|m}}, {{trad+|no|katte|f}}
+* {{T|nov}} : {{trad|nov|kate|mf}}, {{trad|nov|kato|m}}, {{trad|nov|kata|f}}
+* {{T|ngh}} : {{trad|ngh|mʘoa}}
+* {{T|oc}} : {{trad+|oc|gat|m}}, {{trad+|oc|cat|m}}, {{trad+|oc|chat}}
+* {{T|os}} : {{trad|os|гӕды|tr=gædy}}
+* {{T|ur}} : {{trad+|ur|بيلی}}
+* {{T|uz}} : {{trad+|uz|mushuk}}
+* {{T|pln}} : {{trad|pln|ngato}}
+* {{T|pi}} : {{trad+|pi|biḷāla}}
+* {{T|pap}} : {{trad|pap|pushi}}
+* {{T|pa}} : {{trad+|pa|ਬਿੱਲੀ|tr=billī}}
+* {{T|fa}} : {{trad+|fa|گربه|tr=gorbeh}}, {{trad+|fa|پشک|tr=peshak}}
+* {{T|ff}} : {{trad|ff|gnari}}
+* {{T|pcd}} : {{trad|pcd|cat}}, {{trad|pcd|minou}}, {{trad|pcd|cahou}}, {{trad|pcd|mahou}}, {{trad|pcd|cåt}}, {{trad|pcd|cot}}
+* {{T|pms}} : {{trad|pms|gat}}
+* {{T|myp}} : {{trad|myp|báohoipaí}}
+* {{T|plodarisch}} : {{trad|plodarisch|kòtze|f}}
+* {{T|pl}} : {{trad+|pl|kot|m}}, {{trad+|pl|kotka|f}}, {{trad+|pl|kocur|m}}, {{trad+|pl|kocica|f}}, {{trad+|pl|kotek|m}} ''(diminutif)''
+* {{T|pt}} : {{trad+|pt|gato|m}}, {{trad+|pt|gata|f}}
+* {{T|rom}} : {{trad|rom|țițây}}, {{trad|rom|mâçka}}, {{trad|rom|muca|f}}
+* {{T|ro}} : {{trad+|ro|pisică}}, {{trad+|ro|писикэ|tr=pisikă}}, {{trad+|ro|mâță}} (dialectal)
+* {{T|ro}} : {{trad+|ro|pisoi}}
+* {{T|ru}} : {{trad+|ru|кот|tr=kot|m}} ; {{trad+|ru|кошка|tr=kóška|f}}
+* {{T|smn}} : {{trad|smn|kissá}}, {{trad|smn|kaasi}}
+* {{T|se}} : {{trad|se|bussá}}, {{trad|se|gáhttu}}
+* {{T|sms}} : {{trad|sms|kaass}}
+* {{T|sm}} : {{trad+|sm|pusi}}
+* {{T|sg}} : {{trad+|sg|nyâü}}
+* {{T|sa}} : {{trad+|sa|अखुभुज्|tr=akhubhuj|m}}, {{trad+|sa|बिडालः|tr=biḍālah}}
+* {{T|sc}} : {{trad+|sc|munninnu}}, {{trad+|sc|gattu|m}}
+* {{T|sr}} : {{trad+|sr|мачка|tr=[[mačka]]}}
+* {{T|sei}} : {{trad|sei|miist}}, {{trad|sei|ziix canaao}}, {{trad|sei|ziix ihamoc ano catax}}
+* {{T|swo}} : {{trad|swo|juˈmajʔ}}
+* {{T|zdj}} : {{trad|zdj|paha}}
+* {{T|scn}} : {{trad+|scn|gattu}}, {{trad+|scn|attu|m}}, {{trad+|scn|jattu|m}}, {{trad+|scn|iattu|m}}
+* {{T|sk}} : {{trad+|sk|mačka|f}}, {{trad+|sk|kocúr|m}}
+* {{T|sl}} : {{trad+|sl|maček|m}}, {{trad+|sl|mačka|f}}
+* {{T|solrésol}} : {{trad|solrésol|faresimi}}, {{trad|solrésol|f'aresimi}}
+* {{T|ses}} : {{trad|ses|muusi}}, {{trad|ses|hayla}}
+* {{T|dsb}} : {{trad|dsb|kócka|f}}, {{trad|dsb|kót|m}}
+* {{T|hsb}} : {{trad+|hsb|kočka|f}}
+* {{T|nso}} : {{trad|nso|katse}}
+* {{T|sv}} : {{trad+|sv|katt|c}}
+* {{T|sw}} : {{trad+|sw|paka}}
+* {{T|syr}} : {{trad|syr|ܫܘܢܪܐ|m|tr=shūnrā}}, {{trad|syr|ܫܘܢܪܬܐ|f|tr=shūnrātā}}, {{trad|syr|שונרא|m|tr=shūnrā}}, {{trad|syr|שונרתא|f|tr=shūnrātā}}
+* {{T|tg}} : {{trad+|tg|гурба|tr=gurba}}, {{trad+|tg|пишак|tr=pišak}}
+* {{T|tl}} : {{trad+|tl|pusa}}
+* {{T|ta}} : {{trad+|ta|பூனை}}
+* {{T|crh}} : {{trad|crh|mıșıq}}
+* {{T|tt}} : {{trad+|tt|мәче}}, {{trad+|tt|песи}}
+* {{T|cs}} : {{trad+|cs|kočka|f}}, {{trad+|cs|kocour|m}}
+* {{T|te}} : {{trad+|te|పిల్లి}}
+* {{T|th}} : {{trad+|th|แมว|tr=maew}}, {{trad+|th|วิฬาร์|tr=wílaa}}
+* {{T|twf}} : {{trad|twf|mų̀si’ína}}
+* {{T|kim}} : {{trad|kim|һөөшкэ}}
+* {{T|tkn}} : {{trad|tkn|猫}}, {{trad|tkn|まゆ}}, {{trad|tkn|まゆー}}, {{trad|tkn|みゃう}}, {{trad|tkn|みゃふ}}, {{trad|tkn|にゃう}}, {{trad|tkn|にゃふ}}
+* {{T|tsolyáni}} : {{trad|tsolyáni|tiúni-kh}}
+* {{T|tr}} : {{trad+|tr|kedi}}, {{trad+|tr|pisi}} {{désuet|nocat=1}}
+* {{T|tk}} : {{trad+|tk|pişik}}
+* {{T|uk}} : {{trad+|uk|кіт|tr=kit}}, {{trad+|uk|кішка|tr=kiška}}
+* {{T|uum}} : {{trad|uum|мышых}}
+* {{T|vec}} : {{trad+|vec|gato}}
+* {{T|vi}} : {{trad+|vi|mèo}}
+* {{T|wls}} : {{trad|wls|pusi}}
+* {{T|wa}} : {{trad+|wa|tchèt}}, {{trad+|wa|cat|m}}
+* {{T|wim}} : {{trad|wim|ku’waak}}
+* {{T|wo}} : {{trad+|wo|muus}}, {{trad+|wo|wundu}}
+* {{T|yi}} : {{trad+|yi|קאץ|f|tr=kats}}
+* {{T|yij}} : {{trad|yij|buthi}}
+* {{T|zu}} : {{trad+|zu|ikati}}
+{{trad-fin}}
+
+{{trad-début|Chat mâle|2}}
+* {{T|gsw-fr}} : {{trad|gsw-fr|Kàtzeroller}} (matou)
+* {{T|de}} : {{trad+|de|Kater|m}}
+* {{T|en}} : {{trad+|en|tomcat}}
+* {{T|bar}} : {{trad|bar|Koda|m}}
+* {{T|bolze}} : {{trad|bolze|katz}}
+* {{T|br}} : {{trad+|br|kazh}}
+* {{T|co}} : {{trad+|co|ghjattu|m}}
+* {{T|eo}} : {{trad+|eo|virkato}}, {{trad+|eo|katiĉo}}
+* {{T|gaulois}} : {{trad|gaulois|cattos}}
+* {{T|gu}} : {{trad+|gu|બિલાડી|tr=bilāḍī|f}}, {{trad+|gu|બિલાડો|tr=bilāḍo|m}}
+* {{T|hi}} : {{trad+|hi|बिल्ली|f|tr=billī}}, {{trad+|hi|बिल्ला|m|tr=billā}}
+* {{T|io}} : {{trad+|io|katulo}}
+* {{T|kab}} : {{trad|kab|amšiš}}
+* {{T|avk}} : {{trad|avk|karvolye}}
+* {{T|lb}} : {{trad+|lb|Kueder|m}}
+* {{T|nl}} : {{trad+|nl|kater|m}}
+* {{T|normand}} : {{trad|normand|cat}}, {{trad|normand|marcou}}, {{trad|normand|margou}}
+* {{T|oc}} : {{trad+|oc|margaud}}
+* {{T|pcd}} : {{trad|pcd|màrou}}
+* {{T|plodarisch}} : {{trad|plodarisch|kainz|m}}
+* {{T|pl}} : {{trad+|pl|kot}}, {{trad+|pl|kocur}}
+* {{T|pt}} : {{trad+|pt|gato}}
+* {{T|ru}} : {{trad+|ru|кот|m|tr=kot}}
+* {{T|sk}} : {{trad+|sk|kocúr|m}}
+* {{T|cs}} : {{trad+|cs|kocour}}
+* {{T|vo}} : {{trad+|vo|hikat}}
+* {{T|wa}} : {{trad+|wa|marcåd}}
+{{trad-fin}}
+
+{{trad-début|Félin|3}}
+* {{T|af}} : {{trad+|af|kat}}
+* {{T|de}} : {{trad+|de|Katze|f}}
+* {{T|en}} : {{trad+|en|cat}}
+* {{T|az}} : {{trad+|az|pişik}}
+* {{T|bm}} : {{trad+|bm|jakuma}}
+* {{T|eu}} : {{trad+|eu|katu}}
+* {{T|bolze}} : {{trad|bolze|katz}}
+* {{T|bs}} : {{trad+|bs|mačka|f}}, {{trad+|bs|mačak|m}}
+* {{T|br}} : {{trad+|br|kaz}}, {{trad+|br|kazh|m}} ({{p}} : {{trad+|br|kizhier}}), {{trad+|br|kazhez|f}} ({{p}} : {{trad+|br|kazhezed}})
+* {{T|bg}} : {{trad+|bg|котка|tr=kotka|f}}
+* {{T|ca}} : {{trad+|ca|felí|m}}, {{trad+|ca|felina|f}}
+* {{T|chr}} : {{trad+|chr|ᏪᏌ|tr=wesa}}, {{trad+|chr|ᏪᏏ|tr=wesi}}
+* {{T|zh}} : {{trad+|zh|猫|tr=māo}}
+* {{T|hr}} : {{trad+|hr|mačka|f}}
+* {{T|da}} : {{trad+|da|kat|c}}
+* {{T|es}} : {{trad+|es|felino|m}}, {{trad+|es|felina|f}}
+* {{T|eo}} : {{trad+|eo|kato}}
+* {{T|et}} : {{trad+|et|kaslane}}
+* {{T|fo}} : {{trad+|fo|ketta|f}}, {{trad+|fo|húsketta|f}}, {{trad+|fo|køttur|m}}, {{trad+|fo|húskøttur|m}}
+* {{T|fil}} : {{trad|fil|pusa}}
+* {{T|fi}} : {{trad+|fi|kissaeläin}}
+* {{T|fy}} : {{trad+|fy|kat|c}}
+* {{T|gd}} : {{trad+|gd|cat|m}}
+* {{T|ga}} : {{trad+|ga|cat|m}}
+* {{T|el}} : (general) {{trad+|el|αιλουροειδές|tr=ailouroeidés|n}}, {{trad+|el|αίλουρος|tr=aílouros|m}}
+* {{T|he}} : {{trad+|he|חתול|dif=חָתוּל|tr=khatul}}
+* {{T|hu}} : {{trad+|hu|macska}}
+* {{T|id}} : {{trad+|id|kucing}}
+* {{T|ia}} : {{trad+|ia|felin}}
+* {{T|is}} : {{trad+|is|köttur|m}}
+* {{T|it}} : {{trad+|it|felino|m}}, {{trad+|it|felina|f}}
+* {{T|pam}} : {{trad|pam|pusa}}
+* {{T|avk}} : {{trad|avk|krapol}}
+* {{T|la}} : {{trad+|la|feles|f}}, {{trad+|la|felis|f}}
+* {{T|lv}} : {{trad+|lv|kaķis|m}}
+* {{T|lt}} : {{trad+|lt|katė|f}}
+* {{T|jbo}} : {{trad+|jbo|mlatu}}
+* {{T|mk}} : {{trad+|mk|мачка|tr=mačka|f}}
+* {{T|nl}} : {{trad+|nl|kat}}
+* {{T|normand}} : {{trad|normand|cat}}
+* {{T|no}} : {{trad+|no|kattedyr|n}}, {{trad+|no|katt|m}}
+* {{T|nov}} : {{trad|nov|kate|mf}}, {{trad|nov|kato|m}}, {{trad|nov|kata|f}}
+* {{T|oc}} : {{trad+|oc|felin}}
+* {{T|ur}} : {{trad+|ur|بلى}}
+* {{T|ff}} : {{trad|ff|gniari}}
+* {{T|pcd}} : {{trad|pcd|cåt}}, {{trad|pcd|cat}}, {{trad|pcd|cot}}
+* {{T|myp}} : {{trad|myp|báohoipaí}}
+* {{T|pl}} : {{trad+|pl|kot|m}}
+* {{T|pt}} : {{trad+|pt|felino|m}}, {{trad+|pt|felina|f}}
+* {{T|ro}} : {{trad+|ro|pisică|f}}, {{trad+|ro|motan|m}}, {{trad+|ro|cotoi|m}}, {{trad+|ro|mâță|f}}
+* {{T|ru}} : {{trad+|ru|кошка|tr=kóška|f}}
+* {{T|sr}} : {{trad+|sr|мачка|tr=[[mačka]]}}
+* {{T|sk}} : {{trad+|sk|mačka|f}}
+* {{T|sl}} : {{trad+|sl|mačka|f}}
+* {{T|sv}} : {{trad+|sv|kattdjur|n}}
+* {{T|cs}} : {{trad+|cs|šelma kočkovitá|f}}
+* {{T|te}} : {{trad+|te|పిల్లి|tr=}}, {{trad+|te|మార్జాలము|tr=}}
+* {{T|th}} : {{trad+|th|แมว|tr=maew}}
+* {{T|tr}} : {{trad+|tr|kedi}}
+* {{T|tk}} : {{trad+|tk|pişik}}
+* {{T|vi}} : {{trad+|vi|mèo}}
+{{trad-fin}}
+
+{{trad-début|Jeu|5}}
+* {{T|en}} : {{trad+|en|tag}}
+* {{T|kk}} : {{trad+|kk|қуыспақ|tr=quwıspaq}}
+* {{T|kg}} : {{trad|kg|nsaka}}
+* {{cf|lang=fr|loup}}
+* {{T|sk}} : {{trad+|sk|naháňačka|f}}
+{{trad-fin}}
+
+=== {{S|nom|fr|num=2}} ===
+{{fr-rég|ʃa|pron2=ʃɑ}}
+[[Fichier:Siege.avec.chat.3.png|vignette|Un '''chat''' de siège.]]
+'''chat''' {{pron|ʃa|ʃɑ|fr}} {{m}}
+# {{term|instrument de guerre médiéval}} [[chat-château|Chat-château]] ; sorte de couloir couvert servant d’[[abri]] à un [[bélier]] ainsi qu’à ses utilisateurs, recouvert de peaux humides afin de limiter les incendies.
+#* […]'' il était impossible d’empêcher des assaillants nombreux et hardis, protégés par des pavois et même par des '''''chats''''' (sortes de chariots recouverts de madriers et de peaux) de saper le pied des tours.'' {{source|{{w|Eugène Viollet-le-Duc}}, ''{{ws|La Cité de Carcassonne/éd. 1888/Description des défenses|La Cité de Carcassonne}}'', 1888}}
+#* {{exemple | lang=fr
+ | Aussi le bélier avait-il besoin d’être protégé des actions des assiégés : il était donc habituellement couvert par un '''chat''' ou manteau.
+ | source=Jean-Marc Pastré, ''Château et société castrale au Moyen âge'', 1998, page 47}}
+# {{par analogie|fr}} Bélier recouvert par un chat.
+# {{lexique|marine|fr}} [[navire#fr|Navire]] servant au chargement et au déchargement des navires dans les ports ([[allège]]) ou au cabotage le long des côtes ([[chasse-marée]]).
+## [[yacht#fr|Yacht]] à voiles utilisé dans les régates en raison de sa rapidité.
+##* {{exemple | lang=fr
+ | Elle ''[la mer]'' tarabustait de son mieux toutes les embarcations, les chaloupes, les barges, les remorqueurs, les yachts blancs et noirs, les pointus, les stars, les '''chats'''.
+ | source={{w|Paul Vialar}}, ''La Mort est un commencement, Le Bal des sauvages'', 1946}}
+
+==== {{S|traductions}} ====
+{{trad-début}}
+{{trad-fin}}
+
+=== {{S|nom|fr|num=3}} ===
+{{fr-rég|tʃat}}
+[[Fichier:Gaim screenshot under GNOME.png|thumb|Une fenêtre de '''chat'''.]]
+'''chat''' {{pron|tʃat|fr}} {{m}} {{anglicisme|fr}}
+# {{lexique|Internet|fr}} [[communication|Communication]] textuelle directe via [[Internet]] ; [[clavardage|Clavardage]] (Québec).
+# {{lexique|Internet|fr}} [[site|Site]] internet ou partie d’un site où l'on peut [[discuter]] en [[direct]] ; [[clavardoir|Clavardoir]] (Québec).
+#* {{exemple | lang=fr | Retrouver ses copains sur un '''chat'''.}}
+
+==== {{S|variantes orthographiques}} ====
+* {{lien|tchat|fr}}
+* {{lien|tchate|fr}}
+
+==== {{S|synonymes}} ====
+* {{lien|bavardage-clavier|fr}} {{CA|nocat=1}}
+* {{lien|dialogue en ligne|fr}}
+* {{lien|clavardage|fr}} {{CA|nocat=1}}
+* {{lien|cyberbavardage|fr}} {{CA|nocat=1}}
+
+==== {{S|dérivés}} ====
+* {{lien|chater|fr}}
+* {{lien|chateur|fr}}
+
+==== {{S|traductions}} ====
+{{cf|lang=fr|clavardage}}
+
+=== {{S|prononciation}} ===
+''[[#fr-nom-1|Nom 1]], [[#fr-nom-2|Nom 2]]'' :
+* {{pron-rimes|ʃa|fr}}
+* {{pron-rimes|ʃɑ|fr}}
+* {{term|Paris}} {{term|Sud de la France}} {{phon|ʃa|fr}}
+** {{écouter|France (Paris)|ə̃ ˈʃä|audio=Fr-chat.ogg|titre=un chat|lang=fr}}
+** {{écouter|lang=fr|France (Paris)|ʃä|audio=LL-Q150 (fra)-GrandCelinien-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃa|audio=LL-Q150 (fra)-Aemines1-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃä|audio=LL-Q150 (fra)-Aemines2-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃäʔ|audio=LL-Q150 (fra)-Aemines3-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃäʔ|audio=LL-Q150 (fra)-Aemines5-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃä|audio=LL-Q150 (fra)-Aemines4-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃa|audio=LL-Q150 (fra)-Aemines6-chat.wav}}
+** {{écouter|lang=fr|France (Toulouse)|ʃa|audio=LL-Q150 (fra)-Lepticed7-chat.wav}}
+** {{écouter|lang=fr|France|ʃa|audio=LL-Q150 (fra)-Adélaïde Calais WMFr-chat.wav}}
+** {{écouter|France (Muntzenheim)|ʃa|lang=fr|audio=LL-0x010C-fra-chat.wav}}
+** {{écouter|France (Lyon)|ʃa|lang=fr|audio=LL-Q150 (fra)-WikiLucas00-chat (animal).wav}}
+** {{écouter|France|ʃä|lang=fr|audio=LL-Q150 (fra)-Lunagrouh-chat.wav}}
+** {{écouter|France (Canet-en-Roussillon)|ʃa|lang=fr|audio=LL-Q150 (fra)-Mathias G. (BiblioCanet66)-chat.wav}}
+** {{écouter|lang=fr|France (Paris)|ʃa|audio=LL-Q150 (fra)-Eavq-chat.wav}}
+** {{écouter|France (Perpignan)|ʃa|lang=fr|audio=LL-Q150 (fra)-Hanavaï C. (BiblioCanet66)-chat.wav}}
+* {{term|Nord de la France}} {{term|Grand Est}} {{term|Franche-Comté}} {{BE|nocat=1}} {{Suisse|nocat=1}} {{QC|nocat=1}} {{phon|ʃɑ|fr}}, {{phon|ʃɔ|fr}}
+** {{écouter|France (Nord-Pas-de-Calais)|ʃɔ|lang=fr|audio=LL-Q150 (fra)-Jérémy-Günther-Heinz Jähnick-chat.wav}}
+** {{écouter|lang=fr|France (Vosges)|ʃɑ|audio=LL-Q150 (fra)-Penegal-chat.wav}}
+** {{écouter|lang=fr|France (Vosges)|ʃɑ|audio=LL-Q150 (fra)-Poslovitch-chat.wav}}
+** {{écouter|lang=fr|France (Vosges)|ʃɒ|audio=LL-Q150 (fra)-LoquaxFR-chat.wav}}
+** {{écouter|lang=fr|France (Lyon)|ʃɐ|audio=LL-Q150 (fra)-WikiLucas00-chat.wav}}
+** {{écouter|lang=fr|France (Lyon)|ʃɑ|audio=LL-Q150 (fra)-Ltrlg-chat.wav}}
+** {{écouter|France (Saint-Laurent-de-Cerdans)|ʃɑ|lang=fr|audio=LL-Q150 (fra)-Helenou66-chat.wav}}
+** {{écouter|France (Cabestany)|ʃɑ|lang=fr|audio=LL-Q150 (fra)-Adem M. (BiblioCanet66)-chat.wav}}
+** {{écouter|France (Vendée)|ʃɒ|lang=fr|audio=LL-Q150 (fra)-Sartus85-chat.wav}}
+** {{écouter|lang=fr|France (Lyon)|ʃɑ|audio=LL-Q150 (fra)-ContribuLing (WikiLucas00)-chat.wav}}
+** {{écouter|lang=fr|France (Fontainebleau)|ʃɑ|audio=LL-Q150 (fra)-Baidax-chat.wav}}
+** {{écouter|lang=fr|Suisse (canton du Valais)|ʃɑ|audio=LL-Q150 (fra)-DSwissK-chat.wav}}
+** {{écouter|Belgique|ʃa|lang=fr|audio=LL-Q150 (fra)-Mona (Mathsou)-chat.wav}}
+** {{écouter|Belgique|ʃɑ|lang=fr|audio=LL-Q150 (fra)-mmtn (Mathsou)-chat.wav}}
+** {{écouter|Belgique (Tournai)|ʃɑ|lang=fr|audio=LL-Q150 (fra)-Mathé23323 (Mathsou)-chat.wav}}
+** {{écouter|lang=fr|Canada (Laurentides)|ʃɑ|audio=LL-Q150 (fra)-Benoit Rochon-chat.wav}}
+** {{écouter|lang=fr|Canada (Mauricie, Shawinigan)|lə ˈʃɔ|titre=Le chat|audio=Le chat.ogg}}
+''[[#fr-nom-3|Nom 3]]'' :
+* {{pron-rimes|tʃat|fr}}
+* {{pron|tʃat|fr}}
+** {{écouter|France (Lyon)|tʃat|lang=fr|audio=LL-Q150 (fra)-WikiLucas00-chat (internet).wav}}
+
+==== {{S|homophones|fr}} ====
+''[[#fr-nom-1|Nom 1]]'' :
+* {{lien|chas|fr}}
+* {{lien|chah|fr}}, {{lien|shah|fr}}
+
+=== {{S|anagrammes}} ===
+{{voir anagrammes|fr}}
+
+=== {{S|voir aussi}} ===
+* {{Thésaurus|fr|héraldique}}
+* {{WP|Chat (homonymie)}}
+* {{WQ}}
+* {{Le Dico des Ados}}
+* {{Vikidia|AdQ=oui}}
+* {{Vikidia|Chat (homonymie)}}
+
+=== {{S|références}} ===
+<references />
+* {{R:DAF8}}
+* {{R:TLFi}}
+* Jean-François Michel, ''Dictionnaire des expressions vicieuses usitées dans un grand nombre de départemens et dans la ci-devant Province de Lorraine'', Nancy, 1807.
+
+{{Bonne entrée|français}}
+
+[[Catégorie:Homographes non homophones en français]]
+[[Catégorie:Jeux en français]]
+[[Catégorie:Chats en français|*]]
+[[Catégorie:ch prononcés /tʃ/ en français]]
+[[Catégorie:-t prononcés /t/ en français]]
+
+== {{langue|fro}} ==
+=== {{S|étymologie}} ===
+: (Nom 1) Du {{étyl|latin tardif|fro|cattus}}, voir ci-dessus.
+: (Nom 2) À rapprocher de ''[[chaffaut#fro|chaffaut]]'' (étymologiquement : « tour de bois »).
+
+=== {{S|nom|fro|num=1}} ===
+'''chat''' {{pron-recons|t͡ʃat|fro}} {{m}}
+# [[chat#fr|Chat]] (mammifère).
+#* {{exemple | lang=fro
+ | Dunc saut le '''chaz''' sur l’espine
+ | Donc, le chat saute sur l’épine
+ | source=''Le Ysope'', {{w|Marie de France}}, [http://www.bl.uk/manuscripts/Viewer.aspx?ref=harley_ms_978_f066v f. 66v, 1{{re}} colonne de ce manuscrit de 1275-1300]}}
+
+=== {{S|nom|fro|num=2}} ===
+'''chat''' {{pron-recons||fro}} {{m}}
+# [[chat-château|Chat-château]].
+
+==== {{S|synonymes}} ====
+* {{lien|chat chastel|fro}}
+
+=== {{S|références}} ===
+* {{R:Godefroy}}
+* {{R:Godefroy|complément=1}} (au complément)
+
+== {{langue|en}} ==
+=== {{S|étymologie}} ===
+: {{apocope|en|m=1|de=chatter}}.
+
+=== {{S|nom|en}} ===
+{{en-nom-rég|ˈtʃæt|s=s}}
+[[image:Wikimania 2009 - Chatting (3).jpg|thumb|A '''chat''' between two people. (1)]]
+'''chat''' {{pron|ˈtʃæt|en}}
+# {{familier|en}} [[discussion#fr|Discussion]] amicale.
+#* {{exemple | lang=en
+ | Let’s have a '''chat''' over coffee !
+ | Discutons autour d’un café !}}
+# {{lexique|Internet|en}} [[clavardage#fr|Clavardage]], [[tchat#fr|tchat]].
+#* {{exemple | lang=en
+ | Press Ctrl-S save your '''chat''' to a new file.
+ | Taper Ctrl-S pour sauvegarder votre tchat dans un nouveau fichier.}}
+# {{par métonymie|en}} {{lexique|Internet|en}} L’entièreté des [[viewer]]s sur un [[stream]], en particulier les personnes participant au [[tchat]].
+#* {{exemple | lang=en}}
+# {{par extension|en}} {{argot Internet|en}} Formule d’adresse [[informel|informelle]] sur les [[réseau social|réseaux sociaux]].
+#* {{exemple |'''Chat''' is this real?
+|source=u/No_Host_884 le 19 juillet 2024 sur le subreddit r/tankiejerk sur ''reddit.com''
+|lien=https://www.reddit.com/r/tankiejerk/comments/1e6rst7/chat_is_this_real/
+|lang=en}}
+
+==== {{S|dérivés}} ====
+* {{lien|chatline|en}}
+* {{lien|chat room|en}}
+* {{lien|chat show|en}}
+
+=== {{S|verbe|en}} ===
+{{en-conj-rég-cons|t|inf.pron=ˈtʃæt|p3s.psuf=s|prét.psuf=.ɪd|ppr.psuf=.ɪŋ}}
+'''chat''' {{pron|ˈtʃæt|en}} {{i|en}}
+# {{familier|en}} [[deviser|Deviser]], [[causer]], [[bavarder]].
+#* {{exemple | lang=en
+ | I’d like to '''chat''' with you after work.
+ | J’aimerai faire un brin de causette avec toi après le travail.}}
+# {{lexique|Internet|en}} [[clavarder|Clavarder]], [[chatter]] communiquer directement par texte via [[Internet]].
+#* {{exemple | lang=en
+ | You can use Pidgin to '''chat''' with friends over the Internet.
+ | Tu peux utiliser Pidgin pour communiquer avec tes amis sur internet.}}
+
+==== {{S|dérivés}} ====
+* {{lien|chat up|en}} {{familier|nocat=1}} (bavarder (en [[flirter|flirtant]]) avec quelqu’un)
+
+=== {{S|prononciation}} ===
+* {{écouter|États-Unis (Californie)|ˈtʃæt|audio=En-us-chat.ogg|lang=en}}
+* {{écouter|lang=en|États-Unis (New Jersey)||audio=LL-Q1860 (eng)-Simplificationalizer-chat.wav}}
+* {{écouter|Connecticut (États-Unis)||lang=en|audio=LL-Q1860 (eng)-Grendelkhan-chat.wav}}
+* {{écouter|Texas (États-Unis)||lang=en|audio=LL-Q1860 (eng)-Wodencafe-chat.wav}}
+
+=== {{S|voir aussi}} ===
+* {{WP|lang=en}}
+* {{WP|online chat|lang=en}}
+* [http://www.tv5.org/cms/chaine-francophone/lf/Merci-Professeur/p-17081-Chat-tchat-.htm?episode=734 Explication de Bernard Cerquiglini en images]
+
+== {{langue|gcr}} ==
+=== {{S|étymologie}} ===
+: Du {{étyl|fr|gcr|mot=chat}}.
+
+=== {{S|nom|gcr}} ===
+'''chat''' {{pron||gcr}}
+# {{animaux|gcr}} [[chat#fr-nom-1|Chat]] (animal).
+
+=== {{S|références}} ===
+* {{Source-w|fr|Créole guyanais}}
+
+== {{langue|ht}} ==
+=== {{S|étymologie}} ===
+: Du {{étyl|fr|ht|mot=chat}}.
+
+=== {{S|nom|ht}} ===
+'''chat''' {{pron||ht}}
+# [[#fr|Chat]] (animal).
+#* ''Chat se yon '''mamifè'''''.
+#** Le chat est un mammifères.
+
+==== {{S|hyperonymes}} ====
+* {{lien|zannimo|ht}}
+
+=== {{S|prononciation}} ===
+* {{écouter|Delmas (Haïti)||lang=ht|audio=LL-Q33491 (hat)-Rency Inson Michel-chat.wav}}
+* {{écouter|Haïti||lang=ht|audio=LL-Q33491 (hat)-Dade70-chat.wav}}
+
+== {{langue|gallo}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|gallo}}
+
+=== {{S|nom|gallo}} ===
+'''chat''' {{pron||gallo}} {{m}} {{gallo-graphie|ELG}}
+# {{animaux|gallo}} [[chat#fr|Chat]] (animal).
+
+=== {{S|références}} ===
+* {{lien web|url=http://web.archive.org/web/20070928010517fw_/http://www.maezoe.com/maezoe-ga.htm|titre=Le galo, la laungg brito-romaènn|site=maezoe.com (archivé)|consulté le=29 juillet 2019}}
+
+== {{langue|nl}} ==
+=== {{S|verbe|nl|flexion}} ===
+'''chat''' {{pron||nl}}
+# ''Première personne du singulier du présent de'' [[chatten]].
+#* {{exemple|lang=nl}}
+# ''Deuxième personne du singulier du présent de'' [[chatten]].
+#* {{exemple|lang=nl}}
+# ''Troisième personne du singulier du présent de'' [[chatten]].
+#* {{exemple|lang=nl}}
+
+=== {{S|taux de reconnaissance}} ===
+{{nl-taux|97,7|97,3|pourB=97|pourNL=98}}
+
+=== {{S|prononciation}} ===
+* {{écouter|||lang=nl|audio=Nl-chat.ogg}}
+
+=== {{S|anagrammes}} ===
+{{voir anagrammes|nl}}
+
+=== {{S|références}} ===
+{{références}}
+
+== {{langue|oc}} ==
+=== {{S|étymologie}} ===
+: Du {{étyl|bas latin|oc|mot=cattus}} « chat (domestique) ».
+
+=== {{S|nom|oc}} ===
+{{oc-rég-ts|cha|t͡ʃa}}
+{{oc-rég|t͡sa|t͡sa}}
+'''chat''' {{pron|t͡ʃat|oc}} ou {{pron|t͡sa|oc}} {{m}} {{équiv-pour|lang=oc|une femelle|chata}}
+# {{oc nord-occitan}} [[#fr|chat]].
+
+==== {{S|variantes dialectales}} ====
+* {{lien|cat|oc}} {{oc languedocien|nocat=1}}
+* {{lien|gat|oc}} {{oc languedocien|nocat=1}} {{oc gascon|nocat=1}}
+
+=== {{S|prononciation}} ===
+* {{écouter|Béarn (France)||niveau=bon|lang=oc|audio=LL-Q14185 (oci)-Davidgrosclaude-chat.wav}}
+* {{écouter|Clermont-Ferrand (France)||niveau=bon|lang=oc|audio=LL-Q35359-MaëlAuvèrnha-chat.wav}}
+
+=== {{S|références}} ===
+* {{R:Lo Congrès}}
+* {{R:Lavalade}}
+* {{R:Bonnaud}}
+[[Catégorie:Chats en occitan]]
+[[Catégorie:Verbes de parole en anglais]]
+
+== {{langue|cs}} ==
+=== {{S|étymologie}} ===
+: De l’{{étyl|en|cs|mot=chat}}.
+
+=== {{S|nom|cs}} ===
+{{cs-décl-nom-mi-dur|rad=chat}}
+'''chat''' {{pron|tʃɛt|cs}} {{m|i}}
+# [[tchat#fr|Tchat]].
+#* {{exemple|lang=cs}}
+
+==== {{S|synonymes}} ====
+* {{lien|pokec|cs}}
+* {{lien|webchat|cs}}
+
+=== {{S|nom|cs|flexion}} ===
+'''chat''' {{pron||cs}}
+# ''Génitif pluriel de'' [[chata#cs-nom|chata]].
+
+=== {{S|voir aussi}} ===
+* {{WP|lang=cs}}

@@ -1,0 +1,28 @@
+== {{langue|fr}} ==
+=== {{S|étymologie}} ===
+: De l’{{étyl|is|fr|skyr}}.
+
+=== {{S|nom|fr}} ===
+{{fr-rég|skiʁ}}
+'''skyr''' {{pron|skiʁ|fr}} {{m}}
+# [[lait fermenté concentré|Lait fermenté concentré]] produit en [[Islande]].
+#* {{exemple | lang=fr
+ | À côté du riz basmati, de l’avocat, du '''skyr''' et d’autres ingrédients stars, elles se font petit à petit une place dans les conseils nutritionnels des influenceurs fitness et muscu, Sissy Mua et Tibo InShape en tête.
+ | source=journal ''20 minutes'', édition Paris-IDF, 13 mars 2023, page 8}}
+#* {{exemple | lang=fr
+ | Le frigo d’entreprise est une zone de non-droit où chaque jour disparaissent sandwichs, canettes de soda et '''skyr''' framboise.
+ | source=journal ''20 minutes'', édition Paris-IDF, 8 janvier 2024, page 10}}
+
+==== {{S|vocabulaire}} ====
+* [[yaourt]]
+* [[ymer]]
+
+==== {{S|traductions}} ====
+{{trad-début}}
+* {{T|ru}} : {{trad-|ru|скир|tr=skir}}
+{{trad-fin}}
+
+=== {{S|voir aussi}} ===
+* {{WP}}
+
+[[Catégorie:Lexique en français de la cuisine]]

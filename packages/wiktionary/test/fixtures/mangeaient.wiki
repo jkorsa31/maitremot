@@ -1,0 +1,15 @@
+== {{langue|fr}} ==
+=== {{S|verbe|fr|flexion}} ===
+{{fr-verbe-flexion|manger|ind.i.3p=oui}}
+'''mangeaient''' {{pron|mɑ̃.ʒɛ|fr}}
+# ''Troisième personne du pluriel de l’imparfait de l’indicatif de'' [[manger]].
+#* {{exemple | lang=fr
+ | les religieux du couvent de Nice ne '''mangeaient''' guère que des sardines, des grenouilles, des merlusses ou autres poissons, des vermicelles (fidel), des choux, des oignons, des artichauts… agrémentés de quelques condiments : moutarde, safran, poivre ; et s’ils achetaient parfois un peu de beurre, des œufs, voire un chapon, c’était toujours pour un frère malade.
+ | source=Actes du Congrès des sociétés savantes: Section d'histoire moderne et contemporaine, volume 77, 1952}}
+
+=== {{S|prononciation}} ===
+* {{écouter|lang=fr|France (Brétigny-sur-Orge)||audio=LL-Q150 (fra)-Pamputt-mangeaient.wav}}
+* {{écouter|lang=fr|France (Cesseras)||audio=LL-Q150 (fra)-Guilhelma-mangeaient.wav}}
+
+=== {{S|anagrammes}} ===
+{{voir anagrammes|fr}}

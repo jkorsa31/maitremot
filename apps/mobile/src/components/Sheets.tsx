@@ -2,20 +2,22 @@
  * The modal windows of the game screen:
  * - BlankPicker:  choose the letter of a blank;
  * - ExchangeSheet: choose the tiles to exchange;
- * - HistorySheet: list of all turns;
+ * - HistorySheet: list of all turns (tap a word to see its definition);
  * - ConfirmSheet: yes / no question (pass, quit...);
  * - GameOverSheet: final ranking.
  */
 
 import { type GameState, type Letter, LETTERS, type Tile, ranking } from '@maitremot/engine';
 import { type ReactNode, useState } from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { points } from '../game/messages';
 import { colors, radius } from '../ui/theme';
 import { Button } from './Button';
 import { TileView } from './TileView';
 
-function Sheet(props: {
+/** Generic modal card with a title; tapping outside closes it. */
+export function Sheet(props: {
   visible: boolean;
   title: string;
   onClose: () => void;
@@ -131,8 +133,13 @@ export function ConfirmSheet(props: {
   );
 }
 
-/** One line per turn, most recent first. */
-export function HistorySheet(props: { visible: boolean; game: GameState; onClose: () => void }) {
+/** One line per turn, most recent first. Tapping a played turn shows its definitions. */
+export function HistorySheet(props: {
+  visible: boolean;
+  game: GameState;
+  onClose: () => void;
+  onShowWords: (words: string[]) => void;
+}) {
   const names = new Map(props.game.players.map((p) => [p.id, p.name]));
   const turns = [...props.game.history].reverse();
   return (
@@ -140,7 +147,14 @@ export function HistorySheet(props: { visible: boolean; game: GameState; onClose
       <ScrollView style={styles.history}>
         {turns.length === 0 && <Text style={styles.text}>Aucun coup pour l'instant.</Text>}
         {turns.map((turn, i) => (
-          <View key={i} style={styles.historyRow}>
+          <Pressable
+            key={i}
+            disabled={turn.kind !== 'play'}
+            onPress={() =>
+              turn.kind === 'play' && props.onShowWords(turn.score.words.map((w) => w.word))
+            }
+            style={({ pressed }) => [styles.historyRow, pressed && styles.rowPressed]}
+          >
             <Text style={styles.historyName}>{names.get(turn.playerId)}</Text>
             <Text style={styles.historyText}>
               {turn.kind === 'play'
@@ -150,9 +164,13 @@ export function HistorySheet(props: { visible: boolean; game: GameState; onClose
                   : 'passe'}
             </Text>
             <Text style={styles.historyScore}>{turn.kind === 'play' ? turn.score.total : ''}</Text>
-          </View>
+            {turn.kind === 'play' && (
+              <Ionicons name="book-outline" size={16} color={colors.textMuted} />
+            )}
+          </Pressable>
         ))}
       </ScrollView>
+      <Text style={styles.hint}>Touche un coup pour voir la définition de ses mots.</Text>
       <View style={styles.buttons}>
         <Button label="Fermer" onPress={props.onClose} />
       </View>
@@ -223,6 +241,8 @@ const styles = StyleSheet.create({
   letterGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, justifyContent: 'center' },
   buttons: { flexDirection: 'row', justifyContent: 'flex-end', gap: 10, marginTop: 4 },
   history: { maxHeight: 360 },
+  rowPressed: { backgroundColor: colors.background },
+  hint: { fontSize: 12, color: colors.textMuted },
   historyRow: {
     flexDirection: 'row',
     alignItems: 'baseline',

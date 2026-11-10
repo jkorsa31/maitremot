@@ -1,0 +1,420 @@
+{{voir/ka}}
+
+== {{langue|conv}} ==
+=== {{S|étymologie}} ===
+: Du {{étyl|ka|conv|mot=ქართული ენა|tr='''ka'''rtuli ena|sens=langue géorgienne}}
+
+=== {{S|symbole|conv}} ===
+'''ka'''
+# {{lexique|linguistique|conv}} [[code|Code]] ISO 639-1 (alpha-2) du '''[[géorgien]]'''.
+
+== {{langue|fr}} ==
+=== {{S|étymologie}} ===
+: {{lien-ancre-étym|fr|nom|1}} Du {{étyl|la|conv|ka|dif=kā}}.
+: {{lien-ancre-étym|fr|nom|2}} De l’{{étyl|egy|conv|sens=double}}.
+
+=== {{S|nom|fr|num=1}} ===
+{{fr-rég|kɑ|pron2=ka}}
+'''ka''' {{pron|kɑ|fr}} ''ou'' {{pron|ka|fr}} {{m}}
+# Autre appellation du ''[[kaon]]''.
+
+==== {{S|traductions}} ====
+{{trad-début}}
+* {{T|de}} : {{trad+|de|ka}}
+* {{T|en}} : {{trad+|en|kay}}
+* {{T|ko}} : {{trad-|ko|케이|tr=kei}}
+* {{T|eo}} : {{trad+|eo|ko}}
+* {{T|ja}} : {{trad+|ja|ケー|tr=kē}}
+* {{T|avk}} : {{trad|avk|ke}}
+* {{T|oc}} : {{trad+|oc|ca}}
+* {{T|scn}} : {{trad-|scn|kappa}}
+{{trad-fin}}
+
+=== {{S|nom|fr|num=2}} ===
+'''ka''' {{pron|ka|fr}} {{m}}
+# {{lexique|mythologie égyptienne|fr}} Le [[double]], une des parties de l’[[âme]] [[humain]]e.
+#* {{exemple | lang=fr
+ | À côté du corps il y a ce que J. Vandier appelle « les principes spirituels » (5): ''akh, ba, '''ka''', khaibit, ren, śẖm'' (6). On est d’autant plus puissant, semble-t-il, que les âmes sont nombreuses ; et on peut même, à cet effet, avoir plusieurs âmes de la même catégorie. L’''akh'', force divine attribuée originellement aux dieux et au roi qui leur est assimilé, fut très tôt accordée à tous les hommes. Le ''ba'', représenté par un oiseau (cigogne ?) de même que l’''akh'' (ibis), et traduit en général […] 
+ | source={{w|Henri Strohl}}, ''L’Évolution religieuse de Luther jusqu’en 1515'', volumes 50 à 51, Librairie Istra, 1959}}
+#* {{exemple | lang=fr
+ | Que ton '''ka''' te protège et te garde en longue vie, dit l’autre.
+ | source=Odile Weulersse, ''Les pilleurs de sarcophages'', chapitre 1}}
+
+==== {{S|variantes orthographiques}} ====
+* [[kâ]]
+
+==== {{S|vocabulaire}} ====
+* [[ab]]
+* [[akh]]
+* [[ba]], [[bâ]]
+* [[ib]]<!--
+* '''ka''', [[kâ]] -->
+* [[kat]]
+* [[khaibit]], [[khaïbit]]
+* [[khou]], [[khu]]
+* [[ren]]
+* [[sahou]], [[sâhou]], [[sahu]]
+* [[sekhem]], [[sékhem]]
+* [[shout]]
+
+==== {{S|traductions}} ====
+{{trad-début}}
+* {{T|en}} : {{trad+|en|ka}}
+{{trad-fin}}
+
+=== {{S|nom|fr|num=3}} ===
+{{fr-rég|ka}}
+'''ka''' {{pron|ka|fr}} {{m}}
+# Douzième lettre de l’alphabet cyrillique, {{lien|к|ru}}.
+#* {{exemple|lang=fr}}
+
+==== {{S|traductions}} ====
+{{trad-début}}
+* {{T|it}} : {{trad+|it|ka}}
+{{trad-fin}}
+
+=== {{S|prononciation}} ===
+* {{écouter|Lyon (France)|ka|lang=fr|audio=LL-Q150 (fra)-Lyokoï-ka.wav}}
+
+=== {{S|anagrammes}} ===
+{{voir anagrammes|fr}}
+
+=== {{S|voir aussi}} ===
+* {{WP|Composition de l’être dans l’Égypte antique}}
+* {{WP|Ka (homonymie)}}
+
+== {{langue|aa}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|aa}}
+
+=== {{S|pronom personnel|aa}} ===
+'''ka''' {{pron|ka|aa}}
+# [[lui|Lui]].
+
+== {{langue|sq}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|sq}}
+
+=== {{S|nom|sq}} ===
+{{sq-nom-m|def=kau|pl=qe|defpl=qetë}}
+# {{bovins|sq}} [[bœuf|Bœuf]].
+#* {{exemple|lang=sq}}
+
+=== {{S|verbe|sq|flexion}} ===
+'''ka''' {{pron|ˈka|sq}}
+# ''Troisième personne du singulier du présent de l'indicatif de'' {{lien|kam|sq}}.
+#* {{exemple|lang=sq}}
+
+== {{langue|aae}} ==
+=== {{S|verbe|aae|flexion}} ===
+'''ka''' {{pron|ˈka|aae}}
+# ''Troisième personne du singulier de l’indicatif présent du verbe'' {{lien|kam|aae}}.
+#* {{exemple|lang=aae}}
+
+== {{langue|bm}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|bm}}
+
+=== {{S|verbe|bm|num=1}} ===
+'''ka''' {{pron|ka|bm}}
+# [[nier|Nier]], [[avouer|ne pas avouer]], [[reconnaître|ne pas reconnaître]].
+
+=== {{S|verbe|bm|num=2}} ===
+'''ka''' {{pron|ka|bm}} {{auxiliaire|bm}}
+# Auxiliaire d’infinitif positif.
+#* ''Ala '''ka''' dugu mana jɛ.'' : Bonne nuit. (littéralement : « Que le village se réveille en paix. »)
+
+==== {{S|antonymes}} ====
+* {{lien|kana|bm}}
+
+=== {{S|particule|bm|num=1}} ===
+'''ka''' {{pron|ka|bm}}
+# [[de|De]], reliant [[possesseur]] et [[possédé]].
+#* ''Ne '''ka''' sɔ'' : ma maison.
+
+=== {{S|particule|bm|num=2}} ===
+'''ka''' {{pron|ka|bm}}
+de sens positif, pour relier l'adjectif à son sujet.
+# [[être|Être]].
+#* ''Ale '''ka''' bon'' : Lui, il est gros.
+
+=== {{S|voir aussi}} ===
+* {{lien|-ka|bm}}
+
+=== {{S|références}} ===
+* Richard Nci {{smcp|Diarra}}, [http://www.bambara.org/lexique/lexicon/main.htm ''Lexique bambara-français-anglais'']
+
+== {{langue|bci}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|bci}}
+
+=== {{S|verbe|bci|num=1}} ===
+'''ka''' {{pron||bci}}
+# [[mordre|Mordre]].
+#* {{exemple | lang=bci
+ | Alua'n ɔ' a '''ka''' min.
+ | Le chien m’a mordu.}}
+
+==== {{S|dérivés}} ====
+* {{lien|kaka|bci}}
+
+=== {{S|verbe|bci|num=2}} ===
+'''ka''' {{pron||bci}}
+# [[compter|Compter]].
+#* {{exemple | lang=bci
+ | '''ka''' sika nga.
+ | Compte cette somme d’argent.}}
+
+==== {{S|dérivés}} ====
+* {{lien|kaka|bci}}
+
+=== {{S|prononciation}} ===
+* {{écouter|lang=bci|Côte d'Ivoire|audio=LL-Q35107 (bci)-Franckk1-ka.wav}}
+* {{écouter|||lang=bci|audio=LL-Q35107 (bci)-Didierwiki-ka.wav}}
+* {{écouter|Bouaké (Côte d'Ivoire)||lang=bci|audio=LL-Q35107 (bci)-N'guess ange-ka.wav}}
+
+=== {{S|références}} ===
+* Jérémie Kouadio {{pc|N’Guessan}}, Kouakou {{pc|Kouame}}, ''Parlons baoulé : langue et culture de la Côte d’Ivoire'', L’Harmattan, 2004, {{ISBN|2747569578}}
+
+== {{langue|bété}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|bété}}
+
+=== {{S|verbe|bété}} ===
+'''ka''' {{pron||bété}}
+# [[avoir#fr|Avoir]], [[posséder]].
+#* Nyɩgbɔtaa -laa, 'mobiyii -bebe 'ɔ '''ka''' -bha.
+#*: Ce jeune possède beaucoup de voiture
+
+[[Catégorie:bété (Côte d’Ivoire)]]
+
+== {{langue|kea}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|kea}}
+
+=== {{S|particule|kea}} ===
+'''ka''' {{pron||kea}}
+# Particule de la négation. {{usage}} elle est placée avant le verbe ou la particule.
+
+=== {{S|références}} ===
+* {{R:Quint|p=xxix}}
+
+== {{langue|gcf}} ==
+{{ébauche|gcf}}
+=== {{S|étymologie}} ===
+: Peut-être du {{étyl|bm|conv|ka}}.
+
+=== {{S|particule|gcf}} ===
+'''ka''' {{pron||gcf}}
+# ''Marque le présent.''
+#* {{exemple|lang=gcf}}
+
+== {{langue|gcr}} ==
+{{ébauche|gcr}}
+=== {{S|étymologie}} ===
+: Peut-être du {{étyl|bm|conv|ka}}.
+
+=== {{S|particule|gcr}} ===
+'''ka''' {{pron||gcr}}
+# ''Marque le présent.''
+#* {{exemple|lang=gcr}}
+
+== {{langue|ht}} ==
+=== {{S|étymologie}} ===
+: Contraction de ''[[kapab]]'', du {{étyl|fr|conv|mot=capable}}.
+
+=== {{S|verbe|ht}} ===
+'''ka''' {{pron|ka|ht}}
+# [[pouvoir|Pouvoir]].
+# {{auxiliaire|ht}} [[pouvoir|Pouvoir]], être [[capable]].
+
+==== {{S|variantes}} ====
+* {{lien|kab|ht}}
+* {{lien|kapab|ht}}
+
+=== {{S|anagrammes}} ===
+* {{lien|ak|ht}}
+
+== {{langue|gcf-mq}} ==
+{{ébauche|gcf-mq}}
+
+=== {{S|étymologie}} ===
+: Peut-être du {{étyl|bm|gcf-mq|ka}}.
+
+=== {{S|particule|gcf-mq}} ===
+'''ka''' {{pron||gcf-mq}}
+# Marqueur du présent.
+#* {{exemple|lang=gcf-mq}}
+
+=== {{S|références}} ===
+* {{R:PinalieBernabé|p=15}}
+
+== {{langue|hr}} ==
+=== {{S|étymologie}} ===
+# Du proto-slave ''kaъ''
+# Du proto-slave ''kъjь''
+
+=== {{S|pronom indéfini|hr}} ===
+'''ka''' {{pron||hr}}
+# [[que|Que]], [[quoi]].
+# [[qui|Qui]].
+
+==== {{S|variantes}} ====
+* {{lien|kaj|hr}}
+* {{lien|koja|hr}}
+
+==== {{S|synonymes}} ====
+* {{lien|što|hr}}, {{lien|ča|hr}}
+* {{lien|ktera|hr}}
+
+== {{langue|dyu}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|dyu}}
+
+=== {{S|verbe|dyu}} ===
+'''ka''' {{pron||dyu}}
+# [[en train|En train]].
+#*flɛ '''ka''' yɛrɛko.
+#*:Regarde, ils sont en train de rire.
+
+== {{langue|es}} ==
+{{ébauche|es}}
+=== {{S|étymologie}} ===
+: {{ébauche-étym|es}}
+
+=== {{S|nom|es}} ===
+{{es-rég|ka|s=ka}}
+'''hache''' {{pron|ka|es}} {{f}}
+# [[nom|Nom]] de la lettre ''[[k]]''.
+
+[[Catégorie:Alphabet espagnol]]
+
+== {{langue|et}} ==
+=== {{S|étymologie}} ===
+: Dérivé de ''{{lien|kaasas|et}}'', issu du {{étyl|proto-germanique|et}} {{recons|lang-mot-vedette=et|hansō|proto-germanique}}.
+
+=== {{S|adverbe|et|num=1}} ===
+'''ka''' {{pron|ka|et}}
+# [[aussi|Aussi]].
+# ''Troisième personne du singulier du présent de'' {{lien|võima|et}}.
+#* ''Siniste õitega kaunistatakse toitusid, võib lisada '''ka''' salatitele''. {{source|1=Fiche ''Borago officinalis'', Jardin des sens du Jardin botanique de Tallinn}}
+# [[même|Même]].
+
+=== {{S|adverbe|et|num=2}} ===
+'''ka''' {{pron|ka|et}}
+# Adverbe servant à renforcer une [[concession]].
+# Adverbe servant à renforcer un reproche.
+# Adverbe utilisé pour exprimer une affirmation.
+# Adverbe marquant une acceptation imprécise.
+# Adverbe qui sert à souligner l’élément qui précède ou suit.
+
+=== {{S|références}} ===
+* {{R:GDEF|ka}}
+* {{R:eki|ka}}
+* {{R:etü|ka}}
+
+== {{langue|it}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|it}}
+
+=== {{S|nom|it}} ===
+{{it-inv|ˈka}}
+'''ka''' {{pron|ˈka|it}} {{f}}
+# [[ka#fr|Ka]], douzième lettre de l’alphabet cyrillique.
+#* {{exemple|lang=it}}
+
+== {{langue|jeh}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|jeh}}
+
+=== {{S|nom|jeh}} ===
+'''ka''' {{pron||jeh}}
+# {{poissons|jeh}} [[poisson#fr|Poisson]].
+
+==== {{S|notes}} ====
+* {{note-linguistique}}
+
+=== {{S|références}} ===
+* {{R:GradinJeh}}
+
+== {{langue|lv}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|lv}}
+: Apparenté au {{lt}} ''{{lien|kad|lt}}''.
+
+=== {{S|conjonction|lv}} ===
+'''ka''' {{pron||lv}}
+# [[que#fr|Que]].
+#* {{exemple|lang=lv|Ceru, '''ka''' drīz atkal tā tiksimies.|J'espère que nous nous reverrons bientôt.}}
+
+=== {{S|anagrammes}} ===
+* {{lien|kā|lv}}
+
+=== {{S|références}} ===
+* {{ouvrage|titre=Basic Latvian I|auteur=J. Lelis|date=1984|url=https://alausa.org/wp-content/uploads/2019/11/Basic-Latvian-I.pdf}}
+
+== {{langue|ngh}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|ngh}}
+
+=== {{S|particule|ngh}} ===
+'''ka''' {{pron||ngh}}
+# Particule servant à former le pluriel de certains noms communs qu’elle précède.
+
+==== {{S|synonymes}} ====
+* {{lien|-ke|ngh}}
+
+=== {{S|références}} ===
+* {{ouvrage |prénom1=Ouma |nom1=Geelmeid |titre=Ouma Geelmeid ke kx’u ǁxaǁxa Nǀuu |url=http://open.uct.ac.za/bitstream/handle/11427/17432/Shah_N%c7%80uu%20_CALDi_2016.pdf?sequence=5 |année=2016 |éditeur=Centre for African Language Diversity |passage=85 }}
+
+== {{langue|otq}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|otq}}
+
+=== {{S|nom|otq}} ===
+'''ka''' {{pron||otq}}
+# {{oiseaux|otq}} [[corbeau#fr|Corbeau]].
+
+=== {{S|références}} ===
+* Enrique L. {{pc|Palancar}}, ''[https://www.academia.edu/860683/Gram%C3%A1tica_del_Otom%C3%AD_de_San_Ildefonso_Tultepec Hñöhñö. Otomí de San Ildefonso Tultepec, Querétaro. Volumen I: Gramática]'', Plaza y Valdés, México, 2009
+
+== {{langue|pcd}} ==
+
+=== {{S|étymologie}} ===
+: Du {{étyl|bas latin|pcd|mot=cattus}}.
+
+=== {{S|nom|pcd}} ===
+'''ka''' {{pron||pcd}} {{m}}
+# {{régionalisme|Nord de la France}} {{term|Ch’ti}} [[chat|Chat]].
+
+==== {{S|phrases}} ====
+* {{lien|un kien nfé pa un ka|pcd|sens=Un chien ne fait pas un chat}}
+
+==== {{S|variantes orthographiques}} ====
+* {{lien|ca|pcd}}, {{lien|cas|pcd}}, {{lien|cat|pcd}}, {{lien|kat|pcd}}
+
+==== {{S|variantes}} ====
+{{(}}
+* {{lien|co|pcd}}, {{lien|ko|pcd}}, {{lien|cot|pcd}}
+* {{lien|keu|pcd}}, {{lien|keut|pcd}}
+* {{lien|kou|pcd}}
+{{)}}
+
+== {{langue|tl}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|tl}}
+
+=== {{S|pronom personnel|tl}} ===
+'''ka''' {{pron||tl}}
+# [[tu|Tu]].
+
+=== {{S|prononciation}} ===
+* {{écouter|Philippines||lang=tl|audio=LL-Q34057 (tgl)-Kunokuno-ka.wav}}
+
+== {{langue|way}} ==
+=== {{S|étymologie}} ===
+: {{ébauche-étym|way}}
+
+=== {{S|nom|way}} ===
+'''ka''' {{pron|ka|way}}
+# {{poissons|way|clé=*}} [[poisson#fr|Poisson]].

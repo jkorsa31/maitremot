@@ -29,7 +29,8 @@ puis servir le dossier `dist` avec n'importe quel serveur statique.
 
 ## Organisation du code
 
-| Dossier           | Rôle                                                                                                                                                                          |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `packages/engine` | Moteur de jeu en TypeScript pur : règles, score, dictionnaire, IA. Chaque fichier commence par un commentaire qui explique son rôle ; `src/index.ts` donne la vue d'ensemble. |
-| `apps/mobile`     | Application Expo / React Native : écrans dans `src/app` (Expo Router), composants dans `src/components`, logique de partie dans `src/game`.                                   |
+| Dossier               | Rôle                                                                                                                                                                          |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `packages/engine`     | Moteur de jeu en TypeScript pur : règles, score, dictionnaire, IA. Chaque fichier commence par un commentaire qui explique son rôle ; `src/index.ts` donne la vue d'ensemble. |
+| `packages/wiktionary` | Récupération et analyse des définitions du Wiktionnaire (API MediaWiki), testées sur de vraies pages.                                                                         |
+| `apps/mobile`         | Application Expo / React Native : écrans dans `src/app` (Expo Router), composants dans `src/components`, logique de partie dans `src/game`.                                   |

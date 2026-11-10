@@ -78,7 +78,7 @@ tel quel par le serveur en phase 2 pour valider les coups.
 - [x] **3. Dictionnaire** : dictionnaire Hunspell de Grammalecte déplié (toutes les formes) → DAWG compact (440 Ko), lexique forme accentuée → lemme (550 Ko), chargement dans l'app
 - [x] **4. IA** : générateur de coups (Appel & Jacobson), 3 niveaux, 1 à 3 IA par partie
 - [x] **5. Interface** : accueil (1 à 3 IA, niveaux), plateau zoomable, glisser-déposer (case visée surlignée, aimantation sur la case libre la plus proche) ou toucher, curseur de saisie (→/↓), propositions pour compléter le mot depuis le chevalet, joker, aperçu du score, échange, passe, historique, fin de partie
-- [ ] **5 bis. Définitions** : fiche Wiktionnaire au toucher d'un mot joué, cache
+- [x] **5 bis. Définitions** : toucher une lettre jouée (ou un coup de l'historique) affiche les définitions du Wiktionnaire de ses mots, avec la forme de base (MANGEAIENT → manger), en cache
 - [ ] **6. Sauvegarde** : reprise de partie, statistiques
 - [ ] **7. Diffusion** : builds EAS, TestFlight et APK
 
