@@ -1,4 +1,4 @@
-/** French messages for the error codes returned by the engine. */
+/** French messages for the error codes returned by the engine and the server. */
 
 import type { MoveError } from '@maitremot/engine';
 
@@ -39,6 +39,41 @@ export function moveErrorMessage(error: MoveError): string {
     case 'LETTER_ON_NON_BLANK':
       return 'Coup impossible.';
   }
+}
+
+/** Errors of the online server, on top of the engine's move errors. */
+export type ServerErrorCode =
+  | 'CONFLICT'
+  | 'WRONG_STATUS'
+  | 'FORBIDDEN'
+  | 'NOT_FOUND'
+  | 'NOT_FRIENDS'
+  | 'NOT_ENOUGH_PLAYERS'
+  | 'BAD_REQUEST'
+  | 'UNAUTHORIZED'
+  | 'SERVER_ERROR'
+  | 'NETWORK';
+
+export type AppError = MoveError | { readonly code: ServerErrorCode };
+
+const SERVER_MESSAGES: Record<ServerErrorCode, string> = {
+  CONFLICT: 'La partie vient de changer. Vérifie le plateau et rejoue.',
+  WRONG_STATUS: "Cette action n'est plus possible pour cette partie.",
+  FORBIDDEN: "Tu n'as pas le droit de faire ça dans cette partie.",
+  NOT_FOUND: 'Partie introuvable.',
+  NOT_FRIENDS: 'Tu ne peux inviter que tes amis.',
+  NOT_ENOUGH_PLAYERS: 'Il faut au moins 2 joueurs pour lancer la partie.',
+  BAD_REQUEST: 'Demande incorrecte.',
+  UNAUTHORIZED: 'Ta session a expiré. Reconnecte-toi.',
+  SERVER_ERROR: 'Le serveur a rencontré un problème. Réessaie.',
+  NETWORK: 'Connexion au serveur impossible. Vérifie ta connexion à Internet.',
+};
+
+/** Message for any error (engine or server). */
+export function errorMessage(error: AppError): string {
+  return error.code in SERVER_MESSAGES
+    ? SERVER_MESSAGES[error.code as ServerErrorCode]
+    : moveErrorMessage(error as MoveError);
 }
 
 /** "1 point" / "12 points". */

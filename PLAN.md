@@ -84,8 +84,8 @@ tel quel par le serveur en phase 2 pour valider les coups.
 
 ### Phase 2 — multijoueur entre amis
 
-- [ ] **8. Comptes** : Supabase Auth, profils, amis par code d'invitation
-- [ ] **9. Parties en ligne** : coups validés côté serveur, Realtime, présence, reconnexion
+- [x] **8. Comptes** : connexion par e-mail + code à 6 chiffres, pseudo, code ami, ajout d'amis
+- [x] **9. Parties en ligne** : invitations (1 à 3 amis), démarrage automatique, coups validés par le serveur (même moteur), lettres des autres invisibles, mises à jour en temps réel, reprise après reconnexion
 - [ ] **10. Chat texte**
 - [ ] **11. Audio / vidéo** : LiveKit (WebRTC)
 - [ ] **12. Notifications push**

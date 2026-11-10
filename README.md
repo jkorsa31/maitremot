@@ -27,10 +27,29 @@ construit la version web de l'app (`expo export --platform web`) et publie
 Pour l'essayer en local : `cd apps/mobile && npx expo export --platform web`,
 puis servir le dossier `dist` avec n'importe quel serveur statique.
 
+## Serveur multijoueur (Supabase)
+
+Projet Supabase : voir `supabase/project.json` (URL et clé publique, faites pour être
+dans l'app). Le schéma est dans `supabase/migrations`, la logique serveur dans
+`packages/server`. Commandes (avec `SUPABASE_ACCESS_TOKEN`, un jeton d'accès personnel
+Supabase, et `NODE_USE_ENV_PROXY=1` derrière un proxy) :
+
+```bash
+npm run supabase:migrate -w @maitremot/tools   # applique les migrations SQL manquantes
+npm run supabase:deploy -w @maitremot/tools    # déploie la fonction serveur « game »
+npm run supabase:auth -w @maitremot/tools      # codes à 6 chiffres, e-mails en français
+```
+
+Sécurité : chaque joueur ne lit que ses propres lettres (Row Level Security) ;
+l'état complet (sac, chevalets) n'est lisible que par le serveur, qui valide
+chaque coup avec le même moteur que l'app.
+
 ## Organisation du code
 
 | Dossier               | Rôle                                                                                                                                                                          |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `packages/engine`     | Moteur de jeu en TypeScript pur : règles, score, dictionnaire, IA. Chaque fichier commence par un commentaire qui explique son rôle ; `src/index.ts` donne la vue d'ensemble. |
 | `packages/wiktionary` | Récupération et analyse des définitions du Wiktionnaire (API MediaWiki), testées sur de vraies pages.                                                                         |
+| `packages/server`     | Arbitre des parties en ligne (fonction serveur Supabase) : invitations, validation des coups, informations cachées.                                                           |
+| `supabase`            | Migrations SQL et point d'entrée de la fonction serveur.                                                                                                                      |
 | `apps/mobile`         | Application Expo / React Native : écrans dans `src/app` (Expo Router), composants dans `src/components`, logique de partie dans `src/game`.                                   |

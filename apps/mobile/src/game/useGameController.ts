@@ -25,14 +25,13 @@ import {
   type Tile,
   cellAt,
   createRng,
-  type MoveError,
   type WordList,
   currentPlayer,
   evaluateMove,
   shuffle,
 } from '@maitremot/engine';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { moveErrorMessage } from './messages';
+import { type AppError, errorMessage } from './messages';
 
 /** A tile put on the board during the current turn, not yet played. */
 export interface PendingTile {
@@ -63,9 +62,9 @@ const MAX_SUGGESTIONS = 4;
  * on success or the engine's error; it may be async (online games).
  */
 export interface GameActions {
-  play(placements: readonly PendingTile[]): MoveError | null | Promise<MoveError | null>;
-  exchange(tileIds: readonly number[]): MoveError | null | Promise<MoveError | null>;
-  pass(): MoveError | null | Promise<MoveError | null>;
+  play(placements: readonly PendingTile[]): AppError | null | Promise<AppError | null>;
+  exchange(tileIds: readonly number[]): AppError | null | Promise<AppError | null>;
+  pass(): AppError | null | Promise<AppError | null>;
 }
 
 export interface ControllerOptions {
@@ -335,12 +334,12 @@ export function useGameController(game: GameState, options: ControllerOptions) {
    * whether it succeeded.
    */
   const run = useCallback(
-    async (action: () => MoveError | null | Promise<MoveError | null>): Promise<boolean> => {
+    async (action: () => AppError | null | Promise<AppError | null>): Promise<boolean> => {
       setBusy(true);
       try {
         const error = await action();
         if (error) {
-          setError(moveErrorMessage(error));
+          setError(errorMessage(error));
           return false;
         }
         setPending([]);

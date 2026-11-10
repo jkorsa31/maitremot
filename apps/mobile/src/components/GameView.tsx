@@ -364,6 +364,8 @@ function statusLine(game: GameState, g: GameController) {
       color: colors.primary,
     };
   }
+  // Online, the next player may be someone else than this device's player.
+  const next = g.isMyTurn ? 'À toi !' : `À ${g.playing.name} de jouer.`;
   const last = game.history[game.history.length - 1];
   if (last) {
     const who = game.players.find((p) => p.id === last.playerId)?.name;
@@ -373,8 +375,9 @@ function statusLine(game: GameState, g: GameController) {
         : last.kind === 'exchange'
           ? `${who} a échangé ${last.count} lettre${last.count > 1 ? 's' : ''}`
           : `${who} a passé`;
-    return { text: `${what}. À toi !`, color: colors.text };
+    return { text: `${what}. ${next}`, color: colors.text };
   }
+  if (!g.isMyTurn) return { text: `${g.playing.name} commence la partie.`, color: colors.text };
   return { text: "À toi de jouer : pose un mot sur l'étoile.", color: colors.text };
 }
 

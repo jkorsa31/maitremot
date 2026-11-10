@@ -57,6 +57,12 @@ export default function HomeScreen() {
       )}
 
       <View style={styles.card}>
+        <Text style={styles.cardTitle}>Jouer avec des amis</Text>
+        <Text style={styles.muted}>Parties en ligne de 2 à 4 joueurs, en temps réel.</Text>
+        <Button label="Jouer en ligne" icon="people" onPress={() => router.push('/online')} />
+      </View>
+
+      <View style={styles.card}>
         <Text style={styles.cardTitle}>Nouvelle partie solo</Text>
 
         <Text style={styles.label}>Ton prénom</Text>

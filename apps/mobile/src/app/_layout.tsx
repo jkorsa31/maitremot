@@ -36,6 +36,8 @@ export default function RootLayout() {
       >
         <Stack.Screen name="index" options={{ title: 'MaitreMot' }} />
         <Stack.Screen name="game" options={{ headerShown: false, gestureEnabled: false }} />
+        <Stack.Screen name="online/index" options={{ title: 'Jouer en ligne' }} />
+        <Stack.Screen name="online/[id]" options={{ headerShown: false, gestureEnabled: false }} />
       </Stack>
     </>
   );
