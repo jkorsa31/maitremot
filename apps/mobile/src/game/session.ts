@@ -1,6 +1,7 @@
 /**
  * The current solo game, kept in memory outside React so it survives screen
- * changes (step 6 will also save it to the phone's storage).
+ * changes, and saved on the device after every change so it survives closing
+ * the app. Also remembers the last setup (name, opponents) and feeds the stats.
  *
  * This is a tiny "store": a value, a setter, and a hook built on React's
  * `useSyncExternalStore` that re-renders subscribers when the value changes.
@@ -15,6 +16,8 @@ import {
 } from '@maitremot/engine';
 import { getWords } from '@maitremot/lexicon-fr';
 import { useSyncExternalStore } from 'react';
+import { load, save } from '../storage/storage';
+import { recordFinishedGame } from './stats';
 
 /** Id of the human player in a solo game. */
 export const HUMAN_ID = 'me';
@@ -29,7 +32,17 @@ export const LEVEL_LABELS: Record<AiLevel, string> = {
 };
 
 let current: GameState | null = null;
+/** Identifies the current game (for the stats: count each game once). */
+let currentId = '';
 const listeners = new Set<() => void>();
+
+const GAME_KEY = 'solo-game';
+const SETTINGS_KEY = 'settings';
+
+interface SavedGame {
+  readonly id: string;
+  readonly state: GameState;
+}
 
 // End-to-end tests only (web build made with EXPO_PUBLIC_E2E=1): lets the test
 // script read and set the game. Not present in normal builds.
@@ -42,6 +55,17 @@ if (process.env.EXPO_PUBLIC_E2E === '1') {
 
 export function setSoloGame(game: GameState | null): void {
   current = game;
+  save<SavedGame>(GAME_KEY, game ? { id: currentId, state: game } : null);
+  if (game?.status === 'finished') recordFinishedGame(currentId, game, HUMAN_ID);
+  listeners.forEach((listener) => listener());
+}
+
+/** Restores the game saved on the device (called once at startup). */
+export async function loadSoloGame(): Promise<void> {
+  const saved = await load<SavedGame>(GAME_KEY);
+  if (!saved) return;
+  currentId = saved.id;
+  current = saved.state;
   listeners.forEach((listener) => listener());
 }
 
@@ -66,6 +90,11 @@ export interface SoloGameOptions {
   readonly opponents: readonly AiLevel[];
 }
 
+/** The last setup used, to prefill the home screen. */
+export function loadLastOptions(): Promise<SoloGameOptions | null> {
+  return load<SoloGameOptions>(SETTINGS_KEY);
+}
+
 /** Creates a new solo game. Who starts is drawn at random. */
 export function startSoloGame({ playerName, opponents }: SoloGameOptions): void {
   if (opponents.length < 1 || opponents.length > MAX_PLAYERS - 1) {
@@ -85,5 +114,7 @@ export function startSoloGame({ playerName, opponents }: SoloGameOptions): void 
   const seated = [...players.slice(shift), ...players.slice(0, shift)];
 
   getWords(); // decode the dictionary now rather than during the first move
+  save<SoloGameOptions>(SETTINGS_KEY, { playerName, opponents });
+  currentId = `${Date.now().toString(36)}-${Math.floor(Math.random() * 1e9).toString(36)}`;
   setSoloGame(createGame(seated, Math.floor(Math.random() * 2 ** 32)));
 }

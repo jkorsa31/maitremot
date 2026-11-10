@@ -2,8 +2,7 @@
  * Words added from the game ("Ajouter au dictionnaire"), on top of the built-in
  * dictionary (Grammalecte + packages/lexicon-fr/house-words.txt).
  *
- * For now they live in memory only; step 6 saves them on the phone, and in
- * phase 2 they will be shared between friends.
+ * They are saved on the device; in phase 2 they will be shared between friends.
  *
  * Note: the computer players only use the built-in dictionary.
  */
@@ -11,6 +10,9 @@
 import type { WordList } from '@maitremot/engine';
 import { getWords } from '@maitremot/lexicon-fr';
 import { useSyncExternalStore } from 'react';
+import { load, save } from '../storage/storage';
+
+const KEY = 'house-words';
 
 const added = new Set<string>();
 const listeners = new Set<() => void>();
@@ -25,6 +27,14 @@ export const playerWords: WordList = {
 export function addHouseWord(word: string): void {
   if (!/^[A-Z]{2,15}$/.test(word) || added.has(word)) return;
   added.add(word);
+  save(KEY, [...added]);
+  version++;
+  listeners.forEach((listener) => listener());
+}
+
+/** Restores the words added in previous sessions (called once at startup). */
+export async function loadHouseWords(): Promise<void> {
+  for (const word of (await load<string[]>(KEY)) ?? []) added.add(word);
   version++;
   listeners.forEach((listener) => listener());
 }

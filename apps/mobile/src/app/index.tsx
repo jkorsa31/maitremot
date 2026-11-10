@@ -6,10 +6,11 @@
 import type { AiLevel } from '@maitremot/engine';
 import { DICTIONARY_CREDITS } from '@maitremot/lexicon-fr';
 import { router } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Button } from '../components/Button';
-import { LEVEL_LABELS, startSoloGame, useSoloGameState } from '../game/session';
+import { LEVEL_LABELS, loadLastOptions, startSoloGame, useSoloGameState } from '../game/session';
+import { useStats } from '../game/stats';
 import { colors, radius } from '../ui/theme';
 
 const LEVELS: AiLevel[] = ['easy', 'medium', 'expert'];
@@ -18,6 +19,16 @@ export default function HomeScreen() {
   const current = useSoloGameState();
   const [name, setName] = useState('');
   const [opponents, setOpponents] = useState<AiLevel[]>(['medium']);
+  const stats = useStats();
+
+  // Prefill with the last setup used.
+  useEffect(() => {
+    void loadLastOptions().then((last) => {
+      if (!last) return;
+      setName(last.playerName);
+      if (last.opponents.length > 0) setOpponents([...last.opponents]);
+    });
+  }, []);
 
   const setCount = (count: number) =>
     setOpponents((list) =>
@@ -83,8 +94,33 @@ export default function HomeScreen() {
         </View>
       </View>
 
+      {stats.played > 0 && (
+        <View style={styles.card}>
+          <Text style={styles.cardTitle}>Tes statistiques</Text>
+          <View style={styles.statsRow}>
+            <Stat label="Parties" value={String(stats.played)} />
+            <Stat label="Victoires" value={String(stats.won)} />
+            <Stat label="Meilleur score" value={String(stats.bestGameScore ?? '–')} />
+          </View>
+          {stats.bestMove && (
+            <Text style={styles.muted}>
+              Meilleur coup : {stats.bestMove.word} ({stats.bestMove.score} points)
+            </Text>
+          )}
+        </View>
+      )}
+
       <Text style={styles.credits}>{DICTIONARY_CREDITS}</Text>
     </ScrollView>
+  );
+}
+
+function Stat({ label, value }: { label: string; value: string }) {
+  return (
+    <View style={styles.stat}>
+      <Text style={styles.statValue}>{value}</Text>
+      <Text style={styles.statLabel}>{label}</Text>
+    </View>
   );
 }
 
@@ -150,5 +186,9 @@ const styles = StyleSheet.create({
   segmentText: { fontWeight: '600', color: colors.text },
   segmentTextSelected: { color: colors.primaryText },
   startButton: { marginTop: 16 },
+  statsRow: { flexDirection: 'row', justifyContent: 'space-around', marginVertical: 4 },
+  stat: { alignItems: 'center' },
+  statValue: { fontSize: 22, fontWeight: '700', color: colors.text },
+  statLabel: { fontSize: 12, color: colors.textMuted },
   credits: { fontSize: 12, color: colors.textMuted, textAlign: 'center' },
 });

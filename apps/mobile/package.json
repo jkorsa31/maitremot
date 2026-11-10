@@ -8,6 +8,7 @@
     "@maitremot/engine": "*",
     "@maitremot/lexicon-fr": "*",
     "@maitremot/wiktionary": "*",
+    "@react-native-async-storage/async-storage": "^2.2.0",
     "expo": "~58.0.23",
     "expo-constants": "~58.0.15",
     "expo-haptics": "~58.0.7",
