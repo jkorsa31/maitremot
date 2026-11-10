@@ -11,6 +11,7 @@ import { ChatBar } from '../../components/ChatBar';
 import { DragProvider } from '../../components/DragLayer';
 import { GameView } from '../../components/GameView';
 import { useSession } from '../../online/auth';
+import { callGame } from '../../online/api';
 import { useChat } from '../../online/useChat';
 import { useOnlineController, useOnlineGame } from '../../online/useOnlineGame';
 import { colors } from '../../ui/theme';
@@ -78,6 +79,7 @@ function OnlineGame(props: {
       game={props.game}
       g={g}
       notice={props.offline ? 'Hors ligne : reconnexion en cours…' : null}
+      onStop={() => void callGame({ action: 'stop', gameId: props.gameId }).then(props.reload)}
       onQuit={() => (router.canGoBack() ? router.back() : router.replace('/online'))}
       onNewGame={() => router.replace('/online')}
     />

@@ -38,7 +38,7 @@ export interface GameSummary {
 export type GameCall =
   | { action: 'create'; friendIds: string[] }
   | { action: 'respond'; gameId: string; accept: boolean }
-  | { action: 'start' | 'cancel' | 'pass'; gameId: string }
+  | { action: 'start' | 'cancel' | 'pass' | 'stop'; gameId: string }
   | { action: 'play'; gameId: string; placements: readonly unknown[] }
   | { action: 'exchange'; gameId: string; tileIds: readonly number[] };
 

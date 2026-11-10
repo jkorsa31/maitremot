@@ -65,7 +65,8 @@ export type Turn =
   | { readonly kind: 'exchange'; readonly playerId: string; readonly count: number }
   | { readonly kind: 'pass'; readonly playerId: string };
 
-export type EndReason = 'player_out' | 'all_passed';
+/** How a game ended: a player went out, everybody passed, or a player stopped it. */
+export type EndReason = 'player_out' | 'all_passed' | 'stopped';
 
 export interface FinalAdjustment {
   readonly playerId: string;
@@ -89,6 +90,8 @@ export interface GameState {
   readonly end?: {
     readonly reason: EndReason;
     readonly adjustments: readonly FinalAdjustment[];
+    /** For a stopped game: the player who stopped it. */
+    readonly stoppedBy?: string;
   };
 }
 
@@ -367,6 +370,29 @@ function finishGame(state: GameState, reason: EndReason): GameState {
     status: 'finished',
     players: state.players.map((p, i) => ({ ...p, score: p.score + adjustments[i]!.delta })),
     end: { reason, adjustments },
+  };
+}
+
+/**
+ * Stops the game at once, at any player's request (online games between
+ * friends): the scores stay as they are, no end-of-game adjustment.
+ */
+export function stopGame(state: GameState, playerId: string): Result<GameState, MoveError> {
+  if (state.status === 'finished') return { ok: false, error: { code: 'GAME_FINISHED' } };
+  if (!state.players.some((p) => p.id === playerId)) {
+    return { ok: false, error: { code: 'NOT_YOUR_TURN' } };
+  }
+  return {
+    ok: true,
+    value: {
+      ...state,
+      status: 'finished',
+      end: {
+        reason: 'stopped',
+        stoppedBy: playerId,
+        adjustments: state.players.map((p) => ({ playerId: p.id, delta: 0 })),
+      },
+    },
   };
 }
 

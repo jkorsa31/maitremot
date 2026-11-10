@@ -11,6 +11,7 @@
  *
  * Game life cycle:
  *   create (lobby) → friends accept / decline → start (playing) → … → finished
+ *   (any player may also stop a game in progress: it ends with the current scores)
  *                  ↘ cancel (cancelled)
  * A game starts automatically when every invited friend has answered and at
  * least 2 players joined; the creator may also start it earlier.
@@ -27,6 +28,7 @@ import {
   exchangeTiles,
   passTurn,
   playMove,
+  stopGame,
   toPublicState,
 } from '@maitremot/engine';
 import type { WordList } from '@maitremot/engine';
@@ -76,7 +78,8 @@ export type GameRequest =
   | { readonly action: 'cancel'; readonly gameId: string }
   | { readonly action: 'play'; readonly gameId: string; readonly placements: readonly Placement[] }
   | { readonly action: 'exchange'; readonly gameId: string; readonly tileIds: readonly number[] }
-  | { readonly action: 'pass'; readonly gameId: string };
+  | { readonly action: 'pass'; readonly gameId: string }
+  | { readonly action: 'stop'; readonly gameId: string };
 
 /** Errors that are not about the move itself. */
 export type ServerError =
@@ -134,6 +137,8 @@ export class GameHandler {
         return this.move(userId, request.gameId, (s) => exchangeTiles(s, userId, request.tileIds));
       case 'pass':
         return this.move(userId, request.gameId, (s) => passTurn(s, userId));
+      case 'stop':
+        return this.move(userId, request.gameId, (s) => stopGame(s, userId));
       default:
         return fail({ code: 'BAD_REQUEST', message: 'unknown action' });
     }

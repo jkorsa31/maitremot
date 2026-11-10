@@ -181,6 +181,8 @@ export function HistorySheet(props: {
 export function GameOverSheet(props: {
   visible: boolean;
   game: GameState;
+  /** The player using this device. */
+  meId: string;
   onNewGame: () => void;
   onClose: () => void;
 }) {
@@ -188,12 +190,21 @@ export function GameOverSheet(props: {
   const adjustments = new Map(props.game.end?.adjustments.map((a) => [a.playerId, a.delta]));
   const winner = ranked[0];
   const tie = ranked.length > 1 && ranked[1]!.score === winner?.score;
+  const stoppedBy =
+    props.game.end?.reason === 'stopped'
+      ? props.game.players.find((p) => p.id === props.game.end?.stoppedBy)
+      : undefined;
   return (
     <Sheet visible={props.visible} title="Partie terminée" onClose={props.onClose}>
+      {stoppedBy && (
+        <Text style={styles.text}>
+          Partie arrêtée par {stoppedBy.id === props.meId ? 'toi' : stoppedBy.name}.
+        </Text>
+      )}
       <Text style={styles.text}>
         {tie
           ? 'Égalité !'
-          : winner?.kind === 'human'
+          : winner?.id === props.meId
             ? 'Bravo, tu as gagné !'
             : `${winner?.name} gagne.`}
       </Text>

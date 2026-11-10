@@ -213,6 +213,18 @@ describe('moves', () => {
     expect(rack.some((t) => tileIds.includes(t.id))).toBe(false);
   });
 
+  it('lets any player stop the game, with the current scores', async () => {
+    const id = await playingGame();
+    expect((await handler.handle('carol', { action: 'stop', gameId: id })).ok).toBe(false);
+    expect(await handler.handle('bob', { action: 'stop', gameId: id })).toEqual({
+      ok: true,
+      gameId: id,
+    });
+    expect(store.games.get(id)!.status).toBe('finished');
+    expect(store.secrets.get(id)!.end?.stoppedBy).toBe('bob');
+    expect((await handler.handle('alice', { action: 'pass', gameId: id })).ok).toBe(false);
+  });
+
   it('reports a conflict when the game changed meanwhile', async () => {
     const id = await playingGame();
     const first = currentPlayer(store.secrets.get(id)!);
@@ -250,6 +262,7 @@ describe('request parsing', () => {
     [{ action: 'play', gameId: 'g', placements: [] }, true],
     [{ action: 'exchange', gameId: 'g', tileIds: [1, 2] }, true],
     [{ action: 'exchange', gameId: 'g', tileIds: ['x'] }, false],
+    [{ action: 'stop', gameId: 'g' }, true],
     [{ action: 'hack' }, false],
     [null, false],
   ])('%j → valid: %s', (body, valid) => {

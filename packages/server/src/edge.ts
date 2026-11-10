@@ -51,6 +51,7 @@ export function parseRequest(body: unknown): GameRequest | null {
     case 'start':
     case 'cancel':
     case 'pass':
+    case 'stop':
       return isId(r.gameId) ? { action: r.action, gameId: r.gameId } : null;
     case 'play':
       return isId(r.gameId) && Array.isArray(r.placements) && r.placements.length <= 7

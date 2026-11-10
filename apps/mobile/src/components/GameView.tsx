@@ -57,14 +57,18 @@ export interface GameViewProps {
   readonly notice?: string | null;
   /** Optional content under the action buttons (the chat in online games). */
   readonly footer?: ReactNode;
+  /** When given, a button lets the player stop the game (online games). */
+  readonly onStop?: () => void;
 }
 
-export function GameView({ game, g, onQuit, onNewGame, notice, footer }: GameViewProps) {
+export function GameView({ game, g, onQuit, onNewGame, notice, footer, onStop }: GameViewProps) {
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
 
   const [zoomed, setZoomed] = useState(false);
-  const [sheet, setSheet] = useState<'exchange' | 'history' | 'pass' | 'addWord' | null>(null);
+  const [sheet, setSheet] = useState<'exchange' | 'history' | 'pass' | 'addWord' | 'stop' | null>(
+    null,
+  );
   const [gameOverDismissed, setGameOverDismissed] = useState(false);
   /** Words whose definitions are shown (empty = sheet closed). */
   const [definitionWords, setDefinitionWords] = useState<string[]>([]);
@@ -173,6 +177,16 @@ export function GameView({ game, g, onQuit, onNewGame, notice, footer }: GameVie
             compact
             onPress={() => setSheet('history')}
           />
+          {onStop && game.status === 'playing' && (
+            <Button
+              label=""
+              accessibilityLabel="Arrêter la partie"
+              icon="flag-outline"
+              variant="ghost"
+              compact
+              onPress={() => setSheet('stop')}
+            />
+          )}
         </View>
 
         <View style={styles.statusRow}>
@@ -342,9 +356,21 @@ export function GameView({ game, g, onQuit, onNewGame, notice, footer }: GameVie
         }}
       />
       <DefinitionSheet words={definitionWords} onClose={() => setDefinitionWords([])} />
+      <ConfirmSheet
+        visible={sheet === 'stop'}
+        title="Arrêter la partie ?"
+        message="La partie se termine pour tout le monde, avec les scores actuels."
+        confirmLabel="Arrêter"
+        onCancel={() => setSheet(null)}
+        onConfirm={() => {
+          setSheet(null);
+          onStop?.();
+        }}
+      />
       <GameOverSheet
         visible={game.status === 'finished' && !gameOverDismissed}
         game={game}
+        meId={g.me.id}
         onClose={() => setGameOverDismissed(true)}
         onNewGame={onNewGame}
       />

@@ -17,6 +17,7 @@ import {
   View,
 } from 'react-native';
 import { Button } from '../../components/Button';
+import { ConfirmSheet } from '../../components/Sheets';
 import { errorMessage } from '../../game/messages';
 import {
   type GameSummary,
@@ -57,6 +58,8 @@ function Hub({ me }: { me: Profile }) {
   const friends = useFriends(me.id);
   const games = useMyGames(me.id);
   const [message, setMessage] = useState<string | null>(null);
+  /** Game waiting for the "stop?" confirmation. */
+  const [stopping, setStopping] = useState<string | null>(null);
 
   const act = async (call: Parameters<typeof callGame>[0]) => {
     setMessage(null);
@@ -122,12 +125,31 @@ function Hub({ me }: { me: Profile }) {
                     {myTurn ? 'À toi de jouer !' : `Au tour de ${turn?.name ?? '…'}`}
                   </Text>
                 </View>
+                <Button
+                  label="Arrêter"
+                  icon="flag-outline"
+                  variant="ghost"
+                  compact
+                  onPress={() => setStopping(g.id)}
+                />
                 <Text style={styles.chevron}>›</Text>
               </Pressable>
             );
           })}
         </Section>
       )}
+      <ConfirmSheet
+        visible={stopping !== null}
+        title="Arrêter la partie ?"
+        message="La partie se termine pour tout le monde, avec les scores actuels."
+        confirmLabel="Arrêter"
+        onCancel={() => setStopping(null)}
+        onConfirm={() => {
+          const gameId = stopping;
+          setStopping(null);
+          if (gameId) void act({ action: 'stop', gameId });
+        }}
+      />
 
       {waiting.length > 0 && (
         <Section title="En attente des amis">
@@ -182,6 +204,7 @@ function Hub({ me }: { me: Profile }) {
               >
                 <Text style={styles.rowText}>
                   {ranked.map((p, i) => `${i === 0 ? '🏆 ' : ''}${p.name} ${p.score}`).join(' · ')}
+                  {g.publicState?.end?.reason === 'stopped' ? ' (arrêtée)' : ''}
                 </Text>
                 <Text style={styles.chevron}>›</Text>
               </Pressable>

@@ -11,6 +11,7 @@ import {
   passTurn,
   playMove,
   ranking,
+  stopGame,
   tilePoints,
 } from '../src';
 import { placementsFor, withRack } from './helpers';
@@ -195,5 +196,24 @@ describe('end of game', () => {
     expect(next.end?.reason).toBe('player_out');
     expect(next.players.map((p) => p.score)).toEqual([4 + 11, -11]);
     expect(ranking(next)[0]!.id).toBe('alice');
+  });
+});
+
+describe('stopping a game', () => {
+  it('ends the game at once with the current scores', () => {
+    const state = createGame([alice, bot], 2);
+    const stopped = unwrap(stopGame(state, 'bot'));
+    expect(stopped.status).toBe('finished');
+    expect(stopped.end).toEqual({
+      reason: 'stopped',
+      stoppedBy: 'bot',
+      adjustments: [
+        { playerId: 'alice', delta: 0 },
+        { playerId: 'bot', delta: 0 },
+      ],
+    });
+    expect(stopped.players.map((p) => p.score)).toEqual([0, 0]);
+    expect(stopGame(stopped, 'alice')).toEqual({ ok: false, error: { code: 'GAME_FINISHED' } });
+    expect(stopGame(state, 'stranger').ok).toBe(false);
   });
 });
