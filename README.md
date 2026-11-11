@@ -18,6 +18,13 @@ npm start -w @maitremot/mobile   # lance l'app (QR code à scanner avec Expo Go,
 npm run build:dictionary -w @maitremot/tools   # régénère le dictionnaire
 ```
 
+## Quelle version ?
+
+En bas de l'écran d'accueil : « Version 1.0.0 · c5d7dc0 · 11/11/2026 », soit le numéro de
+version, le commit git à partir duquel l'app a été construite et la date de construction
+(voir `apps/mobile/app.config.js`). Deux joueurs ont la même version si le code de
+7 caractères est le même ; le dernier commit de `main` est visible sur GitHub.
+
 ## Version web en ligne (Vercel)
 
 Le fichier `vercel.json` décrit la construction : Vercel installe le projet,

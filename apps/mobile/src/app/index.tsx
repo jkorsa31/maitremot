@@ -12,6 +12,7 @@ import { Button } from '../components/Button';
 import { LEVEL_LABELS, loadLastOptions, startSoloGame, useSoloGameState } from '../game/session';
 import { useStats } from '../game/stats';
 import { colors, radius } from '../ui/theme';
+import { versionLabel } from '../version';
 
 const LEVELS: AiLevel[] = ['easy', 'medium', 'expert'];
 
@@ -117,6 +118,9 @@ export default function HomeScreen() {
       )}
 
       <Text style={styles.credits}>{DICTIONARY_CREDITS}</Text>
+      <Text style={styles.credits} selectable>
+        {versionLabel()}
+      </Text>
     </ScrollView>
   );
 }
