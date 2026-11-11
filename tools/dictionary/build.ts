@@ -9,7 +9,7 @@
  * 2. keep only forms playable on the board: lowercase French letters only
  *    (no proper nouns, acronyms, unit symbols, digits, hyphens, apostrophes),
  *    2 to 15 letters;
- *    then add the house words (packages/lexicon-fr/house-words.txt);
+ *    then add the house words (packages/lexicon-fr/house-words*.txt);
  * 3. write two DAWGs into packages/lexicon-fr/src/generated/:
  *    - words:   board words (A–Z, no accents) → used to validate moves and by the AI;
  *    - lexicon: "<spelling>=<lemma rule>" → used to fetch definitions.
@@ -17,7 +17,7 @@
  * The output is committed, so the app and the server do not need this step.
  */
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -34,7 +34,7 @@ import { expandEntry, parseAffixFile, parseFlags } from './hunspell';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outputDir = join(here, '../../packages/lexicon-fr/src/generated');
-const houseWordsFile = join(here, '../../packages/lexicon-fr/house-words.txt');
+const lexiconDir = join(here, '../../packages/lexicon-fr');
 const source = dirname(createRequire(import.meta.url).resolve('dictionary-fr'));
 
 const spellingPattern = new RegExp(`^[${SPELLING_CHARS}]+$`, 'u');
@@ -72,7 +72,13 @@ async function main() {
   }
 
   // House words: extra words accepted by the group of friends (each is its own lemma).
-  const houseText = await readFile(houseWordsFile, 'utf8');
+  // Every packages/lexicon-fr/house-words*.txt file (house words, club word lists…).
+  const houseFiles = (await readdir(lexiconDir))
+    .filter((f) => /^house-words.*\.txt$/.test(f))
+    .sort();
+  const houseText = (
+    await Promise.all(houseFiles.map((f) => readFile(join(lexiconDir, f), 'utf8')))
+  ).join('\n');
   let houseCount = 0;
   for (const raw of houseText.split('\n')) {
     const form = raw.trim().toLowerCase();

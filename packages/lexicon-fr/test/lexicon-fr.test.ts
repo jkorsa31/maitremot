@@ -26,6 +26,12 @@ describe('French board words', () => {
     'KA', // house words (packages/lexicon-fr/house-words.txt)
     'KAT',
     'SKYR',
+    'KOAN', // club word lists (house-words-fiches.txt)
+    'KOANS', // generated plural
+    'QIN',
+    'WOK',
+    'IXERAIT', // generated conjugation of IXER
+    'IRAQIENNE',
   ])('accepts %s', (word) => expect(words.has(word)).toBe(true));
 
   it.each([
